@@ -1,0 +1,34 @@
+.seo {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media (min-width: 992px) {
+        position: relative;
+        padding-top: 120px;
+        padding-bottom: 120px; 
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            max-width: 212px;
+            width: 100%;
+            height: 3px;
+            background: var(--plashka);
+        }  
+    }
+    p {
+        color: var(--Dark-grey);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+
+        @media (min-width: 992px) {
+            letter-spacing: 0.9px;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+}

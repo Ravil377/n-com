@@ -1,0 +1,21 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Circe", sans-serif;
+  --content-width: 1760px;
+  --container-offset: 12px;
+  @media (min-width: 375px) {
+    --container-offset: 20px;
+  }
+  @media (min-width: 768px) {
+    --container-offset: 80px;
+  }
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --Dark-grey: #383838;
+  --Grey: #808080;
+  --plashka: #EBEBEB;
+}
