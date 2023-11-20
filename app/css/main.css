@@ -692,7 +692,7 @@ a {
   transform: translateX(-100%);
   max-width: 284px;
   width: 100%;
-  height: 100vh;
+  height: var(--vh);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -787,7 +787,7 @@ a {
   position: absolute;
   list-style: none;
   right: -284px;
-  height: 100vh;
+  height: var(--vh);
   top: 0;
   max-width: 310px;
   width: 100%;

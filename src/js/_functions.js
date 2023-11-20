@@ -18,7 +18,7 @@ import { mobileCheck } from "./functions/mobile-check";
 // window.addEventListener('resize', func);
 
 // Фикс фулскрин-блоков
-// import './functions/fix-fullheight';
+import './functions/fix-fullheight';
 
 
 

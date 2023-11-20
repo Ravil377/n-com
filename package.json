@@ -11,7 +11,7 @@
     "backend": "gulp backend",
     "zip": "gulp zip",
     "code": "editorconfig-checker",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d app"
   },
   "author": "MaxGraph",
   "license": "ISC",
