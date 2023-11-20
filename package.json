@@ -13,7 +13,7 @@
     "code": "editorconfig-checker",
     "deploy": "gh-pages -d app"
   },
-  "author": "MaxGraph",
+  "author": "Ravil",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.16.7",
