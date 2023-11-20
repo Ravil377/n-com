@@ -2,7 +2,7 @@
   <div class="container">
     <div class="header__catalog" data-catalogmenu >
       <div class="header__catalog-container">
-        <ul>
+        <ul data-id="1">
           <li>
             <a href="#">Интерьерный свет</a>
             <ul>
@@ -80,6 +80,29 @@
             <a href="#">outlet</a>
           </li>
         </ul>
+        <ul data-id="2">
+          <li>
+            <a href="#">Сотрудничество</a>
+            <ul>
+              <li><a href="#">Дизайнерам</a></li>
+              <li><a href="#">Дилерам</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">скачать Каталоги</a>
+          </li>
+        </ul>
+        <ul data-id="3">
+          <li><a href="#">шоу-рум</a></li>
+          <li><a href="#">доставка</a></li>
+          <li><a href="#">гарантии</a></li>
+          <li><a href="#">оплата</a></li>
+          <li><a href="#">программа лояльности</a></li>
+        </ul>
+        <ul data-id="4">
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Мы находимся</a></li>
+        </ul>
       </div>
     </div>
     <div class="header__top">
@@ -89,7 +112,7 @@
           <span></span>
         </label>
         <div class="menu__container" >
-          <ul class="menu__box">
+          <ul class="menu__box" data-menucontainer>
             <li>
               <a class="menu__item" href="#" data-menu>Каталог</a>
               <ul>
@@ -106,10 +129,45 @@
                 <li><a class="menu__subitem" href="#">Outlet</a></li>
               </ul>
             </li>
-            <li><a class="menu__item" href="#">сотрудничество</a></li>
-            <li><a class="menu__item" href="#">как купить</a></li>
-            <li><a class="menu__item" href="#">контакты</a></li>
+            <li>
+              <a class="menu__item" href="#" data-menu>сотрудничество</a>
+              <ul>
+                <li><a class="menu__subitem" href="#">Дизайнерам</a></li>
+                <li><a class="menu__subitem" href="#">Дилерам</a></li>
+                <li><a class="menu__subitem" href="#">скачать Каталоги</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="menu__item" href="#" data-menu>как купить</a>
+              <ul>
+                <li><a class="menu__subitem" href="#">шоу-рум</a></li>
+                <li><a class="menu__subitem" href="#">доставка</a></li>
+                <li><a class="menu__subitem" href="#">гарантии</a></li>
+                <li><a class="menu__subitem" href="#">оплата</a></li>
+                <li><a class="menu__subitem" href="#">программа лояльности</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="menu__item" href="#" data-menu>контакты</a>
+              <ul>
+                <li><a class="menu__subitem" href="#">О компании</a></li>
+                <li><a class="menu__subitem" href="#">Мы находимся</a></li>
+              </ul>
+            </li>
+            <li>
+              <p>нужна помощь?
+                <a href="#">Задайте вопрос в ватсапп</a>
+              </p>
+              <p>телефон для связи
+                <a href="tel:88005555792">8 800 555 57 92</a>
+              </p>
+            </li>
           </ul>
+          <div class="menu__bottom">
+            <a href="#"><img src="img/user_light-white.svg" alt="Иконка"></a>
+            <a href="#"><img src="img/favorite_light-white.svg" alt="Иконка"></a>
+            <a href="#"><img src="img/icon-compare.svg" alt="Иконка"></a>
+          </div>
         </div>
       </div>
       <button><img src="img/search.svg" alt="Иконка"></button>
@@ -123,10 +181,10 @@
       <div class="header__nav">
         <p>Дизайнерский СВЕТ ИЗ АМЕРИКИ И ЕВРОПЫ</p>
         <nav>
-          <a href="#" data-catalogbtn >каталог</a>
-          <a href="#">сотрудничество</a>
-          <a href="#">как купить</a>
-          <a href="#">контакты</a>
+          <a href="#" data-catalogbtn id="1" >каталог</a>
+          <a href="#" data-catalogbtn id="2" >сотрудничество</a>
+          <a href="#" data-catalogbtn id="3" >как купить</a>
+          <a href="#" data-catalogbtn id="4" >контакты</a>
         </nav>
       </div>
       <p>

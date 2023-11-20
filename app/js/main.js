@@ -10,7 +10,6 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ "./src/js/components/header.js");
-/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_header__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_banner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/banner */ "./src/js/components/banner.js");
 /* harmony import */ var _components_hit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/hit */ "./src/js/components/hit.js");
 /* harmony import */ var _components_project__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/project */ "./src/js/components/project.js");
@@ -30,6 +29,8 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _functions_mobile_check__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions/mobile-check */ "./src/js/functions/mobile-check.js");
+/* harmony import */ var _functions_disable_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./functions/disable-scroll */ "./src/js/functions/disable-scroll.js");
+/* harmony import */ var _functions_enable_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./functions/enable-scroll */ "./src/js/functions/enable-scroll.js");
 // Данный файл - лишь собрание подключений готовых компонентов.
 // Рекомендуется создавать отдельный файл в папке components и подключать все там
 
@@ -55,10 +56,10 @@ __webpack_require__.r(__webpack_exports__);
 // import { burger } from './functions/burger';
 
 // Реализация остановки скролла (не забудьте вызвать функцию)
-// import { disableScroll } from './functions/disable-scroll';
+
 
 // Реализация включения скролла (не забудьте вызвать функцию)
-// import { enableScroll } from './functions/enable-scroll';
+
 
 // Реализация модального окна
 // import GraphModal from 'graph-modal';
@@ -183,37 +184,65 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.banner-swipe
 /*!*************************************!*\
   !*** ./src/js/components/header.js ***!
   \*************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-const menu = document?.querySelector('[data-menu]');
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _functions_disable_scroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/disable-scroll */ "./src/js/functions/disable-scroll.js");
+/* harmony import */ var _functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../functions/enable-scroll */ "./src/js/functions/enable-scroll.js");
+
+
+const menus = document?.querySelectorAll('[data-menu]');
 const menuToggle = document?.querySelector('[data-burger]');
-const catalogBtn = document?.querySelector('[data-catalogbtn]');
+const catalogBtns = document?.querySelectorAll('[data-catalogbtn]');
 const catalogMenu = document?.querySelector('[data-catalogmenu]');
+const menuContainer = document?.querySelector('[data-menucontainer]');
 let isCatalogMenuOpen = false;
+let currentBtnId = null;
 menuToggle.addEventListener('change', function () {
   if (!this.checked) {
+    (0,_functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
     menu?.classList.remove('menu--active');
-  }
-});
-menu?.addEventListener('click', e => {
-  e.preventDefault();
-  menu?.classList.toggle('menu--active');
-});
-catalogBtn?.addEventListener('click', event => {
-  event.stopPropagation();
-  isCatalogMenuOpen = !isCatalogMenuOpen;
-  if (isCatalogMenuOpen) {
-    document.addEventListener('click', closeCatalogMenuHandler);
   } else {
-    document.removeEventListener('click', closeCatalogMenuHandler);
+    (0,_functions_disable_scroll__WEBPACK_IMPORTED_MODULE_0__.disableScroll)();
   }
-  catalogMenu?.classList.toggle('_active', isCatalogMenuOpen);
+});
+menus.forEach(menu => {
+  menu?.addEventListener('click', e => {
+    e.preventDefault();
+    const isActive = menu.classList.contains('menu--active');
+    const active = menuContainer?.querySelector('.menu--active');
+    if (isActive) {
+      menu.classList.remove('menu--active');
+    } else {
+      active?.classList.remove('menu--active');
+      menu.classList.add('menu--active');
+    }
+  });
+});
+catalogBtns.forEach(catalogBtn => {
+  catalogBtn?.addEventListener('click', event => {
+    event.stopPropagation();
+    const id = event.target.id;
+    if (isCatalogMenuOpen && currentBtnId === id) {
+      isCatalogMenuOpen = false;
+      (0,_functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
+    } else {
+      isCatalogMenuOpen = true;
+      currentBtnId = id;
+      (0,_functions_disable_scroll__WEBPACK_IMPORTED_MODULE_0__.disableScroll)();
+      document.addEventListener('click', closeCatalogMenuHandler);
+    }
+    catalogMenu.dataset.id = currentBtnId;
+    catalogMenu?.classList.toggle('_active', isCatalogMenuOpen);
+  });
 });
 function closeCatalogMenuHandler(event) {
   const isClickInsideCatalogMenu = catalogMenu?.contains(event.target);
-  const isClickOnCatalogBtn = catalogBtn?.contains(event.target);
+  const isClickOnCatalogBtn = Array.from(catalogBtns).some(btn => btn.contains(event.target));
   if (!isClickInsideCatalogMenu && !isClickOnCatalogBtn) {
     isCatalogMenuOpen = false;
+    (0,_functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
     catalogMenu?.classList.remove('_active');
     document.removeEventListener('click', closeCatalogMenuHandler);
   }
@@ -285,6 +314,68 @@ const swiper2 = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.project__sl
     }
   }
 });
+
+/***/ }),
+
+/***/ "./src/js/functions/disable-scroll.js":
+/*!********************************************!*\
+  !*** ./src/js/functions/disable-scroll.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   disableScroll: () => (/* binding */ disableScroll)
+/* harmony export */ });
+/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
+
+const disableScroll = () => {
+  const fixBlocks = document?.querySelectorAll('.fixed-block');
+  const pagePosition = window.scrollY;
+  const paddingOffset = `${window.innerWidth - _vars__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.offsetWidth}px`;
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].htmlEl.style.scrollBehavior = 'none';
+  fixBlocks.forEach(el => {
+    el.style.paddingRight = paddingOffset;
+  });
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.style.paddingRight = paddingOffset;
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.classList.add('dis-scroll');
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.dataset.position = pagePosition;
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.style.top = `-${pagePosition}px`;
+};
+
+/***/ }),
+
+/***/ "./src/js/functions/enable-scroll.js":
+/*!*******************************************!*\
+  !*** ./src/js/functions/enable-scroll.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   enableScroll: () => (/* binding */ enableScroll)
+/* harmony export */ });
+/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./src/js/_vars.js");
+
+const enableScroll = () => {
+  const fixBlocks = document?.querySelectorAll('.fixed-block');
+  const body = document.body;
+  const pagePosition = parseInt(_vars__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.dataset.position, 10);
+  fixBlocks.forEach(el => {
+    el.style.paddingRight = '0px';
+  });
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.style.paddingRight = '0px';
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.style.top = 'auto';
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.classList.remove('dis-scroll');
+  window.scroll({
+    top: pagePosition,
+    left: 0
+  });
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.removeAttribute('data-position');
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].htmlEl.style.scrollBehavior = 'smooth';
+};
 
 /***/ }),
 
