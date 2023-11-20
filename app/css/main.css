@@ -2089,10 +2089,12 @@ input[type=submit] {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.footer__container > ul li a:not([class]):hover {
-  -webkit-transform: translateX(10px);
-  -ms-transform: translateX(10px);
-  transform: translateX(10px);
+@media (min-width: 992px) {
+  .footer__container > ul li a:not([class]):hover {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
 }
 .footer__container > ul li a[href^="tel:"] {
   font-size: 20px;
