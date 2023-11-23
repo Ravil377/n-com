@@ -1266,6 +1266,7 @@ a {
 @media (min-width: 1024px) {
   .achievements__container {
     row-gap: 40px;
+    max-width: 66%;
   }
 }
 .achievements__container li {
@@ -1302,7 +1303,6 @@ a {
 }
 .achievements__container li p {
   color: var(--Dark-grey);
-  font-family: Manrope;
   text-align: center;
   font-size: 14px;
   font-style: normal;
@@ -1311,12 +1311,22 @@ a {
   font-variant: all-small-caps;
   max-width: 200px;
 }
+.achievements__container li p i {
+  font-style: normal;
+  font-size: 18px;
+}
+@media (min-width: 1024px) {
+  .achievements__container li p i {
+    font-size: 1.87rem;
+  }
+}
 @media (min-width: 1024px) {
   .achievements__container li p {
     font-size: 1.5rem;
   }
 }
 .achievements__container li p span {
+  font-family: Manrope;
   margin-top: 4px;
   display: block;
   color: var(--Grey);
@@ -1378,7 +1388,7 @@ a {
 }
 @media (min-width: 1024px) {
   .grid__container a {
-    height: 28rem;
+    height: 33.5rem;
   }
 }
 .grid__container a:hover img {
