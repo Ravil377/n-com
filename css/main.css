@@ -763,6 +763,7 @@ a {
   flex-direction: column;
   list-style: none;
   margin: unset;
+  padding: unset;
 }
 .header__catalog-container > ul > li {
   display: -webkit-box;
@@ -857,10 +858,12 @@ a {
 .header__catalog-container > ul > li > ul li a:hover + img {
   opacity: 1;
   max-width: 40rem;
+  min-width: 40rem;
 }
 @media (min-width: 1550px) {
   .header__catalog-container > ul > li > ul li a:hover + img {
     min-width: 670px;
+    max-width: 670px;
   }
 }
 .header__catalog-container > ul > li > ul li img {
