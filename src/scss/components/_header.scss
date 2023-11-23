@@ -421,7 +421,9 @@ content: '';
 
         & > li {
             display: flex;
-
+            & > ul {
+                display: none;
+            }
             &:hover {
                 a {
                     &::after {
@@ -431,6 +433,7 @@ content: '';
                 }
                 ul {
                     transform: translateX(0);
+                    display: block;
                 }
             }
             & > a {
@@ -478,6 +481,7 @@ content: '';
                     display: flex;
                     a {
                         padding: 4.5px 0;
+                        width: 100%;
                         color: var(--Grey);
                         font-size: 14px;
                         font-style: normal;
@@ -487,7 +491,28 @@ content: '';
                         &:hover {
                             transform: translateX(10px);
                             color: black;
+                            & + img {
+                                // display: block;
+                                opacity: 1;
+                                // min-width: 670px;
+                                max-width: 40rem;
+                                @media (min-width: 1550px) {
+                                    min-width: 670px;
+                                }
+                            }
                         }
+                    }
+                    img {
+                        opacity: 0;
+                        transition: max-width .4s, opacity .4s;
+                        position: absolute;
+                        left: 100%;
+                        overflow: hidden;
+                        max-width: 0px;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                        top: 0;
                     }
                 }
             }
