@@ -1,6 +1,10 @@
 html {
   box-sizing: border-box;
   
+  font-size: 12px;
+  @media (min-width: 768px) {
+    font-size: 0.83vw;
+  }
   @media (min-width: 1024px) {
     font-size: 0.83vw;
   }

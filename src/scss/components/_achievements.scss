@@ -15,7 +15,7 @@
     width: 100%;
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 2rem;
     padding: unset;
     justify-items: center;
@@ -43,6 +43,7 @@
         }
         p {
             color: var(--Dark-grey);
+            font-family: Manrope;
             text-align: center;
             font-size: 14px;
             font-style: normal;
@@ -51,13 +52,13 @@
             font-variant: all-small-caps;
             max-width: 200px;
             @media (min-width: 1024px) {
-                font-size: .87rem;
+                font-size: 1rem;
             }
             span {
                 margin-top: 4px;
                 display: block;
                 color: var(--Grey);
-                font-family: Manrope;
+                // font-family: Manrope;
                 font-size: 12px;
                 font-weight: 400;
                 line-height: normal;
@@ -66,8 +67,8 @@
                 @media (min-width: 1024px) {
                     font-size: 0.93rem;
                 }
-                @media (min-width: 1240px) {
-                    font-size: 15px;
+                @media (min-width: 1024px) {
+                    font-size: 1rem;
                 }
             }
         }

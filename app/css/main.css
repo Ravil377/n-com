@@ -69,7 +69,7 @@
 }
 @font-face {
   font-family: "Circe";
-  src: url("../fonts/../fonts/circe-normal.woff2") format("woff2");
+  src: url("../fonts/../fonts/CRC55.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -84,6 +84,12 @@
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 0.83vw;
+  }
 }
 @media (min-width: 1024px) {
   html {
@@ -1250,8 +1256,8 @@ a {
   list-style: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[3];
-  grid-template-columns: repeat(3, auto);
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
   row-gap: 2rem;
   padding: unset;
   justify-items: center;
@@ -1295,6 +1301,7 @@ a {
 }
 .achievements__container li p {
   color: var(--Dark-grey);
+  font-family: Manrope;
   text-align: center;
   font-size: 14px;
   font-style: normal;
@@ -1305,14 +1312,13 @@ a {
 }
 @media (min-width: 1024px) {
   .achievements__container li p {
-    font-size: 0.87rem;
+    font-size: 1rem;
   }
 }
 .achievements__container li p span {
   margin-top: 4px;
   display: block;
   color: var(--Grey);
-  font-family: Manrope;
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
@@ -1324,9 +1330,9 @@ a {
     font-size: 0.93rem;
   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
   .achievements__container li p span {
-    font-size: 15px;
+    font-size: 1rem;
   }
 }
 
@@ -2448,6 +2454,161 @@ input[type=submit] {
     padding: 4px 12px;
     font-size: 16px;
     letter-spacing: 0.8px;
+  }
+}
+
+.breadcrumbs {
+  background: #F3F3F3;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+.breadcrumbs p {
+  color: var(--Grey);
+  font-family: Circe;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin: unset;
+}
+.breadcrumbs p a {
+  color: inherit;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.breadcrumbs p a:hover {
+  color: black;
+}
+.breadcrumbs h1 {
+  margin: unset;
+  margin-top: 43px;
+  color: #000;
+  font-family: Circe;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.catalog {
+  padding-top: 50px;
+  padding-bottom: 287px;
+}
+@media (min-width: 768px) {
+  .catalog {
+    padding-top: 7.5rem;
+    padding-bottom: 18rem;
+  }
+}
+.catalog h2 {
+  color: var(--Dark-grey);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  margin: unset;
+}
+@media (min-width: 768px) {
+  .catalog h2 {
+    font-size: 2.5rem;
+  }
+}
+.catalog ul {
+  margin: unset;
+  padding: unset;
+  padding-top: 30px;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.catalog ul + h2 {
+  padding-top: 30px;
+}
+@media (min-width: 576px) {
+  .catalog ul {
+    gap: 20px;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .catalog ul {
+    padding-top: 5.62rem;
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .catalog ul + h2 {
+    padding-top: 8.75rem;
+  }
+}
+.catalog ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.catalog ul li a {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  row-gap: 10px;
+  position: relative;
+  border-radius: 2px;
+  border: 1px solid var(--plashka, #EBEBEB);
+  min-height: 10rem;
+  color: var(--Dark-grey);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.26px;
+  text-transform: uppercase;
+}
+@media (min-width: 576px) {
+  .catalog ul li a {
+    padding: 20px;
+    row-gap: 30px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  .catalog ul li a {
+    font-size: 1.125rem;
+    row-gap: 1.87rem;
+    min-height: 13.75rem;
+  }
+}
+.catalog ul li a img {
+  height: 40px;
+  width: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+@media (min-width: 768px) {
+  .catalog ul li a img {
+    height: 5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

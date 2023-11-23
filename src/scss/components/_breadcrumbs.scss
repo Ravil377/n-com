@@ -1,0 +1,36 @@
+.breadcrumbs {
+    background: #F3F3F3;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width: 100%;
+    p {
+        color: var(--Grey);
+        font-family: Circe;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 350;
+        line-height: normal;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        margin: unset;
+        a {
+            color: inherit;
+            transition: .4s;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+    h1 {
+        margin: unset;
+        margin-top: 43px;
+        color: #000;
+        font-family: Circe;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+}
