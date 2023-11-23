@@ -1105,6 +1105,7 @@ a {
 }
 @media (min-width: 1024px) {
   .tiles__container {
+    gap: 20px;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 27.5rem 27.5rem;
