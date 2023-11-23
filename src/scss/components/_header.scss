@@ -418,7 +418,7 @@ content: '';
         flex-direction: column;
         list-style: none;
         margin: unset;
-
+        padding: unset;
         & > li {
             display: flex;
             & > ul {
@@ -496,8 +496,10 @@ content: '';
                                 opacity: 1;
                                 // min-width: 670px;
                                 max-width: 40rem;
+                                min-width: 40rem;
                                 @media (min-width: 1550px) {
                                     min-width: 670px;
+                                    max-width: 670px;
                                 }
                             }
                         }
