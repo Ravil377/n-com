@@ -169,10 +169,10 @@ swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MOD
 const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.banner-swiper-js', {
   slidesPerView: 1,
   effect: "fade",
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false
-  },
+  // autoplay: {
+  //     delay: 2500,
+  //     disableOnInteraction: false,
+  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true
