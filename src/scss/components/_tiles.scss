@@ -10,6 +10,7 @@
     flex-direction: column;
     gap: 5px;
     @media (min-width: 1024px) {
+        gap: 20px;
         display: grid;
         grid-template-rows: 27.5rem 27.5rem;
         grid-template-columns: minmax(36.25rem, auto) minmax(27.5rem, 25%) minmax(36.25rem, auto);
