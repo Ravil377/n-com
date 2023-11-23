@@ -1800,6 +1800,7 @@ a {
   .project__slider {
     max-width: unset;
     margin-top: 80px;
+    overflow: hidden;
   }
 }
 
