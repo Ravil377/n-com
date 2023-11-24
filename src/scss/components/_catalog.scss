@@ -144,7 +144,10 @@
 
 .goods {
     width: 100%;
-    padding-top: 66px;
+    padding-top: 30px;
+    @media (min-width: 1024px) {
+        padding-top: 66px;
+    }
     h1 {
         margin: unset;
         color: var(--Dark-grey);
@@ -168,7 +171,19 @@
     display: grid;
     row-gap: 10px;
     column-gap: 6px;
-    grid-template-columns: repeat(2,1fr);
+    // grid-template-columns: repeat(2,1fr);
+
+    @media (max-width: 1025px) {
+        &:not(._one) {
+            grid-template-columns: repeat(2,1fr);
+        }
+        &._one {
+            grid-template-columns: 1fr;
+            .hit__img { 
+                height: 110vw;
+            }
+        }      
+    }
     @media (min-width: 1024px) {
         padding-top: 76px;
         padding-bottom: 120px;

@@ -2686,22 +2686,47 @@ input[type=submit] {
   border-top: 1px solid var(--plashka);
   padding-top: 20px;
 }
-.breadcrumbs-mini p {
-  color: var(--Grey);
+.breadcrumbs-mini p + a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 6px;
+  -moz-column-gap: 6px;
+  column-gap: 6px;
+  color: var(--Grey, #808080);
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 14px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
 }
-.breadcrumbs-mini p a {
-  color: inherit;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+@media (max-width: 769px) {
+  .breadcrumbs-mini p {
+    display: none;
+  }
 }
-.breadcrumbs-mini p a:hover {
-  color: var(--Dark-grey);
+@media (min-width: 768px) {
+  .breadcrumbs-mini p + a {
+    display: none;
+  }
+  .breadcrumbs-mini p {
+    color: var(--Grey);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+  }
+  .breadcrumbs-mini p a {
+    color: inherit;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .breadcrumbs-mini p a:hover {
+    color: var(--Dark-grey);
+  }
 }
 
 .catalog {
@@ -2884,7 +2909,12 @@ input[type=submit] {
 
 .goods {
   width: 100%;
-  padding-top: 66px;
+  padding-top: 30px;
+}
+@media (min-width: 1024px) {
+  .goods {
+    padding-top: 66px;
+  }
 }
 .goods h1 {
   margin: unset;
@@ -2913,8 +2943,19 @@ input[type=submit] {
   -webkit-column-gap: 6px;
   -moz-column-gap: 6px;
   column-gap: 6px;
-  -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 1025px) {
+  .goods__container:not(._one) {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .goods__container._one {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .goods__container._one .hit__img {
+    height: 110vw;
+  }
 }
 @media (min-width: 1024px) {
   .goods__container {
@@ -3130,6 +3171,7 @@ input[type=submit] {
   }
 }
 .filter .filter__buttons button {
+  cursor: pointer;
   border-radius: 1px;
   border: 2px solid var(--Grey);
   width: 16px;
