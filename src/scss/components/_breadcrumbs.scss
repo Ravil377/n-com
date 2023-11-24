@@ -1,8 +1,12 @@
 .breadcrumbs {
     background: #F3F3F3;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     width: 100%;
+    @media (min-width: 1024px) {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
     p {
         color: var(--Grey);
         font-family: Circe;
@@ -23,7 +27,7 @@
     }
     h1 {
         margin: unset;
-        margin-top: 43px;
+        margin-top: 20px;
         color: #000;
         font-family: Circe;
         font-size: 20px;
@@ -32,5 +36,8 @@
         line-height: normal;
         letter-spacing: 3px;
         text-transform: uppercase;
+        @media (min-width: 1024px) {
+            margin-top: 43px;
+        }
     }
 }

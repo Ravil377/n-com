@@ -1,6 +1,6 @@
 .catalog {
     padding-top: 50px;
-    padding-bottom: 287px;
+    padding-bottom: 50px;
     @media (min-width: 768px) {
         padding-top: 7.5rem;
         padding-bottom: 18rem;
@@ -20,7 +20,7 @@
             font-size: 2.5rem;
         }
     }
-    ul {
+    ul:not([class]) {
         margin: unset;
         padding: unset;
         padding-top: 30px;
@@ -64,6 +64,10 @@
                 line-height: normal;
                 letter-spacing: 1.26px;
                 text-transform: uppercase;
+                transition: .4s;
+                &:hover {
+                    border-color: black;
+                }
                 @media (min-width: 576px) {
                     padding: 20px;
                     row-gap: 30px;
@@ -80,6 +84,57 @@
                     object-fit: contain;
                     @media (min-width: 768px) {
                         height: 5rem;
+                    }
+                }
+            }
+        }
+    }
+    ul.bottom {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+        max-width: 1500px;
+        width: 100%;
+        margin: 0 auto;
+        list-style: none;
+        padding: unset;
+        padding-top: 30px;
+        @media (min-width: 1024px) {
+            padding-top: 5.62rem;
+        }
+        li {
+            white-space: nowrap;
+            a {
+                color: var(--Dark-grey);
+                text-align: center;
+                font-family: Manrope;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 1.8px;
+                position: relative;
+                text-transform: uppercase;
+                transition: .4s;
+                white-space: nowrap;
+                @media (min-width: 768px) {
+                    font-size: 1.125rem;
+                    
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 2px;
+                    width: 100%;
+                    height: 1px;
+                    background: var(--Dark-grey);
+                    // transition: .4s;
+                }
+                &:hover {
+                    &::after {
+                        height: 2px;
                     }
                 }
             }
