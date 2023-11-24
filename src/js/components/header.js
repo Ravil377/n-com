@@ -11,7 +11,7 @@ let isCatalogMenuOpen = false;
 let currentBtnId = null;
 
 
-menuToggle.addEventListener('change', function() {
+menuToggle?.addEventListener('change', function() {
     if (!this.checked) {
         enableScroll();
         menu?.classList.remove('menu--active');
@@ -20,7 +20,7 @@ menuToggle.addEventListener('change', function() {
     }
 });
 
-menus.forEach(menu => {
+menus?.forEach(menu => {
     menu?.addEventListener('click', (e) => {
         e.preventDefault();
 

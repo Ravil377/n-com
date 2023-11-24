@@ -141,3 +141,109 @@
         }
     }
 }
+
+.goods {
+    width: 100%;
+    padding-top: 66px;
+    h1 {
+        margin: unset;
+        color: var(--Dark-grey);
+        text-align: center;
+        font-family: Manrope;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        @media (min-width: 1024px) {
+            font-size: 40px;
+        }
+    }
+}
+
+.goods__container {
+    padding-top: 16px;
+    padding-bottom: 20px;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 6px;
+    grid-template-columns: repeat(2,1fr);
+    @media (min-width: 1024px) {
+        padding-top: 76px;
+        padding-bottom: 120px;
+        column-gap: 14px;
+        row-gap: 30px;
+    }
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(3,1fr);
+    }
+    @media (min-width: 1240px) {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+.goods__pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 264px;
+    position: relative;
+    .goods__pagination-btn {
+        color: var(--Dark-grey);
+        min-height: 50px;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.8px;
+        transition: .4s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--Dark-grey);
+        cursor: pointer;
+        background: white;
+        padding: 10px 20px;
+        &:hover {
+            background: var(--Dark-grey);
+            color: white;
+            svg {
+                fill: white;
+            }
+        }
+    }
+    & > button {
+        max-width: 240px;
+        width: 100%;
+        
+    }
+    & > div {
+        right: 0;
+        position: absolute;
+        display: flex;
+        column-gap: 12px;
+        & > button {
+            &._back {
+                svg {
+                    transform: scale(-1);
+                }
+            }
+            svg {
+                width: 8px;
+                height: 8px;
+                fill: var(--Dark-grey);
+            }
+        }
+        & > p {
+            color: var(--Dark-grey);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.8px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

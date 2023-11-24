@@ -13,6 +13,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_banner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/banner */ "./src/js/components/banner.js");
 /* harmony import */ var _components_hit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/hit */ "./src/js/components/hit.js");
 /* harmony import */ var _components_project__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/project */ "./src/js/components/project.js");
+/* harmony import */ var _components_filter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/filter */ "./src/js/components/filter.js");
+/* harmony import */ var _components_filter__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_filter__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
@@ -181,6 +184,24 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.banner-swipe
 
 /***/ }),
 
+/***/ "./src/js/components/filter.js":
+/*!*************************************!*\
+  !*** ./src/js/components/filter.js ***!
+  \*************************************/
+/***/ (() => {
+
+const columns = document?.querySelector('[data-columns]');
+columns?.addEventListener('click', e => {
+  e.preventDefault();
+  const currentBtn = e.target;
+  // const isActive = columns.classList.contains('menu--active');
+  const active = columns?.querySelector('._active');
+  active.classList.remove('_active');
+  currentBtn.classList.add('_active');
+});
+
+/***/ }),
+
 /***/ "./src/js/components/header.js":
 /*!*************************************!*\
   !*** ./src/js/components/header.js ***!
@@ -200,7 +221,7 @@ const catalogMenu = document?.querySelector('[data-catalogmenu]');
 const menuContainer = document?.querySelector('[data-menucontainer]');
 let isCatalogMenuOpen = false;
 let currentBtnId = null;
-menuToggle.addEventListener('change', function () {
+menuToggle?.addEventListener('change', function () {
   if (!this.checked) {
     (0,_functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
     menu?.classList.remove('menu--active');
@@ -208,7 +229,7 @@ menuToggle.addEventListener('change', function () {
     (0,_functions_disable_scroll__WEBPACK_IMPORTED_MODULE_0__.disableScroll)();
   }
 });
-menus.forEach(menu => {
+menus?.forEach(menu => {
   menu?.addEventListener('click', e => {
     e.preventDefault();
     const isActive = menu.classList.contains('menu--active');

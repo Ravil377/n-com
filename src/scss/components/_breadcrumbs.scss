@@ -41,3 +41,25 @@
         }
     }
 }
+
+.breadcrumbs-mini {
+    width: 100%;
+    border-top: 1px solid var(--plashka);
+    padding-top: 20px;
+    p {
+        color: var(--Grey);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        a {
+            color: inherit;
+            transition: .4s;
+            &:hover {
+                color: var(--Dark-grey);
+            }
+        }
+    }
+}
