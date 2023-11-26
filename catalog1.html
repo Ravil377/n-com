@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>N-Con</title>
+  <link rel="preload" href="fonts/circe-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/circe-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/CRC55.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+  <script defer src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+
+    <div class="header__top">
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" data-burger/>
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <div class="menu__container" >
+          <ul class="menu__box" data-menucontainer>
+            <li>
+              <a class="menu__item" href="#" data-menu>Каталог</a>
+              <ul>
+                <li><a class="menu__subitem" href="#">Интерьерный свет</a></li>
+                <li><a class="menu__subitem" href="#">Уличный свет </a></li>
+                <li><a class="menu__subitem" href="#">Декор</a></li>
+                <li><a class="menu__subitem" href="#">Аксессуарыт</a></li>
+                <li><a class="menu__subitem" href="#">В наличии</a></li>
+                <li><a class="menu__subitem" href="#">Новинки</a></li>
+                <li><a class="menu__subitem" href="#">Бренды</a></li>
+                <li><a class="menu__subitem" href="#">Коллекции</a></li>
+                <li><a class="menu__subitem" href="#">Идеи для подарков</a></li>
+                <li><a class="menu__subitem" href="#">Акции</a></li>
+                <li><a class="menu__subitem" href="#">Outlet</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="menu__item" href="#" data-menu>сотрудничество</a>
+              <ul>
+                <li><a class="menu__subitem" href="#">Дизайнерам</a></li>
+                <li><a class="menu__subitem" href="#">Дилерам</a></li>
+                <li><a class="menu__subitem" href="#">скачать Каталоги</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="menu__item" href="#" data-menu>как купить</a>
+              <ul>
+                <li><a class="menu__subitem" href="#">шоу-рум</a></li>
+                <li><a class="menu__subitem" href="#">доставка</a></li>
+                <li><a class="menu__subitem" href="#">гарантии</a></li>
+                <li><a class="menu__subitem" href="#">оплата</a></li>
+                <li><a class="menu__subitem" href="#">программа лояльности</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="menu__item" href="#" data-menu>контакты</a>
+              <ul>
+                <li><a class="menu__subitem" href="#">О компании</a></li>
+                <li><a class="menu__subitem" href="#">Мы находимся</a></li>
+              </ul>
+            </li>
+            <li>
+              <p>нужна помощь?
+                <a href="#">Задайте вопрос в ватсапп</a>
+              </p>
+              <p>телефон для связи
+                <a href="tel:88005555792">8 800 555 57 92</a>
+              </p>
+            </li>
+          </ul>
+          <div class="menu__bottom">
+            <a href="#"><img src="./img/user_light-white.svg" alt="Иконка"></a>
+            <a href="#"><img src="./img/favorite_light-white.svg" alt="Иконка"></a>
+            <a href="#"><img src="./img/icon-compare.svg" alt="Иконка"></a>
+          </div>
+        </div>
+      </div>
+      <button><img src="./img/search.svg" alt="Иконка"></button>
+      <a href="#"><img src="./img/compare.svg" alt="Иконка"></a>
+      <a href="#"><img src="./img/favorite_light.svg" alt="Иконка"></a>
+      <a href="#"><img src="./img/user_light.svg" alt="Иконка"></a>
+      <a href="#"><img src="./img/bag.svg" alt="Иконка"></a>
+    </div>
+    <div class="header__bottom">
+      <a href="/" class="logo"><img src="./img/logo.svg" alt="Логотип"></a>
+      <div class="header__nav">
+        <p>Дизайнерский СВЕТ ИЗ АМЕРИКИ И ЕВРОПЫ</p>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">каталог</a>
+              <div class="header__catalog" >
+                <div class="header__catalog-container">
+                  <ul>
+                    <li>
+                      <a href="#">Интерьерный свет</a>
+                      <ul>
+                        <li>
+                          <a href="#">Бра</a>
+                          <img src="./img/bra.png" alt="Бра">
+                        </li>
+                        <li><a href="#">Бра для ванных комнат</a>
+                          <img src="./img/img1.png" alt="Бра">
+                        </li>
+                        <li><a href="#">Люстры</a></li>
+                        <li><a href="#">Люстры для ванных комнат</a></li>
+                        <li><a href="#">Настольные лампы</a></li>
+                        <li><a href="#">Люстры-вентиляторы</a></li>
+                        <li><a href="#">Плафоны</a></li>
+                        <li><a href="#">Потолочные светильники</a></li>
+                        <li><a href="#">Потолочные светильники для ванных комнат</a></li>
+                        <li><a href="#">Светильники для картин</a></li>
+                        <li><a href="#">Торшеры / Напольные лампы</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Уличный свет </a>
+                      <ul>
+                        <li>
+                          <a href="#">Бра</a>
+                        </li>
+                        <li><a href="#">Бра для ванных комнат</a>
+                        </li>
+                        <li><a href="#">Люстры</a>
+                        </li>
+                        <li><a href="#">Люстры для ванных комнат</a>
+                        </li>
+                        <li><a href="#">Настольные лампы</a>
+                        </li>
+                        <li><a href="#">Потолочные светильники</a>
+                        </li>
+                        <li><a href="#">Потолочные светильники для ванных комнат</a>
+                        </li>
+                        <li><a href="#">Светильники для картин</a>
+                        </li>
+                        <li><a href="#">Торшеры / Напольные лампы</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Декор</a>
+                      <ul>
+                        <li><a href="#">Плафоны</a></li>
+                        <li><a href="#">Потолочные светильники</a></li>
+                        <li><a href="#">Потолочные светильники для ванных комнат</a></li>
+                        <li><a href="#">Светильники для картин</a></li>
+                        <li><a href="#">Торшеры / Напольные лампы</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Аксессуары</a>
+                      <ul>
+                        <li><a href="#">Бра</a></li>
+                        <li><a href="#">Бра для ванных комнат</a></li>
+                        <li><a href="#">Люстры</a></li>
+                        <li><a href="#">Потолочные светильники</a></li>
+                        <li><a href="#">Потолочные светильники для ванных комнат</a></li>
+                        <li><a href="#">Светильники для картин</a></li>
+                        <li><a href="#">Торшеры / Напольные лампы</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">в наличии</a>
+                      <ul>
+                        <li><a href="#">Торшеры / Напольные лампы</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">новинки</a>
+                    </li>
+                    <li>
+                      <a href="#">бренды</a>
+                    </li>
+                    <li>
+                      <a href="#">коллекции</a>
+                    </li>
+                    <li>
+                      <a href="#">идеи для подарков</a>
+                    </li>
+                    <li>
+                      <a href="#">Акции</a>
+                    </li>
+                    <li>
+                      <a href="#">outlet</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#" >сотрудничество</a>
+              <div class="header__catalog" >
+                <div class="header__catalog-container">
+                  <ul>
+                    <li>
+                      <a href="#">Сотрудничество</a>
+                      <ul>
+                        <li><a href="#">Дизайнерам</a></li>
+                        <li><a href="#">Дилерам</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">скачать Каталоги</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">как купить</a>
+              <div class="header__catalog" >
+                <div class="header__catalog-container">
+                  <ul>
+                    <li><a href="#">шоу-рум</a></li>
+                    <li><a href="#">доставка</a></li>
+                    <li><a href="#">гарантии</a></li>
+                    <li><a href="#">оплата</a></li>
+                    <li><a href="#">программа лояльности</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#" >контакты</a>
+              <div class="header__catalog" >
+                <div class="header__catalog-container">
+                  <ul>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Мы находимся</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p>
+        <a href="tel:88005555792">8 800 555 57 92</a>
+        <span>пн-пт: 10.00 — 19.00<br>
+          сб: 11.00 — 18.00</span>
+      </p>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <div class="breadcrumbs-mini">
+    <div class="container">
+        <p class="">
+            <a href="/">ГЛАВНАЯ</a>
+            <span>/</span>
+            <a href="/catalog.html">Каталог</a>
+            <span>/</span>
+            <a href="#">Интерьерный свет</a>
+            <span>/</span>
+            Подвесные светильники
+        </p>
+        <a href="#">
+            <img src="./img/back-arrow.svg" alt="Назад">
+            каталог
+        </a>
+    </div>
+</div>
+      <div class="goods">
+    <div class="container">
+        <h1>Подвесные светильники</h1>
+        <div class="filter">
+            <div class="filter__modal-mob" data-filter-mobil>
+                <div class="filter__modal-mob-top">
+                    <button data-back><img src="./img/arr-mob.svg" alt="Назад"></button>
+                    <p data-name>Фильтры</p>
+                    <button data-reset>сбросить</button>
+                </div>
+                <div class="filter__modal-mob-center _submenu" data-mobsubmenu data-id="1" style="display: none;">
+
+                </div>
+                <div class="filter__modal-mob-center _submenu" data-mobsubmenu data-id="2" style="display: none;">
+                    <div>Материал</div>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Люстры</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Подвесные светильники</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Потолочные светильники</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Потолочные светильники для ванных комнат</span>
+                    </label>
+                </div>
+                <div class="filter__modal-mob-center _submenu" data-mobsubmenu data-id="3" style="display: none;">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Davey Lighting (UK)</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Elstead Lighting</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Feiss</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Flambeau</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Generation Lighting</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Gilded Nola</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Hinkley</span>
+                    </label>
+
+                </div>
+                <div class="filter__modal-mob-center _submenu" data-mobsubmenu data-id="4" style="display: none;">
+
+                </div>
+                <div class="filter__modal-mob-center _submenu" data-mobsubmenu data-id="5" style="display: none;">
+
+                </div>
+                <div class="filter__modal-mob-center _submenu" data-mobsubmenu data-id="6" style="display: none;">
+
+                </div>
+                <div class="filter__modal-mob-center _submenu" data-mobsubmenu data-id="7" style="display: none;">
+                    <div>Материал</div>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Акрил</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Алебастр</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Атлас</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Дерево</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Металл</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Органза</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Смесовая ткань</span>
+                    </label>
+                    <div>Цвет</div>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Бежевый</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Белый</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Графит</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Жёлтый</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Коричневый</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Прозрачный</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Серый</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Чёрный</span>
+                    </label>
+                </div>
+                <div class="filter__modal-mob-center _submenu" data-mobsubmenu data-id="8" style="display: none;">
+
+                </div>
+                <div class="filter__modal-mob-center _submenu" data-mobsubmenu data-id="9" style="display: none;">
+
+                </div>
+                <div class="filter__modal-mob-center _submenu" data-mobsubmenu data-id="10" style="display: none;">
+
+                </div>
+                <div class="filter__modal-mob-center" data-main style="display: flex;">
+                    <label class="custom-checkbox _circle">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Распродажа</span>
+                    </label>
+                    <label class="custom-checkbox _circle">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Товары с видео</span>
+                    </label>
+                    <label class="custom-checkbox _circle">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Новинки</span>
+                    </label>
+                    <div class="filter-checkbox__content">
+                        <p>Цена</p>
+                        <input type="text" class="js-range-slider1 ange-slider" name="my_range" value=""
+                            data-type="double"
+                            data-min="0"
+                            data-max="1000"
+                            data-from="0"
+                            data-to="1000"
+                            data-grid="false"
+                        />
+                    </div>
+                    <button data-mobitem data-id="1">Наличие</button>
+                    <button data-mobitem data-id="2">Категория</button>
+                    <button data-mobitem data-id="3">Бренд</button>
+                    <button data-mobitem data-id="4">Коллекция</button>
+                    <button data-mobitem data-id="5">Стиль</button>
+                    <button data-mobitem data-id="6">Форма светильника</button>
+                    <button data-mobitem data-id="7">Абажур / Плафон</button>
+                    <button data-mobitem data-id="8">Цоколь</button>
+                    <button data-mobitem data-id="9">IP рейтинг</button>
+                    <button data-mobitem data-id="10">Применение</button>
+                </div>
+                <div class="filter__modal-mob-bottom">
+                    <button class="btn _black">Показать 327 товаров</button>
+                </div>
+            </div>
+            <div class="filter__modal" data-filter-menu>
+                <div class="filter__modal-top">
+                    <div class="filter-checkbox__content">
+                        <p>скидка, %</p>
+                        <div>
+                            <div>
+                                <p></p>
+                                <input type="text" class="js-range-slider ange-slider" name="my_range" value=""
+                                    data-type="double"
+                                    data-min="0"
+                                    data-max="100"
+                                    data-from="0"
+                                    data-to="100"
+                                    data-grid="false"
+                                />
+                                <div class="extra-controls">
+                                    <input type="text" class="js-input-from" value="0" />
+                                    <input type="text" class="js-input-to" value="0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-checkbox__content">
+                        <p>max длина изделия, см</p>
+                        <div>
+                            <div>
+                                <p></p>
+                                <input type="text" class="js-range-slider ange-slider" name="my_range" value=""
+                                    data-type="double"
+                                    data-min="0"
+                                    data-max="1000"
+                                    data-from="200"
+                                    data-to="500"
+                                    data-grid="false"
+                                />
+                                <div class="extra-controls">
+                                    <input type="text" class="js-input-from" value="0" />
+                                    <input type="text" class="js-input-to" value="0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-checkbox__content">
+                        <p>Размер, см</p>
+                        <div>
+                            <div>
+                                <p>Ширина (диаметр)</p>
+                                <input type="text" class="js-range-slider ange-slider" name="my_range" value=""
+                                    data-type="double"
+                                    data-min="0"
+                                    data-max="1000"
+                                    data-from="200"
+                                    data-to="500"
+                                    data-grid="false"
+                                />
+                                <div class="extra-controls">
+                                    <input type="text" class="js-input-from" value="0" />
+                                    <input type="text" class="js-input-to" value="0" />
+                                </div>
+                            </div>
+                            <div>
+                                <p>Высота</p>
+                                <input type="text" class="js-range-slider ange-slider" name="my_range" value=""
+                                    data-type="double"
+                                    data-min="0"
+                                    data-max="1000"
+                                    data-from="200"
+                                    data-to="500"
+                                    data-grid="false"
+                                />
+                                <div class="extra-controls">
+                                    <input type="text" class="js-input-from" value="0" />
+                                    <input type="text" class="js-input-to" value="0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-checkbox__content _none">
+                        <p>Количество ламп</p>
+                        <div>
+                            <div>
+                                <p></p>
+                                <input type="text" class="js-range-slider ange-slider" name="my_range" value=""
+                                    data-type="double"
+                                    data-min="0"
+                                    data-max="1000"
+                                    data-from="200"
+                                    data-to="500"
+                                    data-grid="false"
+                                />
+                                <div class="extra-controls">
+                                    <input type="text" class="js-input-from" value="0" />
+                                    <input type="text" class="js-input-to" value="0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__modal-bottom">
+                    <button type="button" class="btn _black">Применить</button>
+                    <button type="button" class="btn _white">Очистить фильтры</button>
+                </div>
+            </div>
+            <button type="button" data-filter>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path d="M15 6.25L25 6.25" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M5 23.75L8.75 23.75" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M5 6.25L10 6.25" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M13.75 23.75L25 23.75" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M21.25 15L25 15" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M5 15L16.25 15" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="12.5" cy="6.25" r="2.5" transform="rotate(90 12.5 6.25)" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="18.75" cy="15" r="2.5" transform="rotate(90 18.75 15)" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="11.25" cy="23.75" r="2.5" transform="rotate(90 11.25 23.75)" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="checkbox__container">
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Распродажа</span>
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Товары с видео</span>
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Новинки</span>
+                </label>
+            </div>
+            <div class="select__container">
+                <select class="select sort_index">
+                    <option value="1">По популярности</option>
+                    <option value="2">Сначала дороже</option>
+                    <option value="3">Сначала дешевле</option>
+                </select>
+            </div>
+            <div class="filter__buttons" data-columns>
+                <button class="one-column" data-id="1"></button>
+                <button class="two-column _active" data-id="2"></button>
+            </div>
+        </div>
+        <div class="filter__checkbox">
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js" >
+                    <span class="custom-checkbox__">Цена</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                            <input type="text" class="js-range-slider ange-slider" name="my_range" value=""
+                                data-type="double"
+                                data-min="0"
+                                data-max="1000"
+                                data-from="200"
+                                data-to="500"
+                                data-grid="false"
+                            />
+                            <div class="extra-controls">
+                                <input type="text" class="js-input-from" value="0" />
+                                <input type="text" class="js-input-to" value="0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field  custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Наличие</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Категория</span>
+                </label>
+                <div class="filter-checkbox__content" style="padding-top: 19px;">
+                    <div class="overlay">
+                        <div>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Люстры</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Подвесные светильники</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Потолочные светильники</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Потолочные светильники для ванных комнат</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Бренд</span>
+                </label>
+                <div class="filter-checkbox__content" style="padding-top: 19px;">
+                    <div class="overlay">
+                        <div>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Davey Lighting (UK)</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Elstead Lighting</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Feiss</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Flambeau</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Generation Lighting</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Gilded Nola</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Hinkley</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Flambeau</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Generation Lighting</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Gilded Nola</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Hinkley</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Коллекция</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Стиль</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Форма светильника</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Абажур/Плафон</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">отделка Основания</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Цоколь</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Применение</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Тип подвеса</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>Очистить фильтры</button>
+        </div>
+        <div class="goods__container" data-goods>
+            <a href="#" class="hit__card">
+                <div class="hit__img" >
+                    <img src="./img/goods/good1.png" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                    <div class="hit__label" >
+                        <p>в наличии</p>
+                        <p class="_new">Новинка</p>
+                        <p>хит</p>
+                    </div>
+                    <div class="hit__buttons">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20" viewBox="0 0 29 20" fill="none">
+                                <circle cx="14.5" cy="10" r="5" stroke-width="2"/>
+                                <path d="M27.2014 8.92254C27.5846 9.41029 27.7762 9.65417 27.7762 10C27.7762 10.3458 27.5846 10.5897 27.2014 11.0775C25.3243 13.4668 20.3461 19 14.5 19C8.65392 19 3.67575 13.4668 1.79863 11.0775C1.41544 10.5897 1.22385 10.3458 1.22385 10C1.22385 9.65417 1.41544 9.41029 1.79863 8.92255C3.67575 6.53323 8.65392 1 14.5 1C20.3461 1 25.3243 6.53323 27.2014 8.92254Z" stroke-width="2"/>
+                            </svg>
+                            <p>быстрый просмотр</p>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
+                                <path d="M10 9.16675L10 7.87508C10 4.56137 12.6863 1.87508 16 1.87508V1.87508C19.3137 1.87508 22 4.56137 22 7.87508L22 9.16675" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M20.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M11.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M4 13.1667C4 11.2811 4 10.3383 4.58579 9.75253C5.17157 9.16675 6.11438 9.16675 8 9.16675H24C25.8856 9.16675 26.8284 9.16675 27.4142 9.75253C28 10.3383 28 11.2811 28 13.1667V20.1251C28 23.8963 28 25.7819 26.8284 26.9535C25.6569 28.1251 23.7712 28.1251 20 28.1251H12C8.22876 28.1251 6.34315 28.1251 5.17157 26.9535C4 25.7819 4 23.8963 4 20.1251V13.1667Z" stroke-width="2"/>
+                            </svg>
+                            <p>добавить в корзину</p>
+                        </button>
+                    </div>
+                </div>
+                <p class="hit__name">Потолочный светильник для ванных комнат QZ-CHANCE-F-PC</p>
+                <p class="hit__price">21 372 ₽</p>
+                <div>
+                    <button>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.28484 17.7004L15.2744 28.2348C15.6148 28.5938 15.7851 28.7734 16 28.7734C16.2149 28.7734 16.3852 28.5938 16.7256 28.2348L26.7152 17.7004C29.1799 15.1011 29.3786 11.092 27.1828 8.26185C24.2409 4.47009 18.3358 5.106 16.2686 9.43717L16 10L15.7314 9.43717C13.6642 5.106 7.7591 4.47009 4.81722 8.26185C2.62142 11.092 2.82005 15.1011 5.28484 17.7004Z" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.00012 6L6.00012 5C6.00012 2.79086 7.79098 1 10.0001 1V1C12.2093 1 14.0001 2.79086 14.0001 5L14.0001 6" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M13 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 10C2 8.11438 2 7.17157 2.58579 6.58579C3.17157 6 4.11438 6 6 6H14C15.8856 6 16.8284 6 17.4142 6.58579C18 7.17157 18 8.11438 18 10V11C18 14.7712 18 16.6569 16.8284 17.8284C15.6569 19 13.7712 19 10 19V19C6.22876 19 4.34315 19 3.17157 17.8284C2 16.6569 2 14.7712 2 11V10Z" stroke="#808080" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="hit__card">
+                <div class="hit__img" >
+                    <img src="./img/goods/good2.png" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                    <div class="hit__label" >
+                        <p>в наличии</p>
+                        <p class="_new">Новинка</p>
+                    </div>
+                    <div class="hit__buttons">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20" viewBox="0 0 29 20" fill="none">
+                                <circle cx="14.5" cy="10" r="5" stroke-width="2"/>
+                                <path d="M27.2014 8.92254C27.5846 9.41029 27.7762 9.65417 27.7762 10C27.7762 10.3458 27.5846 10.5897 27.2014 11.0775C25.3243 13.4668 20.3461 19 14.5 19C8.65392 19 3.67575 13.4668 1.79863 11.0775C1.41544 10.5897 1.22385 10.3458 1.22385 10C1.22385 9.65417 1.41544 9.41029 1.79863 8.92255C3.67575 6.53323 8.65392 1 14.5 1C20.3461 1 25.3243 6.53323 27.2014 8.92254Z" stroke-width="2"/>
+                            </svg>
+                            <p>быстрый просмотр</p>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
+                                <path d="M10 9.16675L10 7.87508C10 4.56137 12.6863 1.87508 16 1.87508V1.87508C19.3137 1.87508 22 4.56137 22 7.87508L22 9.16675" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M20.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M11.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M4 13.1667C4 11.2811 4 10.3383 4.58579 9.75253C5.17157 9.16675 6.11438 9.16675 8 9.16675H24C25.8856 9.16675 26.8284 9.16675 27.4142 9.75253C28 10.3383 28 11.2811 28 13.1667V20.1251C28 23.8963 28 25.7819 26.8284 26.9535C25.6569 28.1251 23.7712 28.1251 20 28.1251H12C8.22876 28.1251 6.34315 28.1251 5.17157 26.9535C4 25.7819 4 23.8963 4 20.1251V13.1667Z" stroke-width="2"/>
+                            </svg>
+                            <p>добавить в корзину</p>
+                        </button>
+                    </div>
+                </div>
+                <p class="hit__name">Подвесной светильник QZ-CHANCE-F-PC</p>
+                <p class="hit__price">144 458 ₽</p>
+                <div>
+                    <button>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.28484 17.7004L15.2744 28.2348C15.6148 28.5938 15.7851 28.7734 16 28.7734C16.2149 28.7734 16.3852 28.5938 16.7256 28.2348L26.7152 17.7004C29.1799 15.1011 29.3786 11.092 27.1828 8.26185C24.2409 4.47009 18.3358 5.106 16.2686 9.43717L16 10L15.7314 9.43717C13.6642 5.106 7.7591 4.47009 4.81722 8.26185C2.62142 11.092 2.82005 15.1011 5.28484 17.7004Z" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.00012 6L6.00012 5C6.00012 2.79086 7.79098 1 10.0001 1V1C12.2093 1 14.0001 2.79086 14.0001 5L14.0001 6" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M13 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 10C2 8.11438 2 7.17157 2.58579 6.58579C3.17157 6 4.11438 6 6 6H14C15.8856 6 16.8284 6 17.4142 6.58579C18 7.17157 18 8.11438 18 10V11C18 14.7712 18 16.6569 16.8284 17.8284C15.6569 19 13.7712 19 10 19V19C6.22876 19 4.34315 19 3.17157 17.8284C2 16.6569 2 14.7712 2 11V10Z" stroke="#808080" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="hit__card">
+                <div class="hit__img" >
+                    <img src="./img/goods/good3.png" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                    <div class="hit__label" >
+                        <p>в наличии</p>
+                        <p class="_new">Новинка</p>
+                        <p>хит</p>
+                    </div>
+                    <div class="hit__buttons">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20" viewBox="0 0 29 20" fill="none">
+                                <circle cx="14.5" cy="10" r="5" stroke-width="2"/>
+                                <path d="M27.2014 8.92254C27.5846 9.41029 27.7762 9.65417 27.7762 10C27.7762 10.3458 27.5846 10.5897 27.2014 11.0775C25.3243 13.4668 20.3461 19 14.5 19C8.65392 19 3.67575 13.4668 1.79863 11.0775C1.41544 10.5897 1.22385 10.3458 1.22385 10C1.22385 9.65417 1.41544 9.41029 1.79863 8.92255C3.67575 6.53323 8.65392 1 14.5 1C20.3461 1 25.3243 6.53323 27.2014 8.92254Z" stroke-width="2"/>
+                            </svg>
+                            <p>быстрый просмотр</p>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
+                                <path d="M10 9.16675L10 7.87508C10 4.56137 12.6863 1.87508 16 1.87508V1.87508C19.3137 1.87508 22 4.56137 22 7.87508L22 9.16675" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M20.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M11.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M4 13.1667C4 11.2811 4 10.3383 4.58579 9.75253C5.17157 9.16675 6.11438 9.16675 8 9.16675H24C25.8856 9.16675 26.8284 9.16675 27.4142 9.75253C28 10.3383 28 11.2811 28 13.1667V20.1251C28 23.8963 28 25.7819 26.8284 26.9535C25.6569 28.1251 23.7712 28.1251 20 28.1251H12C8.22876 28.1251 6.34315 28.1251 5.17157 26.9535C4 25.7819 4 23.8963 4 20.1251V13.1667Z" stroke-width="2"/>
+                            </svg>
+                            <p>добавить в корзину</p>
+                        </button>
+                    </div>
+                </div>
+                <p class="hit__name">Потолочный светильник для ванных комнат QZ-CHANCE-F-PC</p>
+                <p class="hit__price">21 372 ₽</p>
+                <div>
+                    <button>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.28484 17.7004L15.2744 28.2348C15.6148 28.5938 15.7851 28.7734 16 28.7734C16.2149 28.7734 16.3852 28.5938 16.7256 28.2348L26.7152 17.7004C29.1799 15.1011 29.3786 11.092 27.1828 8.26185C24.2409 4.47009 18.3358 5.106 16.2686 9.43717L16 10L15.7314 9.43717C13.6642 5.106 7.7591 4.47009 4.81722 8.26185C2.62142 11.092 2.82005 15.1011 5.28484 17.7004Z" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.00012 6L6.00012 5C6.00012 2.79086 7.79098 1 10.0001 1V1C12.2093 1 14.0001 2.79086 14.0001 5L14.0001 6" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M13 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 10C2 8.11438 2 7.17157 2.58579 6.58579C3.17157 6 4.11438 6 6 6H14C15.8856 6 16.8284 6 17.4142 6.58579C18 7.17157 18 8.11438 18 10V11C18 14.7712 18 16.6569 16.8284 17.8284C15.6569 19 13.7712 19 10 19V19C6.22876 19 4.34315 19 3.17157 17.8284C2 16.6569 2 14.7712 2 11V10Z" stroke="#808080" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="hit__card">
+                <div class="hit__img" >
+                    <img src="./img/goods/good4.png" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                    <div class="hit__label" >
+                        <p>в наличии</p>
+                        <p class="_new">Новинка</p>
+                        <p>хит</p>
+                    </div>
+                    <div class="hit__buttons">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20" viewBox="0 0 29 20" fill="none">
+                                <circle cx="14.5" cy="10" r="5" stroke-width="2"/>
+                                <path d="M27.2014 8.92254C27.5846 9.41029 27.7762 9.65417 27.7762 10C27.7762 10.3458 27.5846 10.5897 27.2014 11.0775C25.3243 13.4668 20.3461 19 14.5 19C8.65392 19 3.67575 13.4668 1.79863 11.0775C1.41544 10.5897 1.22385 10.3458 1.22385 10C1.22385 9.65417 1.41544 9.41029 1.79863 8.92255C3.67575 6.53323 8.65392 1 14.5 1C20.3461 1 25.3243 6.53323 27.2014 8.92254Z" stroke-width="2"/>
+                            </svg>
+                            <p>быстрый просмотр</p>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
+                                <path d="M10 9.16675L10 7.87508C10 4.56137 12.6863 1.87508 16 1.87508V1.87508C19.3137 1.87508 22 4.56137 22 7.87508L22 9.16675" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M20.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M11.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M4 13.1667C4 11.2811 4 10.3383 4.58579 9.75253C5.17157 9.16675 6.11438 9.16675 8 9.16675H24C25.8856 9.16675 26.8284 9.16675 27.4142 9.75253C28 10.3383 28 11.2811 28 13.1667V20.1251C28 23.8963 28 25.7819 26.8284 26.9535C25.6569 28.1251 23.7712 28.1251 20 28.1251H12C8.22876 28.1251 6.34315 28.1251 5.17157 26.9535C4 25.7819 4 23.8963 4 20.1251V13.1667Z" stroke-width="2"/>
+                            </svg>
+                            <p>добавить в корзину</p>
+                        </button>
+                    </div>
+                </div>
+                <p class="hit__name">Потолочный светильник для ванных комнат QZ-CHANCE-F-PC</p>
+                <p class="hit__price">21 372 ₽</p>
+                <div>
+                    <button>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.28484 17.7004L15.2744 28.2348C15.6148 28.5938 15.7851 28.7734 16 28.7734C16.2149 28.7734 16.3852 28.5938 16.7256 28.2348L26.7152 17.7004C29.1799 15.1011 29.3786 11.092 27.1828 8.26185C24.2409 4.47009 18.3358 5.106 16.2686 9.43717L16 10L15.7314 9.43717C13.6642 5.106 7.7591 4.47009 4.81722 8.26185C2.62142 11.092 2.82005 15.1011 5.28484 17.7004Z" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.00012 6L6.00012 5C6.00012 2.79086 7.79098 1 10.0001 1V1C12.2093 1 14.0001 2.79086 14.0001 5L14.0001 6" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M13 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 10C2 8.11438 2 7.17157 2.58579 6.58579C3.17157 6 4.11438 6 6 6H14C15.8856 6 16.8284 6 17.4142 6.58579C18 7.17157 18 8.11438 18 10V11C18 14.7712 18 16.6569 16.8284 17.8284C15.6569 19 13.7712 19 10 19V19C6.22876 19 4.34315 19 3.17157 17.8284C2 16.6569 2 14.7712 2 11V10Z" stroke="#808080" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="hit__card">
+                <div class="hit__img" >
+                    <img src="./img/goods/good1.png" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                    <div class="hit__label" >
+                        <p>в наличии</p>
+                        <p class="_new">Новинка</p>
+                        <p>хит</p>
+                    </div>
+                    <div class="hit__buttons">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20" viewBox="0 0 29 20" fill="none">
+                                <circle cx="14.5" cy="10" r="5" stroke-width="2"/>
+                                <path d="M27.2014 8.92254C27.5846 9.41029 27.7762 9.65417 27.7762 10C27.7762 10.3458 27.5846 10.5897 27.2014 11.0775C25.3243 13.4668 20.3461 19 14.5 19C8.65392 19 3.67575 13.4668 1.79863 11.0775C1.41544 10.5897 1.22385 10.3458 1.22385 10C1.22385 9.65417 1.41544 9.41029 1.79863 8.92255C3.67575 6.53323 8.65392 1 14.5 1C20.3461 1 25.3243 6.53323 27.2014 8.92254Z" stroke-width="2"/>
+                            </svg>
+                            <p>быстрый просмотр</p>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
+                                <path d="M10 9.16675L10 7.87508C10 4.56137 12.6863 1.87508 16 1.87508V1.87508C19.3137 1.87508 22 4.56137 22 7.87508L22 9.16675" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M20.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M11.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M4 13.1667C4 11.2811 4 10.3383 4.58579 9.75253C5.17157 9.16675 6.11438 9.16675 8 9.16675H24C25.8856 9.16675 26.8284 9.16675 27.4142 9.75253C28 10.3383 28 11.2811 28 13.1667V20.1251C28 23.8963 28 25.7819 26.8284 26.9535C25.6569 28.1251 23.7712 28.1251 20 28.1251H12C8.22876 28.1251 6.34315 28.1251 5.17157 26.9535C4 25.7819 4 23.8963 4 20.1251V13.1667Z" stroke-width="2"/>
+                            </svg>
+                            <p>добавить в корзину</p>
+                        </button>
+                    </div>
+                </div>
+                <p class="hit__name">Потолочный светильник для ванных комнат QZ-CHANCE-F-PC</p>
+                <p class="hit__price">21 372 ₽</p>
+                <div>
+                    <button>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.28484 17.7004L15.2744 28.2348C15.6148 28.5938 15.7851 28.7734 16 28.7734C16.2149 28.7734 16.3852 28.5938 16.7256 28.2348L26.7152 17.7004C29.1799 15.1011 29.3786 11.092 27.1828 8.26185C24.2409 4.47009 18.3358 5.106 16.2686 9.43717L16 10L15.7314 9.43717C13.6642 5.106 7.7591 4.47009 4.81722 8.26185C2.62142 11.092 2.82005 15.1011 5.28484 17.7004Z" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.00012 6L6.00012 5C6.00012 2.79086 7.79098 1 10.0001 1V1C12.2093 1 14.0001 2.79086 14.0001 5L14.0001 6" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M13 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 10C2 8.11438 2 7.17157 2.58579 6.58579C3.17157 6 4.11438 6 6 6H14C15.8856 6 16.8284 6 17.4142 6.58579C18 7.17157 18 8.11438 18 10V11C18 14.7712 18 16.6569 16.8284 17.8284C15.6569 19 13.7712 19 10 19V19C6.22876 19 4.34315 19 3.17157 17.8284C2 16.6569 2 14.7712 2 11V10Z" stroke="#808080" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="hit__card">
+                <div class="hit__img" >
+                    <img src="./img/goods/good2.png" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                    <div class="hit__label" >
+                        <p>в наличии</p>
+                        <p class="_new">Новинка</p>
+                    </div>
+                    <div class="hit__buttons">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20" viewBox="0 0 29 20" fill="none">
+                                <circle cx="14.5" cy="10" r="5" stroke-width="2"/>
+                                <path d="M27.2014 8.92254C27.5846 9.41029 27.7762 9.65417 27.7762 10C27.7762 10.3458 27.5846 10.5897 27.2014 11.0775C25.3243 13.4668 20.3461 19 14.5 19C8.65392 19 3.67575 13.4668 1.79863 11.0775C1.41544 10.5897 1.22385 10.3458 1.22385 10C1.22385 9.65417 1.41544 9.41029 1.79863 8.92255C3.67575 6.53323 8.65392 1 14.5 1C20.3461 1 25.3243 6.53323 27.2014 8.92254Z" stroke-width="2"/>
+                            </svg>
+                            <p>быстрый просмотр</p>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
+                                <path d="M10 9.16675L10 7.87508C10 4.56137 12.6863 1.87508 16 1.87508V1.87508C19.3137 1.87508 22 4.56137 22 7.87508L22 9.16675" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M20.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M11.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M4 13.1667C4 11.2811 4 10.3383 4.58579 9.75253C5.17157 9.16675 6.11438 9.16675 8 9.16675H24C25.8856 9.16675 26.8284 9.16675 27.4142 9.75253C28 10.3383 28 11.2811 28 13.1667V20.1251C28 23.8963 28 25.7819 26.8284 26.9535C25.6569 28.1251 23.7712 28.1251 20 28.1251H12C8.22876 28.1251 6.34315 28.1251 5.17157 26.9535C4 25.7819 4 23.8963 4 20.1251V13.1667Z" stroke-width="2"/>
+                            </svg>
+                            <p>добавить в корзину</p>
+                        </button>
+                    </div>
+                </div>
+                <p class="hit__name">Подвесной светильник QZ-CHANCE-F-PC</p>
+                <p class="hit__price">144 458 ₽</p>
+                <div>
+                    <button>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.28484 17.7004L15.2744 28.2348C15.6148 28.5938 15.7851 28.7734 16 28.7734C16.2149 28.7734 16.3852 28.5938 16.7256 28.2348L26.7152 17.7004C29.1799 15.1011 29.3786 11.092 27.1828 8.26185C24.2409 4.47009 18.3358 5.106 16.2686 9.43717L16 10L15.7314 9.43717C13.6642 5.106 7.7591 4.47009 4.81722 8.26185C2.62142 11.092 2.82005 15.1011 5.28484 17.7004Z" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.00012 6L6.00012 5C6.00012 2.79086 7.79098 1 10.0001 1V1C12.2093 1 14.0001 2.79086 14.0001 5L14.0001 6" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M13 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 10C2 8.11438 2 7.17157 2.58579 6.58579C3.17157 6 4.11438 6 6 6H14C15.8856 6 16.8284 6 17.4142 6.58579C18 7.17157 18 8.11438 18 10V11C18 14.7712 18 16.6569 16.8284 17.8284C15.6569 19 13.7712 19 10 19V19C6.22876 19 4.34315 19 3.17157 17.8284C2 16.6569 2 14.7712 2 11V10Z" stroke="#808080" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="hit__card">
+                <div class="hit__img" >
+                    <img src="./img/goods/good3.png" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                    <div class="hit__label" >
+                        <p>в наличии</p>
+                        <p class="_new">Новинка</p>
+                        <p>хит</p>
+                    </div>
+                    <div class="hit__buttons">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20" viewBox="0 0 29 20" fill="none">
+                                <circle cx="14.5" cy="10" r="5" stroke-width="2"/>
+                                <path d="M27.2014 8.92254C27.5846 9.41029 27.7762 9.65417 27.7762 10C27.7762 10.3458 27.5846 10.5897 27.2014 11.0775C25.3243 13.4668 20.3461 19 14.5 19C8.65392 19 3.67575 13.4668 1.79863 11.0775C1.41544 10.5897 1.22385 10.3458 1.22385 10C1.22385 9.65417 1.41544 9.41029 1.79863 8.92255C3.67575 6.53323 8.65392 1 14.5 1C20.3461 1 25.3243 6.53323 27.2014 8.92254Z" stroke-width="2"/>
+                            </svg>
+                            <p>быстрый просмотр</p>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
+                                <path d="M10 9.16675L10 7.87508C10 4.56137 12.6863 1.87508 16 1.87508V1.87508C19.3137 1.87508 22 4.56137 22 7.87508L22 9.16675" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M20.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M11.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M4 13.1667C4 11.2811 4 10.3383 4.58579 9.75253C5.17157 9.16675 6.11438 9.16675 8 9.16675H24C25.8856 9.16675 26.8284 9.16675 27.4142 9.75253C28 10.3383 28 11.2811 28 13.1667V20.1251C28 23.8963 28 25.7819 26.8284 26.9535C25.6569 28.1251 23.7712 28.1251 20 28.1251H12C8.22876 28.1251 6.34315 28.1251 5.17157 26.9535C4 25.7819 4 23.8963 4 20.1251V13.1667Z" stroke-width="2"/>
+                            </svg>
+                            <p>добавить в корзину</p>
+                        </button>
+                    </div>
+                </div>
+                <p class="hit__name">Потолочный светильник для ванных комнат QZ-CHANCE-F-PC</p>
+                <p class="hit__price">21 372 ₽</p>
+                <div>
+                    <button>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.28484 17.7004L15.2744 28.2348C15.6148 28.5938 15.7851 28.7734 16 28.7734C16.2149 28.7734 16.3852 28.5938 16.7256 28.2348L26.7152 17.7004C29.1799 15.1011 29.3786 11.092 27.1828 8.26185C24.2409 4.47009 18.3358 5.106 16.2686 9.43717L16 10L15.7314 9.43717C13.6642 5.106 7.7591 4.47009 4.81722 8.26185C2.62142 11.092 2.82005 15.1011 5.28484 17.7004Z" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.00012 6L6.00012 5C6.00012 2.79086 7.79098 1 10.0001 1V1C12.2093 1 14.0001 2.79086 14.0001 5L14.0001 6" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M13 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 10C2 8.11438 2 7.17157 2.58579 6.58579C3.17157 6 4.11438 6 6 6H14C15.8856 6 16.8284 6 17.4142 6.58579C18 7.17157 18 8.11438 18 10V11C18 14.7712 18 16.6569 16.8284 17.8284C15.6569 19 13.7712 19 10 19V19C6.22876 19 4.34315 19 3.17157 17.8284C2 16.6569 2 14.7712 2 11V10Z" stroke="#808080" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="hit__card">
+                <div class="hit__img" >
+                    <img src="./img/goods/good4.png" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                    <div class="hit__label" >
+                        <p>в наличии</p>
+                        <p class="_new">Новинка</p>
+                        <p>хит</p>
+                    </div>
+                    <div class="hit__buttons">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20" viewBox="0 0 29 20" fill="none">
+                                <circle cx="14.5" cy="10" r="5" stroke-width="2"/>
+                                <path d="M27.2014 8.92254C27.5846 9.41029 27.7762 9.65417 27.7762 10C27.7762 10.3458 27.5846 10.5897 27.2014 11.0775C25.3243 13.4668 20.3461 19 14.5 19C8.65392 19 3.67575 13.4668 1.79863 11.0775C1.41544 10.5897 1.22385 10.3458 1.22385 10C1.22385 9.65417 1.41544 9.41029 1.79863 8.92255C3.67575 6.53323 8.65392 1 14.5 1C20.3461 1 25.3243 6.53323 27.2014 8.92254Z" stroke-width="2"/>
+                            </svg>
+                            <p>быстрый просмотр</p>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
+                                <path d="M10 9.16675L10 7.87508C10 4.56137 12.6863 1.87508 16 1.87508V1.87508C19.3137 1.87508 22 4.56137 22 7.87508L22 9.16675" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M20.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M11.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M4 13.1667C4 11.2811 4 10.3383 4.58579 9.75253C5.17157 9.16675 6.11438 9.16675 8 9.16675H24C25.8856 9.16675 26.8284 9.16675 27.4142 9.75253C28 10.3383 28 11.2811 28 13.1667V20.1251C28 23.8963 28 25.7819 26.8284 26.9535C25.6569 28.1251 23.7712 28.1251 20 28.1251H12C8.22876 28.1251 6.34315 28.1251 5.17157 26.9535C4 25.7819 4 23.8963 4 20.1251V13.1667Z" stroke-width="2"/>
+                            </svg>
+                            <p>добавить в корзину</p>
+                        </button>
+                    </div>
+                </div>
+                <p class="hit__name">Потолочный светильник для ванных комнат QZ-CHANCE-F-PC</p>
+                <p class="hit__price">21 372 ₽</p>
+                <div>
+                    <button>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.28484 17.7004L15.2744 28.2348C15.6148 28.5938 15.7851 28.7734 16 28.7734C16.2149 28.7734 16.3852 28.5938 16.7256 28.2348L26.7152 17.7004C29.1799 15.1011 29.3786 11.092 27.1828 8.26185C24.2409 4.47009 18.3358 5.106 16.2686 9.43717L16 10L15.7314 9.43717C13.6642 5.106 7.7591 4.47009 4.81722 8.26185C2.62142 11.092 2.82005 15.1011 5.28484 17.7004Z" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.00012 6L6.00012 5C6.00012 2.79086 7.79098 1 10.0001 1V1C12.2093 1 14.0001 2.79086 14.0001 5L14.0001 6" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M13 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 10C2 8.11438 2 7.17157 2.58579 6.58579C3.17157 6 4.11438 6 6 6H14C15.8856 6 16.8284 6 17.4142 6.58579C18 7.17157 18 8.11438 18 10V11C18 14.7712 18 16.6569 16.8284 17.8284C15.6569 19 13.7712 19 10 19V19C6.22876 19 4.34315 19 3.17157 17.8284C2 16.6569 2 14.7712 2 11V10Z" stroke="#808080" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="hit__card">
+                <div class="hit__img" >
+                    <img src="./img/goods/good1.png" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                    <div class="hit__label" >
+                        <p>в наличии</p>
+                        <p class="_new">Новинка</p>
+                        <p>хит</p>
+                    </div>
+                    <div class="hit__buttons">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20" viewBox="0 0 29 20" fill="none">
+                                <circle cx="14.5" cy="10" r="5" stroke-width="2"/>
+                                <path d="M27.2014 8.92254C27.5846 9.41029 27.7762 9.65417 27.7762 10C27.7762 10.3458 27.5846 10.5897 27.2014 11.0775C25.3243 13.4668 20.3461 19 14.5 19C8.65392 19 3.67575 13.4668 1.79863 11.0775C1.41544 10.5897 1.22385 10.3458 1.22385 10C1.22385 9.65417 1.41544 9.41029 1.79863 8.92255C3.67575 6.53323 8.65392 1 14.5 1C20.3461 1 25.3243 6.53323 27.2014 8.92254Z" stroke-width="2"/>
+                            </svg>
+                            <p>быстрый просмотр</p>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
+                                <path d="M10 9.16675L10 7.87508C10 4.56137 12.6863 1.87508 16 1.87508V1.87508C19.3137 1.87508 22 4.56137 22 7.87508L22 9.16675" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M20.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M11.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M4 13.1667C4 11.2811 4 10.3383 4.58579 9.75253C5.17157 9.16675 6.11438 9.16675 8 9.16675H24C25.8856 9.16675 26.8284 9.16675 27.4142 9.75253C28 10.3383 28 11.2811 28 13.1667V20.1251C28 23.8963 28 25.7819 26.8284 26.9535C25.6569 28.1251 23.7712 28.1251 20 28.1251H12C8.22876 28.1251 6.34315 28.1251 5.17157 26.9535C4 25.7819 4 23.8963 4 20.1251V13.1667Z" stroke-width="2"/>
+                            </svg>
+                            <p>добавить в корзину</p>
+                        </button>
+                    </div>
+                </div>
+                <p class="hit__name">Потолочный светильник для ванных комнат QZ-CHANCE-F-PC</p>
+                <p class="hit__price">21 372 ₽</p>
+                <div>
+                    <button>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.28484 17.7004L15.2744 28.2348C15.6148 28.5938 15.7851 28.7734 16 28.7734C16.2149 28.7734 16.3852 28.5938 16.7256 28.2348L26.7152 17.7004C29.1799 15.1011 29.3786 11.092 27.1828 8.26185C24.2409 4.47009 18.3358 5.106 16.2686 9.43717L16 10L15.7314 9.43717C13.6642 5.106 7.7591 4.47009 4.81722 8.26185C2.62142 11.092 2.82005 15.1011 5.28484 17.7004Z" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.00012 6L6.00012 5C6.00012 2.79086 7.79098 1 10.0001 1V1C12.2093 1 14.0001 2.79086 14.0001 5L14.0001 6" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M13 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 10C2 8.11438 2 7.17157 2.58579 6.58579C3.17157 6 4.11438 6 6 6H14C15.8856 6 16.8284 6 17.4142 6.58579C18 7.17157 18 8.11438 18 10V11C18 14.7712 18 16.6569 16.8284 17.8284C15.6569 19 13.7712 19 10 19V19C6.22876 19 4.34315 19 3.17157 17.8284C2 16.6569 2 14.7712 2 11V10Z" stroke="#808080" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="hit__card">
+                <div class="hit__img" >
+                    <img src="./img/goods/good2.png" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                    <div class="hit__label" >
+                        <p>в наличии</p>
+                        <p class="_new">Новинка</p>
+                    </div>
+                    <div class="hit__buttons">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20" viewBox="0 0 29 20" fill="none">
+                                <circle cx="14.5" cy="10" r="5" stroke-width="2"/>
+                                <path d="M27.2014 8.92254C27.5846 9.41029 27.7762 9.65417 27.7762 10C27.7762 10.3458 27.5846 10.5897 27.2014 11.0775C25.3243 13.4668 20.3461 19 14.5 19C8.65392 19 3.67575 13.4668 1.79863 11.0775C1.41544 10.5897 1.22385 10.3458 1.22385 10C1.22385 9.65417 1.41544 9.41029 1.79863 8.92255C3.67575 6.53323 8.65392 1 14.5 1C20.3461 1 25.3243 6.53323 27.2014 8.92254Z" stroke-width="2"/>
+                            </svg>
+                            <p>быстрый просмотр</p>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
+                                <path d="M10 9.16675L10 7.87508C10 4.56137 12.6863 1.87508 16 1.87508V1.87508C19.3137 1.87508 22 4.56137 22 7.87508L22 9.16675" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M20.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M11.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M4 13.1667C4 11.2811 4 10.3383 4.58579 9.75253C5.17157 9.16675 6.11438 9.16675 8 9.16675H24C25.8856 9.16675 26.8284 9.16675 27.4142 9.75253C28 10.3383 28 11.2811 28 13.1667V20.1251C28 23.8963 28 25.7819 26.8284 26.9535C25.6569 28.1251 23.7712 28.1251 20 28.1251H12C8.22876 28.1251 6.34315 28.1251 5.17157 26.9535C4 25.7819 4 23.8963 4 20.1251V13.1667Z" stroke-width="2"/>
+                            </svg>
+                            <p>добавить в корзину</p>
+                        </button>
+                    </div>
+                </div>
+                <p class="hit__name">Подвесной светильник QZ-CHANCE-F-PC</p>
+                <p class="hit__price">144 458 ₽</p>
+                <div>
+                    <button>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.28484 17.7004L15.2744 28.2348C15.6148 28.5938 15.7851 28.7734 16 28.7734C16.2149 28.7734 16.3852 28.5938 16.7256 28.2348L26.7152 17.7004C29.1799 15.1011 29.3786 11.092 27.1828 8.26185C24.2409 4.47009 18.3358 5.106 16.2686 9.43717L16 10L15.7314 9.43717C13.6642 5.106 7.7591 4.47009 4.81722 8.26185C2.62142 11.092 2.82005 15.1011 5.28484 17.7004Z" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.00012 6L6.00012 5C6.00012 2.79086 7.79098 1 10.0001 1V1C12.2093 1 14.0001 2.79086 14.0001 5L14.0001 6" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M13 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 10C2 8.11438 2 7.17157 2.58579 6.58579C3.17157 6 4.11438 6 6 6H14C15.8856 6 16.8284 6 17.4142 6.58579C18 7.17157 18 8.11438 18 10V11C18 14.7712 18 16.6569 16.8284 17.8284C15.6569 19 13.7712 19 10 19V19C6.22876 19 4.34315 19 3.17157 17.8284C2 16.6569 2 14.7712 2 11V10Z" stroke="#808080" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="hit__card">
+                <div class="hit__img" >
+                    <img src="./img/goods/good3.png" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                    <div class="hit__label" >
+                        <p>в наличии</p>
+                        <p class="_new">Новинка</p>
+                        <p>хит</p>
+                    </div>
+                    <div class="hit__buttons">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20" viewBox="0 0 29 20" fill="none">
+                                <circle cx="14.5" cy="10" r="5" stroke-width="2"/>
+                                <path d="M27.2014 8.92254C27.5846 9.41029 27.7762 9.65417 27.7762 10C27.7762 10.3458 27.5846 10.5897 27.2014 11.0775C25.3243 13.4668 20.3461 19 14.5 19C8.65392 19 3.67575 13.4668 1.79863 11.0775C1.41544 10.5897 1.22385 10.3458 1.22385 10C1.22385 9.65417 1.41544 9.41029 1.79863 8.92255C3.67575 6.53323 8.65392 1 14.5 1C20.3461 1 25.3243 6.53323 27.2014 8.92254Z" stroke-width="2"/>
+                            </svg>
+                            <p>быстрый просмотр</p>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
+                                <path d="M10 9.16675L10 7.87508C10 4.56137 12.6863 1.87508 16 1.87508V1.87508C19.3137 1.87508 22 4.56137 22 7.87508L22 9.16675" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M20.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M11.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M4 13.1667C4 11.2811 4 10.3383 4.58579 9.75253C5.17157 9.16675 6.11438 9.16675 8 9.16675H24C25.8856 9.16675 26.8284 9.16675 27.4142 9.75253C28 10.3383 28 11.2811 28 13.1667V20.1251C28 23.8963 28 25.7819 26.8284 26.9535C25.6569 28.1251 23.7712 28.1251 20 28.1251H12C8.22876 28.1251 6.34315 28.1251 5.17157 26.9535C4 25.7819 4 23.8963 4 20.1251V13.1667Z" stroke-width="2"/>
+                            </svg>
+                            <p>добавить в корзину</p>
+                        </button>
+                    </div>
+                </div>
+                <p class="hit__name">Потолочный светильник для ванных комнат QZ-CHANCE-F-PC</p>
+                <p class="hit__price">21 372 ₽</p>
+                <div>
+                    <button>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.28484 17.7004L15.2744 28.2348C15.6148 28.5938 15.7851 28.7734 16 28.7734C16.2149 28.7734 16.3852 28.5938 16.7256 28.2348L26.7152 17.7004C29.1799 15.1011 29.3786 11.092 27.1828 8.26185C24.2409 4.47009 18.3358 5.106 16.2686 9.43717L16 10L15.7314 9.43717C13.6642 5.106 7.7591 4.47009 4.81722 8.26185C2.62142 11.092 2.82005 15.1011 5.28484 17.7004Z" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.00012 6L6.00012 5C6.00012 2.79086 7.79098 1 10.0001 1V1C12.2093 1 14.0001 2.79086 14.0001 5L14.0001 6" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M13 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 10C2 8.11438 2 7.17157 2.58579 6.58579C3.17157 6 4.11438 6 6 6H14C15.8856 6 16.8284 6 17.4142 6.58579C18 7.17157 18 8.11438 18 10V11C18 14.7712 18 16.6569 16.8284 17.8284C15.6569 19 13.7712 19 10 19V19C6.22876 19 4.34315 19 3.17157 17.8284C2 16.6569 2 14.7712 2 11V10Z" stroke="#808080" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="hit__card">
+                <div class="hit__img" >
+                    <img src="./img/goods/good4.png" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                    <div class="hit__label" >
+                        <p>в наличии</p>
+                        <p class="_new">Новинка</p>
+                        <p>хит</p>
+                    </div>
+                    <div class="hit__buttons">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20" viewBox="0 0 29 20" fill="none">
+                                <circle cx="14.5" cy="10" r="5" stroke-width="2"/>
+                                <path d="M27.2014 8.92254C27.5846 9.41029 27.7762 9.65417 27.7762 10C27.7762 10.3458 27.5846 10.5897 27.2014 11.0775C25.3243 13.4668 20.3461 19 14.5 19C8.65392 19 3.67575 13.4668 1.79863 11.0775C1.41544 10.5897 1.22385 10.3458 1.22385 10C1.22385 9.65417 1.41544 9.41029 1.79863 8.92255C3.67575 6.53323 8.65392 1 14.5 1C20.3461 1 25.3243 6.53323 27.2014 8.92254Z" stroke-width="2"/>
+                            </svg>
+                            <p>быстрый просмотр</p>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
+                                <path d="M10 9.16675L10 7.87508C10 4.56137 12.6863 1.87508 16 1.87508V1.87508C19.3137 1.87508 22 4.56137 22 7.87508L22 9.16675" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M20.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M11.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M4 13.1667C4 11.2811 4 10.3383 4.58579 9.75253C5.17157 9.16675 6.11438 9.16675 8 9.16675H24C25.8856 9.16675 26.8284 9.16675 27.4142 9.75253C28 10.3383 28 11.2811 28 13.1667V20.1251C28 23.8963 28 25.7819 26.8284 26.9535C25.6569 28.1251 23.7712 28.1251 20 28.1251H12C8.22876 28.1251 6.34315 28.1251 5.17157 26.9535C4 25.7819 4 23.8963 4 20.1251V13.1667Z" stroke-width="2"/>
+                            </svg>
+                            <p>добавить в корзину</p>
+                        </button>
+                    </div>
+                </div>
+                <p class="hit__name">Потолочный светильник для ванных комнат QZ-CHANCE-F-PC</p>
+                <p class="hit__price">21 372 ₽</p>
+                <div>
+                    <button>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.28484 17.7004L15.2744 28.2348C15.6148 28.5938 15.7851 28.7734 16 28.7734C16.2149 28.7734 16.3852 28.5938 16.7256 28.2348L26.7152 17.7004C29.1799 15.1011 29.3786 11.092 27.1828 8.26185C24.2409 4.47009 18.3358 5.106 16.2686 9.43717L16 10L15.7314 9.43717C13.6642 5.106 7.7591 4.47009 4.81722 8.26185C2.62142 11.092 2.82005 15.1011 5.28484 17.7004Z" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.00012 6L6.00012 5C6.00012 2.79086 7.79098 1 10.0001 1V1C12.2093 1 14.0001 2.79086 14.0001 5L14.0001 6" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M13 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 10C2 8.11438 2 7.17157 2.58579 6.58579C3.17157 6 4.11438 6 6 6H14C15.8856 6 16.8284 6 17.4142 6.58579C18 7.17157 18 8.11438 18 10V11C18 14.7712 18 16.6569 16.8284 17.8284C15.6569 19 13.7712 19 10 19V19C6.22876 19 4.34315 19 3.17157 17.8284C2 16.6569 2 14.7712 2 11V10Z" stroke="#808080" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="hit__card">
+                <div class="hit__img" >
+                    <img src="./img/goods/good1.png" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                    <div class="hit__label" >
+                        <p>в наличии</p>
+                        <p class="_new">Новинка</p>
+                        <p>хит</p>
+                    </div>
+                    <div class="hit__buttons">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20" viewBox="0 0 29 20" fill="none">
+                                <circle cx="14.5" cy="10" r="5" stroke-width="2"/>
+                                <path d="M27.2014 8.92254C27.5846 9.41029 27.7762 9.65417 27.7762 10C27.7762 10.3458 27.5846 10.5897 27.2014 11.0775C25.3243 13.4668 20.3461 19 14.5 19C8.65392 19 3.67575 13.4668 1.79863 11.0775C1.41544 10.5897 1.22385 10.3458 1.22385 10C1.22385 9.65417 1.41544 9.41029 1.79863 8.92255C3.67575 6.53323 8.65392 1 14.5 1C20.3461 1 25.3243 6.53323 27.2014 8.92254Z" stroke-width="2"/>
+                            </svg>
+                            <p>быстрый просмотр</p>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
+                                <path d="M10 9.16675L10 7.87508C10 4.56137 12.6863 1.87508 16 1.87508V1.87508C19.3137 1.87508 22 4.56137 22 7.87508L22 9.16675" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M20.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M11.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M4 13.1667C4 11.2811 4 10.3383 4.58579 9.75253C5.17157 9.16675 6.11438 9.16675 8 9.16675H24C25.8856 9.16675 26.8284 9.16675 27.4142 9.75253C28 10.3383 28 11.2811 28 13.1667V20.1251C28 23.8963 28 25.7819 26.8284 26.9535C25.6569 28.1251 23.7712 28.1251 20 28.1251H12C8.22876 28.1251 6.34315 28.1251 5.17157 26.9535C4 25.7819 4 23.8963 4 20.1251V13.1667Z" stroke-width="2"/>
+                            </svg>
+                            <p>добавить в корзину</p>
+                        </button>
+                    </div>
+                </div>
+                <p class="hit__name">Потолочный светильник для ванных комнат QZ-CHANCE-F-PC</p>
+                <p class="hit__price">21 372 ₽</p>
+                <div>
+                    <button>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.28484 17.7004L15.2744 28.2348C15.6148 28.5938 15.7851 28.7734 16 28.7734C16.2149 28.7734 16.3852 28.5938 16.7256 28.2348L26.7152 17.7004C29.1799 15.1011 29.3786 11.092 27.1828 8.26185C24.2409 4.47009 18.3358 5.106 16.2686 9.43717L16 10L15.7314 9.43717C13.6642 5.106 7.7591 4.47009 4.81722 8.26185C2.62142 11.092 2.82005 15.1011 5.28484 17.7004Z" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.00012 6L6.00012 5C6.00012 2.79086 7.79098 1 10.0001 1V1C12.2093 1 14.0001 2.79086 14.0001 5L14.0001 6" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M13 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 10C2 8.11438 2 7.17157 2.58579 6.58579C3.17157 6 4.11438 6 6 6H14C15.8856 6 16.8284 6 17.4142 6.58579C18 7.17157 18 8.11438 18 10V11C18 14.7712 18 16.6569 16.8284 17.8284C15.6569 19 13.7712 19 10 19V19C6.22876 19 4.34315 19 3.17157 17.8284C2 16.6569 2 14.7712 2 11V10Z" stroke="#808080" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="hit__card">
+                <div class="hit__img" >
+                    <img src="./img/goods/good2.png" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                    <div class="hit__label" >
+                        <p>в наличии</p>
+                        <p class="_new">Новинка</p>
+                    </div>
+                    <div class="hit__buttons">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20" viewBox="0 0 29 20" fill="none">
+                                <circle cx="14.5" cy="10" r="5" stroke-width="2"/>
+                                <path d="M27.2014 8.92254C27.5846 9.41029 27.7762 9.65417 27.7762 10C27.7762 10.3458 27.5846 10.5897 27.2014 11.0775C25.3243 13.4668 20.3461 19 14.5 19C8.65392 19 3.67575 13.4668 1.79863 11.0775C1.41544 10.5897 1.22385 10.3458 1.22385 10C1.22385 9.65417 1.41544 9.41029 1.79863 8.92255C3.67575 6.53323 8.65392 1 14.5 1C20.3461 1 25.3243 6.53323 27.2014 8.92254Z" stroke-width="2"/>
+                            </svg>
+                            <p>быстрый просмотр</p>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
+                                <path d="M10 9.16675L10 7.87508C10 4.56137 12.6863 1.87508 16 1.87508V1.87508C19.3137 1.87508 22 4.56137 22 7.87508L22 9.16675" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M20.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M11.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M4 13.1667C4 11.2811 4 10.3383 4.58579 9.75253C5.17157 9.16675 6.11438 9.16675 8 9.16675H24C25.8856 9.16675 26.8284 9.16675 27.4142 9.75253C28 10.3383 28 11.2811 28 13.1667V20.1251C28 23.8963 28 25.7819 26.8284 26.9535C25.6569 28.1251 23.7712 28.1251 20 28.1251H12C8.22876 28.1251 6.34315 28.1251 5.17157 26.9535C4 25.7819 4 23.8963 4 20.1251V13.1667Z" stroke-width="2"/>
+                            </svg>
+                            <p>добавить в корзину</p>
+                        </button>
+                    </div>
+                </div>
+                <p class="hit__name">Подвесной светильник QZ-CHANCE-F-PC</p>
+                <p class="hit__price">144 458 ₽</p>
+                <div>
+                    <button>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.28484 17.7004L15.2744 28.2348C15.6148 28.5938 15.7851 28.7734 16 28.7734C16.2149 28.7734 16.3852 28.5938 16.7256 28.2348L26.7152 17.7004C29.1799 15.1011 29.3786 11.092 27.1828 8.26185C24.2409 4.47009 18.3358 5.106 16.2686 9.43717L16 10L15.7314 9.43717C13.6642 5.106 7.7591 4.47009 4.81722 8.26185C2.62142 11.092 2.82005 15.1011 5.28484 17.7004Z" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.00012 6L6.00012 5C6.00012 2.79086 7.79098 1 10.0001 1V1C12.2093 1 14.0001 2.79086 14.0001 5L14.0001 6" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M13 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 10C2 8.11438 2 7.17157 2.58579 6.58579C3.17157 6 4.11438 6 6 6H14C15.8856 6 16.8284 6 17.4142 6.58579C18 7.17157 18 8.11438 18 10V11C18 14.7712 18 16.6569 16.8284 17.8284C15.6569 19 13.7712 19 10 19V19C6.22876 19 4.34315 19 3.17157 17.8284C2 16.6569 2 14.7712 2 11V10Z" stroke="#808080" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="hit__card">
+                <div class="hit__img" >
+                    <img src="./img/goods/good3.png" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                    <div class="hit__label" >
+                        <p>в наличии</p>
+                        <p class="_new">Новинка</p>
+                        <p>хит</p>
+                    </div>
+                    <div class="hit__buttons">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20" viewBox="0 0 29 20" fill="none">
+                                <circle cx="14.5" cy="10" r="5" stroke-width="2"/>
+                                <path d="M27.2014 8.92254C27.5846 9.41029 27.7762 9.65417 27.7762 10C27.7762 10.3458 27.5846 10.5897 27.2014 11.0775C25.3243 13.4668 20.3461 19 14.5 19C8.65392 19 3.67575 13.4668 1.79863 11.0775C1.41544 10.5897 1.22385 10.3458 1.22385 10C1.22385 9.65417 1.41544 9.41029 1.79863 8.92255C3.67575 6.53323 8.65392 1 14.5 1C20.3461 1 25.3243 6.53323 27.2014 8.92254Z" stroke-width="2"/>
+                            </svg>
+                            <p>быстрый просмотр</p>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
+                                <path d="M10 9.16675L10 7.87508C10 4.56137 12.6863 1.87508 16 1.87508V1.87508C19.3137 1.87508 22 4.56137 22 7.87508L22 9.16675" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M20.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M11.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M4 13.1667C4 11.2811 4 10.3383 4.58579 9.75253C5.17157 9.16675 6.11438 9.16675 8 9.16675H24C25.8856 9.16675 26.8284 9.16675 27.4142 9.75253C28 10.3383 28 11.2811 28 13.1667V20.1251C28 23.8963 28 25.7819 26.8284 26.9535C25.6569 28.1251 23.7712 28.1251 20 28.1251H12C8.22876 28.1251 6.34315 28.1251 5.17157 26.9535C4 25.7819 4 23.8963 4 20.1251V13.1667Z" stroke-width="2"/>
+                            </svg>
+                            <p>добавить в корзину</p>
+                        </button>
+                    </div>
+                </div>
+                <p class="hit__name">Потолочный светильник для ванных комнат QZ-CHANCE-F-PC</p>
+                <p class="hit__price">21 372 ₽</p>
+                <div>
+                    <button>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.28484 17.7004L15.2744 28.2348C15.6148 28.5938 15.7851 28.7734 16 28.7734C16.2149 28.7734 16.3852 28.5938 16.7256 28.2348L26.7152 17.7004C29.1799 15.1011 29.3786 11.092 27.1828 8.26185C24.2409 4.47009 18.3358 5.106 16.2686 9.43717L16 10L15.7314 9.43717C13.6642 5.106 7.7591 4.47009 4.81722 8.26185C2.62142 11.092 2.82005 15.1011 5.28484 17.7004Z" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.00012 6L6.00012 5C6.00012 2.79086 7.79098 1 10.0001 1V1C12.2093 1 14.0001 2.79086 14.0001 5L14.0001 6" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M13 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 10C2 8.11438 2 7.17157 2.58579 6.58579C3.17157 6 4.11438 6 6 6H14C15.8856 6 16.8284 6 17.4142 6.58579C18 7.17157 18 8.11438 18 10V11C18 14.7712 18 16.6569 16.8284 17.8284C15.6569 19 13.7712 19 10 19V19C6.22876 19 4.34315 19 3.17157 17.8284C2 16.6569 2 14.7712 2 11V10Z" stroke="#808080" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </a>
+            <a href="#" class="hit__card">
+                <div class="hit__img" >
+                    <img src="./img/goods/good4.png" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                    <div class="hit__label" >
+                        <p>в наличии</p>
+                        <p class="_new">Новинка</p>
+                        <p>хит</p>
+                    </div>
+                    <div class="hit__buttons">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20" viewBox="0 0 29 20" fill="none">
+                                <circle cx="14.5" cy="10" r="5" stroke-width="2"/>
+                                <path d="M27.2014 8.92254C27.5846 9.41029 27.7762 9.65417 27.7762 10C27.7762 10.3458 27.5846 10.5897 27.2014 11.0775C25.3243 13.4668 20.3461 19 14.5 19C8.65392 19 3.67575 13.4668 1.79863 11.0775C1.41544 10.5897 1.22385 10.3458 1.22385 10C1.22385 9.65417 1.41544 9.41029 1.79863 8.92255C3.67575 6.53323 8.65392 1 14.5 1C20.3461 1 25.3243 6.53323 27.2014 8.92254Z" stroke-width="2"/>
+                            </svg>
+                            <p>быстрый просмотр</p>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
+                                <path d="M10 9.16675L10 7.87508C10 4.56137 12.6863 1.87508 16 1.87508V1.87508C19.3137 1.87508 22 4.56137 22 7.87508L22 9.16675" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M20.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M11.5 17.9167V15" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M4 13.1667C4 11.2811 4 10.3383 4.58579 9.75253C5.17157 9.16675 6.11438 9.16675 8 9.16675H24C25.8856 9.16675 26.8284 9.16675 27.4142 9.75253C28 10.3383 28 11.2811 28 13.1667V20.1251C28 23.8963 28 25.7819 26.8284 26.9535C25.6569 28.1251 23.7712 28.1251 20 28.1251H12C8.22876 28.1251 6.34315 28.1251 5.17157 26.9535C4 25.7819 4 23.8963 4 20.1251V13.1667Z" stroke-width="2"/>
+                            </svg>
+                            <p>добавить в корзину</p>
+                        </button>
+                    </div>
+                </div>
+                <p class="hit__name">Потолочный светильник для ванных комнат QZ-CHANCE-F-PC</p>
+                <p class="hit__price">21 372 ₽</p>
+                <div>
+                    <button>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.28484 17.7004L15.2744 28.2348C15.6148 28.5938 15.7851 28.7734 16 28.7734C16.2149 28.7734 16.3852 28.5938 16.7256 28.2348L26.7152 17.7004C29.1799 15.1011 29.3786 11.092 27.1828 8.26185C24.2409 4.47009 18.3358 5.106 16.2686 9.43717L16 10L15.7314 9.43717C13.6642 5.106 7.7591 4.47009 4.81722 8.26185C2.62142 11.092 2.82005 15.1011 5.28484 17.7004Z" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.00012 6L6.00012 5C6.00012 2.79086 7.79098 1 10.0001 1V1C12.2093 1 14.0001 2.79086 14.0001 5L14.0001 6" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M13 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M7 12V10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 10C2 8.11438 2 7.17157 2.58579 6.58579C3.17157 6 4.11438 6 6 6H14C15.8856 6 16.8284 6 17.4142 6.58579C18 7.17157 18 8.11438 18 10V11C18 14.7712 18 16.6569 16.8284 17.8284C15.6569 19 13.7712 19 10 19V19C6.22876 19 4.34315 19 3.17157 17.8284C2 16.6569 2 14.7712 2 11V10Z" stroke="#808080" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </a>
+        </div>
+        <div class="goods__pagination">
+            <button class="goods__pagination-btn">Показать ещё</button>
+            <div>
+                <button class="goods__pagination-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8" viewBox="0 0 9 8" fill="none">
+                        <path d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM1 4.5H9V3.5H1V4.5Z" />
+                    </svg>
+                </button>
+                <button class="goods__pagination-btn">1</button>
+                <button class="goods__pagination-btn">2</button>
+                <button class="goods__pagination-btn">3</button>
+                <button class="goods__pagination-btn">…</button>
+                <button class="goods__pagination-btn _back">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8" viewBox="0 0 9 8" fill="none">
+                        <path d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM1 4.5H9V3.5H1V4.5Z" />
+                    </svg>
+                </button>
+                <p>из 37</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__container">
+      <ul>
+        <li>
+          <a href="#">О нас</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+        <li>
+          <a href="tel:88005555792">8 800 555 57 92</a>
+          г. Москва, ул. Адмирала Корнилова, д. 61
+        </li>
+        <li>
+          <a href="#">Условия и сроки доставки</a>
+        </li>
+        <li>
+          <a href="#">Гарантия</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+        <li>
+          <a href="#">Программа лояльности</a>
+        </li>
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#">Обработка персональных данных</a>
+        </li>
+        <li>
+          <a href="#">Правила сайта</a>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="#" class="icon">
+          <img src="./img/play.svg" alt="Youtube">
+        </a></li>
+        <li><a href="#">Все акции</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Видео</a></li>
+        <li><a href="#">Проекты</a></li>
+        <li><a href="#">Бренды</a></li>
+        <li><a href="#">Коллекции</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Скачать каталоги </a></li>
+      </ul>
+      <div>
+        <form action="">
+          <input type="text" name="search" placeholder=" " required="required" id="search"/>
+          <button type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+              <path d="M15.8443 17.1527L15.8443 16.0686L15.4738 15.6844C13.9095 17.0292 11.8786 17.8388 9.66938 17.8388C4.74314 17.8388 0.749999 13.8456 0.75 8.91938C0.75 3.99314 4.74314 1.74546e-07 9.66938 3.89879e-07C14.5956 6.05212e-07 18.5888 3.99314 18.5888 8.91938C18.5888 11.1286 17.7792 13.1595 16.4344 14.7238L16.8186 15.0943L17.9027 15.0943L24.75 21.9554L22.7054 24L15.8443 17.1527V17.1527ZM15.8443 8.91938C15.8443 5.50257 13.0862 2.74443 9.66938 2.74443C6.25257 2.74443 3.49443 5.50257 3.49443 8.91938C3.49442 12.3362 6.25257 15.0943 9.66938 15.0943C13.0862 15.0943 15.8443 12.3362 15.8443 8.91938Z" fill="#EBEBEB"/>
+            </svg>
+          </button>
+        </form>
+        <ul>
+          <li><a href="#">ИНТЕРЬЕРНЫЙ СВЕТ</a></li>
+          <li><a href="#">уличный СВЕТ</a></li>
+          <li><a href="#">Аксессуары</a></li>
+          <li><a href="#">декор</a></li>
+          <li><a href="#">новинки</a></li>
+          <li><a href="#">бренды</a></li>
+          <li><a href="#">коллекции</a></li>
+          <li><a href="#">проекты</a></li>
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">В наличии</a></li>
+          <li><a href="#">как купить</a></li>
+          <li><a href="#">контакты</a></li>
+          <li><a href="#">о компании</a></li>
+          <li><a href="#">Оплата</a></li>
+          <li><a href="#">Доставка</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>Natural Concepts 2023 © Все права защищены</p>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>
