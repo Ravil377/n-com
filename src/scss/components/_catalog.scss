@@ -171,7 +171,6 @@
     display: grid;
     row-gap: 10px;
     column-gap: 6px;
-    // grid-template-columns: repeat(2,1fr);
 
     @media (max-width: 1025px) {
         &:not(._one) {
@@ -201,8 +200,17 @@
 .goods__pagination {
     display: flex;
     justify-content: center;
-    margin-bottom: 264px;
+    align-items: center;
+    margin-bottom: 100px;
+    row-gap: 30px;
     position: relative;
+    flex-direction: column;
+    @media (min-width: 992px) {
+        margin-bottom: 264px;
+    }
+    @media (min-width: 1440px) {
+        flex-direction: row;
+    }
     .goods__pagination-btn {
         color: var(--Dark-grey);
         min-height: 50px;
@@ -220,6 +228,7 @@
         cursor: pointer;
         background: white;
         padding: 10px 20px;
+        
         &:hover {
             background: var(--Dark-grey);
             color: white;
@@ -234,10 +243,15 @@
         
     }
     & > div {
-        right: 0;
-        position: absolute;
-        display: flex;
-        column-gap: 12px;
+        display: none;
+        @media (min-width: 992px) {
+            display: flex;
+            column-gap: 12px; 
+        }
+        @media (min-width: 1440px) {
+            right: 0;
+            position: absolute;         
+        }
         & > button {
             &._back {
                 svg {

@@ -10,7 +10,6 @@ const menuContainer = document?.querySelector('[data-menucontainer]');
 let isCatalogMenuOpen = false;
 let currentBtnId = null;
 
-
 menuToggle?.addEventListener('change', function() {
     if (!this.checked) {
         enableScroll();

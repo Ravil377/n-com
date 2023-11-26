@@ -5,9 +5,26 @@
 import 'ion-rangeslider/js/ion.rangeSlider.min.js';
 const filter = document?.querySelector('[data-filter]');
 const filterMenu = document?.querySelector('[data-filter-menu]');
+const filterMobilMenu = document?.querySelector('[data-filter-mobil]');
 const inputs = document?.querySelectorAll('.custom-checkbox__field-js');
 const columns = document?.querySelector('[data-columns]');
 const goods = document?.querySelector('[data-goods]');
+const mobSubmenus = document.querySelectorAll('[data-mobsubmenu]');
+const mobMain = document.querySelector('[data-main]');
+const mobName = document.querySelector('[data-name]');
+const backButton = document.querySelector('[data-back]');
+const resetButton = document.querySelector('[data-reset]');
+
+
+// Инициализация Ion Range Slider
+let $range1 = $(".js-range-slider1").ionRangeSlider({
+    skin: "round",
+    type: "double"
+});
+
+// Получение экземпляра Ion Range Slider
+let $rangemob = $range1.data("ionRangeSlider");
+
 
 var $ranges = $(".js-range-slider"),
     $inputsFrom = $(".js-input-from"),
@@ -26,7 +43,10 @@ filter.addEventListener('click', () => {
         }
     });
     filterMenu.classList.toggle('_active');
+    filterMobilMenu.classList.toggle('_active');
 })
+
+
 
 $ranges.each(function (index) {
     var $range = $(this);
@@ -87,7 +107,6 @@ $inputsTo.on("input", function () {
     });
 });
 
-
 inputs.forEach(input => input.addEventListener('change', () => toggleFilterContent(input)));
 
 function toggleFilterContent(clickedInput) {
@@ -119,3 +138,60 @@ columns?.addEventListener('click', (e) => {
     active.classList.remove('_active');
     currentBtn.classList.add('_active');
 })
+
+resetButton?.addEventListener('click', function() {
+    // Находим все input внутри блока с классом filter__modal-mob
+    const inputsToReset = document.querySelectorAll('.filter__modal-mob input');
+    
+    // Сбрасываем значения всех найденных input
+    inputsToReset.forEach(input => {
+        // В зависимости от типа input (checkbox, text и т.д.), устанавливаем различные значения
+        if (input.type === 'checkbox') {
+            input.checked = false; // Для чекбокса сбрасываем checked
+        } else {
+            input.value = ''; // Для других типов input просто устанавливаем пустое значение
+        }
+    });
+    
+    $rangemob.reset();
+    showMain();
+});
+
+// Обработчики событий для кнопок
+document.querySelectorAll('[data-mobitem]').forEach(itemButton => {
+    itemButton.addEventListener('click', function() {
+        const submenuId = this.getAttribute('data-id');
+        const submenuName = this.innerText;
+        showSubmenu(submenuId, submenuName);
+    });
+});
+
+backButton?.addEventListener('click', function() {
+    showMain();
+});
+
+// Функция для отображения подменю
+function showSubmenu(submenuId, submenuName) {
+    mobMain.style.display = 'none';
+    mobName.innerText = submenuName;
+    mobSubmenus.forEach(submenu => {
+        submenu.style.display = submenu.getAttribute('data-id') === submenuId ? 'flex' : 'none';
+    });
+}
+
+// Функция для отображения главного содержимого
+function showMain() {
+    if (mobMain.style.display === 'flex') {
+        // Если открыто главное меню, закрываем модальное окно
+        closeFilterModal();
+    } else {
+        // В противном случае, отображаем главное меню
+        mobMain.style.display = 'flex';
+        mobName.innerText = 'Фильтры';
+        mobSubmenus.forEach(submenu => submenu.style.display = 'none');
+    }
+}
+
+function closeFilterModal() {
+    filterMobilMenu.classList.remove('_active');
+}

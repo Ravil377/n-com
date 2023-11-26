@@ -58,17 +58,18 @@
         padding-bottom: 1.87rem;
     }
     &:hover {
-        border-bottom: 1px solid var(--plashka, #EBEBEB);
-        & > button {
-            opacity: 1;
-            visibility: visible;
-        }
-        .hit__img {
-            border: 1px solid var(--plashka, #EBEBEB);
-        }
-        .hit__img .hit__buttons {
-            bottom: 0;
-            
+        @media (min-width: 1024px) {
+            border-bottom: 1px solid var(--plashka, #EBEBEB);
+            & > button {
+                opacity: 1;
+                visibility: visible;
+            }
+            .hit__img {
+                border: 1px solid var(--plashka, #EBEBEB);
+            }
+            .hit__img .hit__buttons {
+                bottom: 0;
+            }
         }
     }
     .hit__img {
@@ -231,27 +232,42 @@
             font-size: rem(24);
         }
     }
-    & > button {
-        background: unset;
-        border: unset;
-        width: 27px;
-        height: 27px;
-        right: 30px;
-        bottom: 30px;
-        cursor: pointer;
+    & > div:not([class]) {
         position: absolute;
-        opacity: 0;
-        transition: .4s;
-        visibility: hidden;
         z-index: 1;
-        &:hover {
-            svg {
-                stroke: var(--Dark-grey);
-            }
+        right: 10px;
+        bottom: 30px;
+        display: flex;
+        column-gap: 10px;
+        @media (min-width: 1024px) {
+            opacity: 0;
+            visibility: hidden;
+            right: 30px;
+            bottom: 30px;
         }
-        svg {
-            stroke: var(--Grey);
-            transition: .4s;
+        button {
+            background: unset;
+            border: unset;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            padding: unset;
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+            @media (min-width: 1024px) {
+                transition: .4s;
+            }
+            &:hover {
+                svg {
+                    stroke: var(--Dark-grey);
+                }
+            }
+            svg {
+                stroke: var(--Grey);
+                transition: .4s;
+            }
         }
     }
 }
