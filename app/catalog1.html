@@ -16,7 +16,10 @@
   <link rel="preload" href="fonts/manrope-semibold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
   <script defer src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
 </head>
 
 <body class="page__body">
@@ -319,54 +322,222 @@
             </div>
         </div>
         <div class="filter__checkbox">
-            <label class="filter-checkbox">
-                <input type="checkbox" class="custom-checkbox__field">
-                <span class="custom-checkbox__">Цена</span>
-            </label>
-            <label class="filter-checkbox">
-                <input type="checkbox" class="custom-checkbox__field">
-                <span class="custom-checkbox__">Наличие</span>
-            </label>
-            <label class="filter-checkbox">
-                <input type="checkbox" class="custom-checkbox__field">
-                <span class="custom-checkbox__">Категория</span>
-            </label>
-            <label class="filter-checkbox">
-                <input type="checkbox" class="custom-checkbox__field">
-                <span class="custom-checkbox__">Бренд</span>
-            </label>
-            <label class="filter-checkbox">
-                <input type="checkbox" class="custom-checkbox__field">
-                <span class="custom-checkbox__">Коллекция</span>
-            </label>
-            <label class="filter-checkbox">
-                <input type="checkbox" class="custom-checkbox__field">
-                <span class="custom-checkbox__">Стиль</span>
-            </label>
-            <label class="filter-checkbox">
-                <input type="checkbox" class="custom-checkbox__field">
-                <span class="custom-checkbox__">Форма светильника</span>
-            </label>
-            <label class="filter-checkbox">
-                <input type="checkbox" class="custom-checkbox__field">
-                <span class="custom-checkbox__">Абажур/Плафон</span>
-            </label>
-            <label class="filter-checkbox">
-                <input type="checkbox" class="custom-checkbox__field">
-                <span class="custom-checkbox__">отделка Основания</span>
-            </label>
-            <label class="filter-checkbox">
-                <input type="checkbox" class="custom-checkbox__field">
-                <span class="custom-checkbox__">Цоколь</span>
-            </label>
-            <label class="filter-checkbox">
-                <input type="checkbox" class="custom-checkbox__field">
-                <span class="custom-checkbox__">Применение</span>
-            </label>
-            <label class="filter-checkbox">
-                <input type="checkbox" class="custom-checkbox__field">
-                <span class="custom-checkbox__">Тип подвеса</span>
-            </label>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js" >
+                    <span class="custom-checkbox__">Цена</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                            <input type="text" class="js-range-slider ange-slider" name="my_range" value=""
+                                data-type="double"
+                                data-min="0"
+                                data-max="1000"
+                                data-from="200"
+                                data-to="500"
+                                data-grid="false"
+                            />
+                            <div class="extra-controls">
+                                <input type="text" class="js-input-from" value="0" />
+                                <input type="text" class="js-input-to" value="0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field  custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Наличие</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Категория</span>
+                </label>
+                <div class="filter-checkbox__content" style="padding-top: 19px;">
+                    <div class="overlay">
+                        <div>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Люстры</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Подвесные светильники</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Потолочные светильники</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Потолочные светильники для ванных комнат</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Бренд</span>
+                </label>
+                <div class="filter-checkbox__content" style="padding-top: 19px;">
+                    <div class="overlay">
+                        <div>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Davey Lighting (UK)</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Elstead Lighting</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Feiss</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Flambeau</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Generation Lighting</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Gilded Nola</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Hinkley</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Flambeau</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Generation Lighting</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Gilded Nola</span>
+                            </label>
+                            <label class="custom-checkbox _right">
+                                <input type="checkbox" class="custom-checkbox__field">
+                                <span class="custom-checkbox__content">Hinkley</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Коллекция</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Стиль</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Форма светильника</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Абажур/Плафон</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">отделка Основания</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Цоколь</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Применение</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-checkbox">
+                <label>
+                    <input type="checkbox" class="custom-checkbox__field custom-checkbox__field-js">
+                    <span class="custom-checkbox__">Тип подвеса</span>
+                </label>
+                <div class="filter-checkbox__content">
+                    <div class="overlay">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <button>Очистить фильтры</button>
         </div>
         <div class="goods__container" data-goods>
@@ -949,6 +1120,7 @@
         </div>
     </div>
 </div>
+
     </main>
     <footer class="footer">
   <div class="container">

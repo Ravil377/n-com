@@ -2,16 +2,46 @@
 
 @mixin custom-checkbox {
   position: relative;
-
+  user-select: none;
   &__field {
     appearance: none;
     position: absolute;
   }
-
-  &__content {
+  &._right {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    padding-right: 15px;
+    text-transform: unset;
+    color: var(--Grey);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    font-family: Circe;
+    letter-spacing: 0.42px;
+  }
+  &._right > &__content {
+    &::before {
+      left: unset;
+      right: 0;
+      width: 18px;
+      height: 18px;
+      top: 0;
+    }
+    &::after {
+      left: unset;
+      top: 0;
+      right: 0;
+      width: 18px;
+      height: 18px;
+    }
+  }
+  &:not(._right) > &__content {
     padding-left: 35px;
     cursor: pointer;
-
+  } 
+  &__content {
     &::before {
       content: "";
       position: absolute;
