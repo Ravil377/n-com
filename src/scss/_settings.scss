@@ -124,3 +124,38 @@ a {
 .page--ios .dis-scroll {
   position: relative;
 }
+
+
+.btn {
+  border-radius: 1px;
+  text-align: center;
+  font-family: Circe;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  min-height: 50px;
+  max-width: 280px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .4s;
+  &._black {
+    background: var(--Dark-grey);
+    color: #FFF;
+    &:hover {
+      background: var(--Grey);
+    }
+  }
+  &._white {
+    background: white;
+    color: var(--Dark-grey);
+    &:hover {
+      background: var(--Grey);
+      color: #FFF;
+    }
+  }
+}

@@ -1,8 +1,111 @@
 <div class="goods">
     <div class="container">
         <h1>Подвесные светильники</h1>
-        <div class="filter" data-filter>
-            <button>
+        <div class="filter">
+            <div class="filter__modal" data-filter-menu>
+                <div class="filter__modal-top">
+                    <div class="filter-checkbox__content">
+                        <p>скидка, %</p>
+                        <div>
+                            <div>
+                                <p></p>
+                                <input type="text" class="js-range-slider ange-slider" name="my_range" value=""
+                                    data-type="double"
+                                    data-min="0"
+                                    data-max="100"
+                                    data-from="0"
+                                    data-to="100"
+                                    data-grid="false"
+                                />
+                                <div class="extra-controls">
+                                    <input type="text" class="js-input-from" value="0" />
+                                    <input type="text" class="js-input-to" value="0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-checkbox__content">
+                        <p>max длина изделия, см</p>
+                        <div>
+                            <div>
+                                <p></p>
+                                <input type="text" class="js-range-slider ange-slider" name="my_range" value=""
+                                    data-type="double"
+                                    data-min="0"
+                                    data-max="1000"
+                                    data-from="200"
+                                    data-to="500"
+                                    data-grid="false"
+                                />
+                                <div class="extra-controls">
+                                    <input type="text" class="js-input-from" value="0" />
+                                    <input type="text" class="js-input-to" value="0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-checkbox__content">
+                        <p>Размер, см</p>
+                        <div>
+                            <div>
+                                <p>Ширина (диаметр)</p>
+                                <input type="text" class="js-range-slider ange-slider" name="my_range" value=""
+                                    data-type="double"
+                                    data-min="0"
+                                    data-max="1000"
+                                    data-from="200"
+                                    data-to="500"
+                                    data-grid="false"
+                                />
+                                <div class="extra-controls">
+                                    <input type="text" class="js-input-from" value="0" />
+                                    <input type="text" class="js-input-to" value="0" />
+                                </div>
+                            </div>
+                            <div>
+                                <p>Высота</p>
+                                <input type="text" class="js-range-slider ange-slider" name="my_range" value=""
+                                    data-type="double"
+                                    data-min="0"
+                                    data-max="1000"
+                                    data-from="200"
+                                    data-to="500"
+                                    data-grid="false"
+                                />
+                                <div class="extra-controls">
+                                    <input type="text" class="js-input-from" value="0" />
+                                    <input type="text" class="js-input-to" value="0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="filter-checkbox__content _none">
+                        <p>Количество ламп</p>
+                        <div>
+                            <div>
+                                <p></p>
+                                <input type="text" class="js-range-slider ange-slider" name="my_range" value=""
+                                    data-type="double"
+                                    data-min="0"
+                                    data-max="1000"
+                                    data-from="200"
+                                    data-to="500"
+                                    data-grid="false"
+                                />
+                                <div class="extra-controls">
+                                    <input type="text" class="js-input-from" value="0" />
+                                    <input type="text" class="js-input-to" value="0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="filter__modal-bottom">
+                    <button type="button" class="btn _black">Применить</button>
+                    <button type="button" class="btn _white">Очистить фильтры</button>
+                </div>
+            </div>
+            <button type="button" data-filter>
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                     <path d="M15 6.25L25 6.25" stroke-width="2" stroke-linecap="round"/>
                     <path d="M5 23.75L8.75 23.75" stroke-width="2" stroke-linecap="round"/>
