@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>N-Con</title>
+  <link rel="preload" href="fonts/circe-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/circe-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/CRC55.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+  <script defer src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header header-js">
+  <div class="container">
+    <div class="header__top header-top-js">
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" data-burger/>
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <div class="menu__container" >
+          <ul class="menu__box" data-menucontainer>
+            <li>
+              <a class="menu__item" href="#" data-menu>Каталог</a>
+              <ul>
+                <li><a class="menu__subitem" href="#">Интерьерный свет</a></li>
+                <li><a class="menu__subitem" href="#">Уличный свет </a></li>
+                <li><a class="menu__subitem" href="#">Декор</a></li>
+                <li><a class="menu__subitem" href="#">Аксессуарыт</a></li>
+                <li><a class="menu__subitem" href="#">В наличии</a></li>
+                <li><a class="menu__subitem" href="#">Новинки</a></li>
+                <li><a class="menu__subitem" href="#">Бренды</a></li>
+                <li><a class="menu__subitem" href="#">Коллекции</a></li>
+                <li><a class="menu__subitem" href="#">Идеи для подарков</a></li>
+                <li><a class="menu__subitem" href="#">Акции</a></li>
+                <li><a class="menu__subitem" href="#">Outlet</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="menu__item" href="#" data-menu>сотрудничество</a>
+              <ul>
+                <li><a class="menu__subitem" href="#">Дизайнерам</a></li>
+                <li><a class="menu__subitem" href="#">Дилерам</a></li>
+                <li><a class="menu__subitem" href="#">скачать Каталоги</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="menu__item" href="#" data-menu>как купить</a>
+              <ul>
+                <li><a class="menu__subitem" href="#">шоу-рум</a></li>
+                <li><a class="menu__subitem" href="#">доставка</a></li>
+                <li><a class="menu__subitem" href="#">гарантии</a></li>
+                <li><a class="menu__subitem" href="#">оплата</a></li>
+                <li><a class="menu__subitem" href="#">программа лояльности</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="menu__item" href="#" data-menu>контакты</a>
+              <ul>
+                <li><a class="menu__subitem" href="#">О компании</a></li>
+                <li><a class="menu__subitem" href="#">Мы находимся</a></li>
+              </ul>
+            </li>
+            <li>
+              <p>нужна помощь?
+                <a href="#">Задайте вопрос в ватсапп</a>
+              </p>
+              <p>телефон для связи
+                <a href="tel:88005555792">8 800 555 57 92</a>
+              </p>
+            </li>
+          </ul>
+          <div class="menu__bottom">
+            <a href="#"><img src="./img/user_light-white.svg" alt="Иконка"></a>
+            <a href="#"><img src="./img/favorite_light-white.svg" alt="Иконка"></a>
+            <a href="#"><img src="./img/icon-compare.svg" alt="Иконка"></a>
+          </div>
+        </div>
+      </div>
+      <button><img src="./img/search.svg" alt="Иконка"></button>
+      <a href="/" class="logo__mobil">
+        <img src="./img/nc.svg" alt="Лого">
+      </a>
+      <a href="#"><img src="./img/compare.svg" alt="Иконка"></a>
+      <a href="#"><img src="./img/favorite_light.svg" alt="Иконка"></a>
+      <a href="#"><img src="./img/user_light.svg" alt="Иконка"></a>
+      <a href="#"><img src="./img/bag.svg" alt="Иконка"></a>
+    </div>
+    <div class="header__bottom header-bottom-js">
+      <div class="container" >
+        <div class="header__bottom" >
+          <a href="/" class="logo"><img src="./img/logo.svg" alt="Логотип"></a>
+          <div class="header__nav">
+            <p>Дизайнерский СВЕТ ИЗ АМЕРИКИ И ЕВРОПЫ</p>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">каталог</a>
+                  <div class="header__catalog" >
+                    <div class="header__catalog-container">
+                      <ul>
+                        <li>
+                          <a href="#">Интерьерный свет</a>
+                          <ul>
+                            <li>
+                              <a href="#">Бра</a>
+                              <img src="./img/bra.png" alt="Бра">
+                            </li>
+                            <li><a href="#">Бра для ванных комнат</a>
+                              <img src="./img/img1.png" alt="Бра">
+                            </li>
+                            <li><a href="#">Люстры</a></li>
+                            <li><a href="#">Люстры для ванных комнат</a></li>
+                            <li><a href="#">Настольные лампы</a></li>
+                            <li><a href="#">Люстры-вентиляторы</a></li>
+                            <li><a href="#">Плафоны</a></li>
+                            <li><a href="#">Потолочные светильники</a></li>
+                            <li><a href="#">Потолочные светильники для ванных комнат</a></li>
+                            <li><a href="#">Светильники для картин</a></li>
+                            <li><a href="#">Торшеры / Напольные лампы</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">Уличный свет </a>
+                          <ul>
+                            <li>
+                              <a href="#">Бра</a>
+                            </li>
+                            <li><a href="#">Бра для ванных комнат</a>
+                            </li>
+                            <li><a href="#">Люстры</a>
+                            </li>
+                            <li><a href="#">Люстры для ванных комнат</a>
+                            </li>
+                            <li><a href="#">Настольные лампы</a>
+                            </li>
+                            <li><a href="#">Потолочные светильники</a>
+                            </li>
+                            <li><a href="#">Потолочные светильники для ванных комнат</a>
+                            </li>
+                            <li><a href="#">Светильники для картин</a>
+                            </li>
+                            <li><a href="#">Торшеры / Напольные лампы</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">Декор</a>
+                          <ul>
+                            <li><a href="#">Плафоны</a></li>
+                            <li><a href="#">Потолочные светильники</a></li>
+                            <li><a href="#">Потолочные светильники для ванных комнат</a></li>
+                            <li><a href="#">Светильники для картин</a></li>
+                            <li><a href="#">Торшеры / Напольные лампы</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">Аксессуары</a>
+                          <ul>
+                            <li><a href="#">Бра</a></li>
+                            <li><a href="#">Бра для ванных комнат</a></li>
+                            <li><a href="#">Люстры</a></li>
+                            <li><a href="#">Потолочные светильники</a></li>
+                            <li><a href="#">Потолочные светильники для ванных комнат</a></li>
+                            <li><a href="#">Светильники для картин</a></li>
+                            <li><a href="#">Торшеры / Напольные лампы</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">в наличии</a>
+                          <ul>
+                            <li><a href="#">Торшеры / Напольные лампы</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">новинки</a>
+                        </li>
+                        <li>
+                          <a href="#">бренды</a>
+                        </li>
+                        <li>
+                          <a href="#">коллекции</a>
+                        </li>
+                        <li>
+                          <a href="#">идеи для подарков</a>
+                        </li>
+                        <li>
+                          <a href="#">Акции</a>
+                        </li>
+                        <li>
+                          <a href="#">outlet</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" >сотрудничество</a>
+                  <div class="header__catalog" >
+                    <div class="header__catalog-container">
+                      <ul>
+                        <li>
+                          <a href="#">Сотрудничество</a>
+                          <ul>
+                            <li><a href="#">Дизайнерам</a></li>
+                            <li><a href="#">Дилерам</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">скачать Каталоги</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">как купить</a>
+                  <div class="header__catalog" >
+                    <div class="header__catalog-container">
+                      <ul>
+                        <li><a href="#">шоу-рум</a></li>
+                        <li><a href="#">доставка</a></li>
+                        <li><a href="#">гарантии</a></li>
+                        <li><a href="#">оплата</a></li>
+                        <li><a href="#">программа лояльности</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" >контакты</a>
+                  <div class="header__catalog" >
+                    <div class="header__catalog-container">
+                      <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Мы находимся</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <p>
+            <a href="tel:88005555792">8 800 555 57 92</a>
+            <span>пн-пт: 10.00 — 19.00<br>
+              сб: 11.00 — 18.00</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="header__mobil">
+      <div class="container">
+        <input id="menu__toggle" type="checkbox" data-burger/>
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+      </div>
+    </div> -->
+  </div>
+</header>
+
+    <main class="main">
+        <div class="breadcrumbs-mini">
+    <div class="container">
+        <p class="">
+            <a href="/">ГЛАВНАЯ</a>
+            <span>/</span>
+            <a href="/catalog.html">Каталог</a>
+            <span>/</span>
+            <a href="#">Интерьерный свет</a>
+            <span>/</span>
+            Подвесные светильники
+        </p>
+        <a href="#">
+            <img src="./img/back-arrow.svg" alt="Назад">
+            каталог
+        </a>
+    </div>
+</div>
+        <div class="detail-good">
+    <div class="container">
+        <div class="detail-good__container">
+            <div class="detail-good__slider swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide detail-good__slide">
+                        <img src="./img/goods/lampa.png" alt="Слайд" />
+                        <div class="hit__label">
+                            <p style="background: #949A8E; color: white;">новинка</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide detail-good__slide">
+                        <img src="./img/goods/good4.png" alt="Слайд" />
+                    </div>
+                    <div class="swiper-slide detail-good__slide">
+                        <img src="./img/goods/good2.png" alt="Слайд" />
+                    </div>
+                </div>
+                <!-- <p>Цвет отделки может отличаться от фото</p> -->
+            </div>
+            <div class="swiper mySwiper detail-good__thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide detail-good__thumbs-good">
+                        <img src="./img/goods/lampa.png" alt="Слайд" />
+                    </div>
+                    <div class="swiper-slide detail-good__thumbs-good">
+                        <img src="./img/goods/good4.png" alt="Слайд" />
+                    </div>
+                    <div class="swiper-slide detail-good__thumbs-good">
+                        <img src="./img/goods/good2.png" alt="Слайд" />
+                    </div>
+                </div>
+            </div>
+            <div class="detail-good__info">
+                <div class="info">
+                    <div class="top">
+                        <h2>Потолочный светильник для ванных комнат QZ-CHANCE-F-PC</h2>
+                        <p>21 372 ₽
+                            <span>В наличии</span>
+                        </p>
+                        <div class="buttons">
+                            <a href="#"><img src="./img/favorite_light.svg" alt="Иконка"></a>
+                            <a href="#"><img src="./img/compare.svg" alt="Иконка"></a>
+                            <a href="#"><img src="./img/print.svg" alt="Иконка"></a>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">шоу-рум ARTPLAY</a>
+                        </li>
+                        <li>
+                            <a href="#">шоу-рум Юго-Запад</a>
+                        </li>
+                        <li>
+                            <a href="#">Склад в Москве</a>
+                        </li>
+                    </ul>
+                    <div class="calc">
+                        <button>-</button>
+                        <input step="1" min="1" max="9999" type="number" value="1">
+                        <button>+</button>
+                    </div>
+                    <button>В корзину</button>
+                    <p>Стоимость доставки будет расчитана при оформлении</p>
+                </div>
+                <div class="accordeon">
+                    <div class="c">
+                        <input type="checkbox" id="faq-1">
+                        <p><label for="faq-1">Информация о товаре</label></p>
+                        <div class="p">
+                            <ul class="column">
+                                <li><p>Категория: <span>Потолочные вентиляторы</span></p></li>
+                                <li><p>Бренд: <span>Kichler</span></p></li>
+                                <li><p>Артикул: <span>KLF-SOLA-34-BN</span></p></li>
+                                <li><p>Коллекция: <span>SOLA</span></p></li>
+                                <li><p>Цоколь: <span>Integrated LED</span></p></li>
+                                <li><p>Высота изделия: <span>280 мм</span></p></li>
+                                <li><p>Количество ламп: <span>1 шт</span></p></li>
+                                <li><p>Мощность: <span>10 Вт</span></p></li>
+                                <li><p>IP рейтинг: <span>IP23</span></p></li>
+                                <li><p>Цветовая температура (К): <span>3000</span></p></li>
+                                <li><p>Напряжение: <span>220 В</span></p></li>
+                                <li><p>Применение: <span>Уличный свет</span></p></li>
+                                <li><p>Страна происхождения бренда: <span>США</span></p></li>
+                                <li><p>Размер упаковки (ДхШхВ): <span>537×304×285</span></p></li>
+                                <li><p>Вес брутто, кг: <span>8.06</span></p></li>
+                            </ul>
+                            <div class="line"></div>
+                            <a href="#" class="download">
+                                <img src="./img/pdf.svg" alt="PDF">
+                                Скачать инструкцию по монтажу</a>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="c">
+                        <input type="checkbox" id="faq-2">
+                        <p><label for="faq-2">Оплата</label></p>
+                        <div class="p">
+                            <p>Для вашего удобства мы предусмотрели разные способы оплаты заказа:</p>
+                            <ul class="list">
+                                <li>Банковской картой на сайте или в шоу-руме</li>
+                                <li>Наличными при получении заказа</li>
+                                <li>По квитанции Сбербанка</li>
+                                <li>Подробнее об оплате</li>
+                            </ul>
+                            <a href="#">Подробнее об оплате</a>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="c">
+                        <input type="checkbox" id="faq-3">
+                        <p><label for="faq-3">Доставка и Гарантия</label></p>
+                        <div class="p">
+                            <p><strong>Бесплатная доставка по Москве при заказе от 80 000 рублей</strong></p>
+                            <p>Вы можете выбрать наиболее подходящий для вас способ доставки товара:</p>
+                            <ul class="list">
+                                <li>Курьером по Москве — от 1 до 3 дней</li>
+                                <li>Самовывоз — от 1 дня</li>
+                                <li>Транспортной компанией — от 3 до 7 дней</li>
+                            </ul>
+                            <a href="#">Подробнее о доставке</a>
+                            <p><strong>Гарантия</strong></p>
+                            <p>На товар предоставляется гарантия 24 месяца с момента получения его покупателем.</p>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="hit">
+    <h2><span>Хиты и новинки</span></h2>
+    <div class="container">
+        <div class="hit__slider hit__slider-js">
+            <div class="swiper-wrapper hit__container">
+                <a href="#" class="hit__card swiper-slide">
+                    <div class="hit__img" >
+                        <img src="./img/tovar.png" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                        <div class="hit__label" >
+                            <p>в наличии</p>
+                            <p class="_new">Новинка</p>
+                            <p>хит</p>
+                        </div>
+                    </div>
+                    <p class="hit__name">Потолочный светильник для ванных комнат QZ-CHANCE-F-PC</p>
+                    <p class="hit__price">21 372 ₽</p>
+                </a>
+                <a href="#" class="hit__card swiper-slide">
+                    <div class="hit__img" >
+                        <img src="./img/tovar.png" alt="Подвесной светильник QZ-CHANCE-F-PC" >
+                        <div class="hit__label" >
+                            <p>в наличии</p>
+                            <p>хит</p>
+                        </div>
+                    </div>
+                    <p class="hit__name">Подвесной светильник QZ-CHANCE-F-PC</p>
+                    <p class="hit__price">144 458 ₽</p>
+                </a>
+                <a href="#" class="hit__card swiper-slide">
+                    <div class="hit__img" >
+                        <img src="./img/tovar.png" alt="Подвесной светильник QZ-CHANCE-F-PC" >
+                        <div class="hit__label" >
+                            <p>в наличии</p>
+                            <p class="_new">Новинка</p>
+                        </div>
+                    </div>
+                    <p class="hit__name">Подвесной светильник QZ-CHANCE-F-PC</p>
+                    <p class="hit__price">144 458 ₽</p>
+                </a>
+                <a href="#" class="hit__card swiper-slide">
+                    <div class="hit__img" >
+                        <img src="./img/tovar.png" alt="Люстра QZ-CHANCE-F-PC" >
+                        <div class="hit__label" >
+                            <p>в наличии</p>
+                        </div>
+                    </div>
+                    <p class="hit__name">Люстра QZ-CHANCE-F-PC</p>
+                    <p class="hit__price">144 458 ₽</p>
+                </a>
+                <a href="#" class="hit__card swiper-slide">
+                    <div class="hit__img" >
+                        <img src="./img/tovar.png" alt="Люстра QZ-CHANCE-F-PC" >
+                        <div class="hit__label" >
+                            <p>в наличии</p>
+                        </div>
+                    </div>
+                    <p class="hit__name">Люстра QZ-CHANCE-F-PC</p>
+                    <p class="hit__price">144 458 ₽</p>
+                </a>
+            </div>
+            <div class="hit__slider-navigation">
+                <div>
+                    <button class="hit-swiper-button-prev">
+                        <svg width="9" height="20" viewBox="0 0 9 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.99312 19.6364L8.63647 17.4039L3.29848 10.1364L8.63648 2.86885L6.99312 0.636352L0.000111224 10.1364L6.99312 19.6364Z" />
+                        </svg>
+                    </button>
+                    <button class="hit-swiper-button-next">
+                        <svg width="9" height="20" viewBox="0 0 9 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.99312 19.6364L8.63647 17.4039L3.29848 10.1364L8.63648 2.86885L6.99312 0.636352L0.000111224 10.1364L6.99312 19.6364Z" />
+                        </svg>
+                    </button>
+                </div>
+                <a href="#">Посмотреть весь каталог
+                    <svg width="50" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40.7071 14.7071C41.0976 14.3166 41.0976 13.6834 40.7071 13.2929L34.3431 6.92893C33.9526 6.53841 33.3195 6.53841 32.9289 6.92893C32.5384 7.31946 32.5384 7.95262 32.9289 8.34315L38.5858 14L32.9289 19.6569C32.5384 20.0474 32.5384 20.6805 32.9289 21.0711C33.3195 21.4616 33.9526 21.4616 34.3431 21.0711L40.7071 14.7071ZM12 15H40V13H12V15Z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__container">
+      <ul>
+        <li>
+          <a href="#">О нас</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+        <li>
+          <a href="tel:88005555792">8 800 555 57 92</a>
+          г. Москва, ул. Адмирала Корнилова, д. 61
+        </li>
+        <li>
+          <a href="#">Условия и сроки доставки</a>
+        </li>
+        <li>
+          <a href="#">Гарантия</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+        <li>
+          <a href="#">Программа лояльности</a>
+        </li>
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#">Обработка персональных данных</a>
+        </li>
+        <li>
+          <a href="#">Правила сайта</a>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="#" class="icon">
+          <img src="./img/play.svg" alt="Youtube">
+        </a></li>
+        <li><a href="#">Все акции</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Видео</a></li>
+        <li><a href="#">Проекты</a></li>
+        <li><a href="#">Бренды</a></li>
+        <li><a href="#">Коллекции</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Скачать каталоги </a></li>
+      </ul>
+      <div>
+        <form action="">
+          <input type="text" name="search" placeholder=" " required="required" id="search"/>
+          <button type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+              <path d="M15.8443 17.1527L15.8443 16.0686L15.4738 15.6844C13.9095 17.0292 11.8786 17.8388 9.66938 17.8388C4.74314 17.8388 0.749999 13.8456 0.75 8.91938C0.75 3.99314 4.74314 1.74546e-07 9.66938 3.89879e-07C14.5956 6.05212e-07 18.5888 3.99314 18.5888 8.91938C18.5888 11.1286 17.7792 13.1595 16.4344 14.7238L16.8186 15.0943L17.9027 15.0943L24.75 21.9554L22.7054 24L15.8443 17.1527V17.1527ZM15.8443 8.91938C15.8443 5.50257 13.0862 2.74443 9.66938 2.74443C6.25257 2.74443 3.49443 5.50257 3.49443 8.91938C3.49442 12.3362 6.25257 15.0943 9.66938 15.0943C13.0862 15.0943 15.8443 12.3362 15.8443 8.91938Z" fill="#EBEBEB"/>
+            </svg>
+          </button>
+        </form>
+        <ul>
+          <li><a href="#">ИНТЕРЬЕРНЫЙ СВЕТ</a></li>
+          <li><a href="#">уличный СВЕТ</a></li>
+          <li><a href="#">Аксессуары</a></li>
+          <li><a href="#">декор</a></li>
+          <li><a href="#">новинки</a></li>
+          <li><a href="#">бренды</a></li>
+          <li><a href="#">коллекции</a></li>
+          <li><a href="#">проекты</a></li>
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">В наличии</a></li>
+          <li><a href="#">как купить</a></li>
+          <li><a href="#">контакты</a></li>
+          <li><a href="#">о компании</a></li>
+          <li><a href="#">Оплата</a></li>
+          <li><a href="#">Доставка</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>Natural Concepts 2023 © Все права защищены</p>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>
