@@ -14,6 +14,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_hit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/hit */ "./src/js/components/hit.js");
 /* harmony import */ var _components_project__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/project */ "./src/js/components/project.js");
 /* harmony import */ var _components_filter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/filter */ "./src/js/components/filter.js");
+/* harmony import */ var _components_detail__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/detail */ "./src/js/components/detail.js");
+
 
 
 
@@ -179,6 +181,65 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.banner-swipe
     el: ".swiper-pagination",
     clickable: true
   }
+});
+
+/***/ }),
+
+/***/ "./src/js/components/detail.js":
+/*!*************************************!*\
+  !*** ./src/js/components/detail.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+
+swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.EffectFade, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs]);
+var mainSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper", {
+  spaceBetween: 20,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
+  direction: 'vertical'
+});
+var thumbnailSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper2", {
+  spaceBetween: 10,
+  effect: "fade",
+  thumbs: {
+    swiper: mainSwiper
+  }
+});
+document.addEventListener("DOMContentLoaded", function () {
+  var inputElement = document.querySelector(".calc input");
+  var decreaseButton = document.querySelector(".calc button:first-child");
+  var increaseButton = document.querySelector(".calc button:last-child");
+  decreaseButton?.addEventListener("click", function () {
+    updateValue(-1);
+  });
+  increaseButton?.addEventListener("click", function () {
+    updateValue(1);
+  });
+  function updateValue(change) {
+    var currentValue = parseInt(inputElement.value, 10);
+    var newValue = currentValue + change;
+
+    // Проверяем минимальное и максимальное значение
+    if (newValue >= 1 && newValue <= 9999) {
+      inputElement.value = newValue;
+    }
+  }
+
+  // Дополнительно можно добавить обработчик для поля ввода,
+  // чтобы ограничить ввод неправильных значений (например, букв)
+  inputElement?.addEventListener("input", function () {
+    var currentValue = parseInt(inputElement.value, 10);
+    if (isNaN(currentValue) || currentValue < 1) {
+      inputElement.value = 1;
+    } else if (currentValue > 9999) {
+      inputElement.value = 9999;
+    }
+  });
 });
 
 /***/ }),
