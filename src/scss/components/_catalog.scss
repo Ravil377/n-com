@@ -175,6 +175,9 @@
     @media (max-width: 1025px) {
         &:not(._one) {
             grid-template-columns: repeat(2,1fr);
+            .hit__card .hit__img {
+                min-height: unset !important;
+            }
         }
         &._one {
             grid-template-columns: 1fr;

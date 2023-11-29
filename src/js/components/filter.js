@@ -33,7 +33,7 @@ var $ranges = $(".js-range-slider"),
     min = 0,
     max = 1000;
 
-filter.addEventListener('click', () => {
+filter?.addEventListener('click', () => {
     inputs.forEach(input => {
         if (input) {
             var container = input?.closest('.filter-checkbox');
@@ -107,7 +107,7 @@ $inputsTo.on("input", function () {
     });
 });
 
-inputs.forEach(input => input.addEventListener('change', () => toggleFilterContent(input)));
+inputs?.forEach(input => input.addEventListener('change', () => toggleFilterContent(input)));
 
 function toggleFilterContent(clickedInput) {
     inputs.forEach(input => {
