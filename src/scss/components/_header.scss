@@ -167,9 +167,11 @@
         background: white;
         margin: 0 auto;
         // padding: 0 var(--container-offset);
-        padding-top: 20px;
+        padding-top: 0;
         padding-bottom: 20px;
-        
+        @media (min-width: 1240px) {
+            
+        }
         &._transform {
             transform: translateY(0);
             opacity: 1;
