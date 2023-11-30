@@ -1,6 +1,12 @@
 .hit {
     margin-top: 70px;
     width: 100%;
+    & + .hit:last-child {
+        margin-bottom: 100px;
+        @media (min-width: 1024px) {
+            margin-bottom: 200px;
+        }
+    }
     @media (min-width: 992px) {
         margin-top: 160px;
     }
@@ -15,6 +21,13 @@
         line-height: normal;
         letter-spacing: 4px;
         letter-spacing: 0.84px;
+        &._h2 {
+            text-align: left;
+            &::after {
+                top: unset;
+                bottom: -12px;
+            }
+        }
         @media (min-width: 992px) {
             text-transform: uppercase;
             letter-spacing: 4px;

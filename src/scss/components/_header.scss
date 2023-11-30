@@ -1,6 +1,6 @@
 .header {
     position: relative;
-    padding: 14px 0 40px;
+    padding: 14px 0 20px;
     
     
     @media (min-width: 993px) {
@@ -127,8 +127,11 @@
         
     }
 }
-.header__bottom {
+.header__top + .header__bottom {
     padding-top: 10px;
+}
+.header__bottom {
+    // padding-top: 10px;
     display: flex;
     align-items: center;
     column-gap: 10px;
