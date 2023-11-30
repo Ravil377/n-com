@@ -5110,4 +5110,241 @@ input[type=submit] {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
+.graph-modal__container {
+  max-width: 750px;
+  min-height: 750px;
+  padding: 36px 23px;
+  padding-right: 79px;
+}
+.graph-modal__container.graph-modal-open {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.graph-modal__container .graph-modal__close {
+  width: 26px;
+  height: 26px;
+  top: 30px;
+  right: 30px;
+}
+.graph-modal__container .graph-modal__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.graph-modal__container .modal__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.graph-modal__container .modal__tabs button {
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+  color: var(--Grey);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background: white;
+  border: unset;
+  padding: 0 12px 12px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--plashka);
+}
+.graph-modal__container .modal__tabs button._active {
+  border-bottom: 1px solid var(--Dark-grey);
+  color: var(--Dark-grey);
+}
+.graph-modal__container .modal__tabs button:hover {
+  color: var(--Dark-grey);
+}
+.graph-modal__container .modal__content {
+  display: none;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.graph-modal__container .modal__content._active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.graph-modal__container .modal__content > form {
+  max-width: 440px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.graph-modal__container .modal__content > form .form__placeholder-container {
+  position: relative;
+  width: 100%;
+}
+.graph-modal__container .modal__content > form .form__placeholder-container input {
+  border: unset;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  width: 100%;
+  color: var(--Dark-grey);
+  font-family: Circe;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  background: #F3F3F3;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  min-height: 50px;
+}
+.graph-modal__container .modal__content > form .form__placeholder-container label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  pointer-events: none;
+  position: absolute;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  top: 14px;
+  left: 15px;
+  color: var(--Grey);
+  font-family: Circe;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.7px;
+}
+.graph-modal__container .modal__content > form input[type=submit] {
+  margin-top: 48px;
+  cursor: pointer;
+  border-radius: 1px;
+  border: none;
+  background: var(--Dark-grey);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  min-height: 50px;
+  width: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+@media (min-width: 992px) {
+  .graph-modal__container .modal__content > form input[type=submit] {
+    background: var(--Grey);
+    max-width: 300px;
+  }
+}
+.graph-modal__container .modal__content > form .form__placeholder-container input:not(:-moz-placeholder-shown) + label {
+  opacity: 0;
+}
+.graph-modal__container .modal__content > form .form__placeholder-container input:not(:-ms-input-placeholder) + label {
+  opacity: 0;
+}
+.graph-modal__container .modal__content > form .form__placeholder-container input:focus + label,
+.graph-modal__container .modal__content > form .form__placeholder-container input:not(:placeholder-shown) + label {
+  opacity: 0;
+}
+.graph-modal__container .modal__content > form .modal__flex {
+  margin-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.graph-modal__container .modal__content > form .modal__flex a {
+  color: var(--Dark-grey);
+  text-align: right;
+  font-family: Circe;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.graph-modal__container .modal__content > form .modal__radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+}
+.graph-modal__container .modal__content > form .custom-checkbox {
+  color: var(--Grey);
+  font-family: Circe;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.7px;
+}
+.graph-modal__container .modal__content > form .custom-checkbox .custom-checkbox__content {
+  padding-left: 45px;
+  text-transform: initial;
+}
+.graph-modal__container .modal__content > form .custom-checkbox .custom-checkbox__content::after {
+  width: 30px;
+  height: 30px;
+}
+.graph-modal__container .modal__content > form .custom-checkbox .custom-checkbox__content::before {
+  width: 30px;
+  height: 30px;
+}
 /*# sourceMappingURL=main.css.map */
