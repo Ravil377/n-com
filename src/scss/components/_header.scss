@@ -89,9 +89,6 @@
                         display: block;
                         transform: translateX(0);
                     }
-                }
-                &:first-child {
-                    
                     &::after {
                         content: '';
                         position: absolute;
@@ -102,6 +99,18 @@
                         background: #383838;
                     }
                 }
+                // &:first-child {
+                    
+                //     &::after {
+                //         content: '';
+                //         position: absolute;
+                //         bottom: 15px;
+                //         left: 0;
+                //         height: 1px;
+                //         width: 100%;
+                //         background: #383838;
+                //     }
+                // }
                 & > a {
                     color: var(--Dark-grey);
                     text-align: center;
@@ -456,7 +465,7 @@ content: '';
     position: absolute;
     top: 35px;
     z-index: 20;
-    left: -74px;
+    left: -50px;
     transform: translateX(-100%);
     min-width: 284px;
     width: 100%;
