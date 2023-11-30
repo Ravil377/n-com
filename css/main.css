@@ -5272,12 +5272,10 @@ input[type=submit] {
   width: 100%;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  max-width: 300px;
 }
-@media (min-width: 992px) {
-  .graph-modal__container .modal__content > form input[type=submit] {
-    background: var(--Grey);
-    max-width: 300px;
-  }
+.graph-modal__container .modal__content > form input[type=submit]:hover {
+  background: var(--Grey);
 }
 .graph-modal__container .modal__content > form .form__placeholder-container input:not(:-moz-placeholder-shown) + label {
   opacity: 0;
@@ -5325,6 +5323,31 @@ input[type=submit] {
   -webkit-column-gap: 20px;
   -moz-column-gap: 20px;
   column-gap: 20px;
+}
+.graph-modal__container .modal__content > form .modal__radio .custom-checkbox__content {
+  padding-left: 25px !important;
+}
+.graph-modal__container .modal__content > form .modal__radio .custom-checkbox__content::before {
+  border-radius: 50%;
+  width: 14px !important;
+  height: 14px !important;
+  border: 1.5px solid var(--Dark-grey);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.graph-modal__container .modal__content > form .modal__radio .custom-checkbox__content::after {
+  border-radius: 50%;
+  background-image: unset;
+  background: var(--Dark-grey);
+  left: 3px;
+  width: 8px !important;
+  height: 8px !important;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .graph-modal__container .modal__content > form .custom-checkbox {
   color: var(--Grey);
