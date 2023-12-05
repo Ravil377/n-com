@@ -47,6 +47,10 @@
         max-width: 164px;
         height: 80px;
     }
+    @media (min-width: 1240px) {
+        max-width: 10.25rem;
+        height: 5rem;
+    }
 }
 .header__nav {
     display: none;
@@ -59,11 +63,11 @@
     p { 
         color: var(--Dark-grey);
         font-family: Manrope;
-        font-size: 22px;
+        font-size: 1.37rem;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        letter-spacing: 2.64px;
+        letter-spacing: .16rem;
         text-transform: uppercase;
     }
     
@@ -83,6 +87,7 @@
                 position: relative;
                 @media (min-width: 1240px) {
                     padding-bottom: 20px;
+                    
                 }
                 &:hover {
                     & > .header__catalog {
@@ -99,18 +104,6 @@
                         background: #383838;
                     }
                 }
-                // &:first-child {
-                    
-                //     &::after {
-                //         content: '';
-                //         position: absolute;
-                //         bottom: 15px;
-                //         left: 0;
-                //         height: 1px;
-                //         width: 100%;
-                //         background: #383838;
-                //     }
-                // }
                 & > a {
                     color: var(--Dark-grey);
                     text-align: center;
@@ -125,10 +118,12 @@
                     @media (min-width: 992px) {
                         transition: .4s;
                         &:hover {
-                            // filter: brightness(100%);
                             color: black;
         
                         }
+                    }
+                    @media (min-width: 1240px) {
+                        font-size: 0.87rem;
                     }
                 }
             }
@@ -142,7 +137,7 @@
 .header__bottom {
     // padding-top: 10px;
     display: flex;
-    align-items: center;
+    // align-items: center;
     column-gap: 10px;
     &:not(._fixed) {
         & > .container {
@@ -184,8 +179,8 @@
     @media (min-width: 992px) {
         padding-top: 30px;
     }
-    @media (min-width: 1290px) {
-        column-gap: 50px;
+    @media (min-width: 1240px) {
+        column-gap: 3.12rem;
     }
     & > p {
         margin-left: auto;
@@ -206,6 +201,9 @@
             @media (min-width: 992px) {
                 font-size: 28px;
             }
+            @media (min-width: 1240px) {
+                font-size: 1.75rem;
+            }
         }
         span {
             text-align: right;
@@ -221,6 +219,10 @@
             @media (min-width: 992px) {
                 font-size: 14px;
             }
+            @media (min-width: 1240px) {
+                font-size: 0.75rem;
+                line-height: 1.12rem;
+            }
         }
     }
 }
@@ -229,6 +231,9 @@
     display: flex;
     column-gap: 30px;
     justify-content: flex-end;
+    @media (min-width: 1240px) {
+        column-gap: 2.8rem;
+    }
     &:not(._fixed) {
         & > .container {
             padding: unset !important;
@@ -268,7 +273,7 @@
         padding-bottom: 20px;
     }
     @media (min-width: 1240px) {
-        column-gap: 100px;
+        column-gap: 3rem;
     }
     & > * {
         min-width: 24px;
@@ -280,6 +285,10 @@
         @media (min-width: 992px) {
             min-width: 32px;
             height: 32px;
+        }
+        @media (min-width: 1240px) {
+            min-width: 2rem;
+            height: 2rem;
         }
         @media (max-width: 1241px) {
             &:nth-child(n+2):nth-child(-n+2), &:nth-child(4), &:nth-child(5) {
@@ -483,18 +492,6 @@ content: '';
         transform: translateX(0);
         // display: flex;
     }
-    // &[data-id="1"] > .header__catalog-container > ul[data-id="1"] {
-    //     display: flex;
-    // }
-    // &[data-id="2"] > .header__catalog-container > ul[data-id="2"] {
-    //     display: flex;
-    // }
-    // &[data-id="3"] > .header__catalog-container > ul[data-id="3"] {
-    //     display: flex;
-    // }
-    // &[data-id="4"] > .header__catalog-container > ul[data-id="4"] {
-    //     display: flex;
-    // }
 }
 .header__catalog-container {
     padding: 24px 0 40px 29px;
@@ -540,6 +537,7 @@ content: '';
                 line-height: normal;
                 letter-spacing: 0.42px;
                 text-transform: uppercase;
+                
                 &::after {
                     content: '';
                     left: 0;

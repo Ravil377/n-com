@@ -73,10 +73,10 @@
             font-style: normal;
             font-weight: 500;
             line-height: normal;
-            letter-spacing: 2.16px;
+            letter-spacing: .16rem;
             text-align: left;
             @media (min-width: 1024px) {
-                font-size: 4.5rem;
+                font-size: 3.5rem;
             }
         }
         .banner__subtitle {
@@ -91,8 +91,8 @@
             letter-spacing: 1.68px;
             text-transform: uppercase;
             @media (min-width: 1024px) {
-                font-size: 1.5rem;
-                margin-top: 2.81rem;
+                font-size: 1rem;
+                margin-top: 2rem;
             }
         }
         .banner__link {
