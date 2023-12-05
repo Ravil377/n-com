@@ -291,7 +291,7 @@
             height: 2rem;
         }
         @media (max-width: 1241px) {
-            &:nth-child(n+2):nth-child(-n+2), &:nth-child(4), &:nth-child(5) {
+            &:nth-child(n+2):nth-child(-n+1), &:nth-child(6), &:nth-child(4), &:nth-child(5) {
                 display: none;
             }
         }
@@ -647,5 +647,126 @@ content: '';
     height: 32px;
     @media (min-width: 1240px) {
         display: none;
+    }
+}
+
+
+.header__search {
+    position: fixed;
+    transform: translateY(-100%);
+    z-index: 20;
+    left: 0;
+    top: 0;
+    background: white;
+    width: 100vw;
+    padding: 10px 0;
+    transition: .4s;
+    @media (min-width: 992px) {
+        padding: 30px 0;
+    }
+    &._open {
+        transform: translateY(0);
+    }
+    .container {
+        width: 100%;
+    }
+}
+.header__search-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    form {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 100px;
+        flex-wrap: nowrap;
+        @media (min-width: 992px) {
+            grid-template-columns: 1fr 130px;
+        }
+        .header__search-container {
+            position: relative;
+            max-width: 1560px;
+            width: 100%;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="27" height="24" viewBox="0 0 27 24" fill="none"%3E%3Cpath d="M1.66661 10.2589C1.66661 15.2986 6.11786 19.5179 11.7804 19.5179C17.443 19.5179 21.8943 15.2986 21.8943 10.2589C21.8943 5.21922 17.443 1 11.7804 1C6.11786 1 1.66661 5.21922 1.66661 10.2589Z" stroke="%23808080" stroke-width="2"/%3E%3Cline y1="-1" x2="9.62544" y2="-1" transform="matrix(0.734803 0.67828 0.747597 -0.664153 19.5938 15.8154)" stroke="%23808080" stroke-width="2"/%3E%3C/svg%3E');
+                background-repeat: no-repeat;
+                background-size: contain;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 12px;
+                @media (min-width: 992px) {
+                    left: 22px;
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+            input {
+                padding-left: 40px;
+                padding-right: 20px;
+                width: 100%;
+                height: 100%;
+                border-right: unset;
+                @media (min-width: 992px) {
+                    padding-left: 55px;
+                }
+            }
+        }
+        & > input[type="submit"] {
+            transition: .4s;
+
+            &:hover {
+                background: var(--Dark-grey);
+                color: white;
+            }
+            @media (max-width: 992px) {
+                min-height: 44px;
+            }
+        }
+    }
+    & > button {
+        background: white;
+        border: none;
+        max-width: 130px;
+        width: 20px;
+        height: 20px;
+        transition: .4s;
+        cursor: pointer;
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none"%3E%3Cline x1="21.3763" y1="7.23421" x2="7.23416" y2="21.3763" stroke="%23383838" stroke-width="2"/%3E%3Cline x1="21.05" y1="21.3764" x2="6.90784" y2="7.23428" stroke="%23383838" stroke-width="2"/%3E%3C/svg%3E');
+        background-repeat: no-repeat;
+        background-size: contain;
+        @media (min-width: 992px) {
+            min-height: 51px;
+        }
+        p {
+            display: none;
+        }
+        @media (min-width: 992px) {
+            background-image: unset;
+            border-radius: 1px;
+            border: 1px solid var(--Dark-grey);
+            max-width: 130px;
+            width: 100%;
+            height: auto;
+            p {
+                display: block;
+                color: var(--Dark-grey);
+                text-align: center;
+                font-family: Circe;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.8px;
+            }
+        }
+        &:hover {
+            background: var(--Dark-grey);
+            color: white;
+        }
     }
 }

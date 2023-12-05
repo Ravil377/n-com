@@ -4,11 +4,23 @@ import { enableScroll } from '../functions/enable-scroll';
 const menus = document?.querySelectorAll('[data-menu]');
 const menuToggle = document?.querySelector('[data-burger]');
 const catalogBtns = document?.querySelectorAll('[data-catalogbtn]');
+const searchBtns = document?.querySelectorAll('[data-searchbtn]');
+const searchMenu = document?.querySelector('[data-search]');
+const closeBtn = document?.querySelector('[data-closebtn]');
 const catalogMenu = document?.querySelector('[data-catalogmenu]');
 const menuContainer = document?.querySelector('[data-menucontainer]');
 
 let isCatalogMenuOpen = false;
 let currentBtnId = null;
+
+searchBtns?.forEach(searchBtn => {
+    searchBtn.addEventListener('click', function() {
+        searchMenu.classList.add('_open');
+    });
+
+});
+
+closeBtn?.addEventListener('click', () => searchMenu.classList.remove('_open'));
 
 menuToggle?.addEventListener('change', function() {
     if (!this.checked) {
@@ -35,7 +47,7 @@ menus?.forEach(menu => {
     });
 });
 
-catalogBtns.forEach(catalogBtn => {
+catalogBtns?.forEach(catalogBtn => {
     catalogBtn?.addEventListener('click', (event) => {
         event.stopPropagation();
         const id = event.target.id;
