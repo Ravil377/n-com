@@ -215,13 +215,16 @@
   @include custom-checkbox;
   color: var(--Dark-grey);
   font-family: Manrope;
-  font-size: 12px;
+  font-size: 8px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.96px;
   text-transform: uppercase;
   transition: .4s;
+  @media (min-width: 425px) {
+    font-size: 12px;
+  }
   &:hover {
     color: dark;
   }

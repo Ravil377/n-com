@@ -1,0 +1,197 @@
+.brands {
+    width: 100%;
+}
+.brands__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 30px;
+    max-width: 1666px;
+    width: 100%;
+    margin: 0 auto;
+    padding: unset;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @media (min-width: 425px) {
+        column-gap: 40px;
+    }
+    @media (min-width: 768px) {
+        display: grid;
+        justify-content: space-between;
+        column-gap: 30px;
+        grid-template-columns: repeat(7, 1fr);
+        padding-top: 8rem;
+        padding-bottom: 7.5rem;
+    }
+    @media (min-width: 1440px) {
+        padding-top: 130px;
+        padding-bottom: 120px;
+    }
+    li {
+        width: fit-content;
+        a {
+            width: 100%;
+            display: flex;
+            
+            @media (min-width: 768px) {
+                max-width: 8rem;
+            }
+            @media (min-width: 992px) {
+                transition: .4s;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+       
+        @media (min-width: 1440px) {
+            a {
+                max-width: 130px;
+            }
+        }
+    }
+}
+
+
+.brand {
+    width: 100%;
+    &:last-of-type {
+        margin-bottom: 7.81rem;
+        @media (min-width: 1240px) {
+            margin-bottom: 125px;
+        }
+    }
+    .container {
+        border-top: 2px solid #EBEBEB;
+        border-bottom: 2px solid #EBEBEB;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        @media (min-width: 1240px) {
+            padding-top: 7.5rem;
+            padding-bottom: 5.60rem;
+        }
+    }
+    .brand__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        @media (min-width: 1240px) {
+            grid-template-columns: 1fr 1fr;
+            column-gap: 30px;
+        }
+        & > img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+            @media (min-width: 1240px) {
+                min-height: 41.4rem;
+            }
+        }
+        .brand__content {
+            display: flex;
+            flex-direction: column;
+            @media (min-width: 1240px) {
+                padding: 0 1.87rem;
+            }
+            & > img {
+                max-width: 60%;
+                width: 100%;
+                padding-bottom: 30px;
+                margin: 0 auto;
+                @media (min-width: 425px) {
+                    max-width: 300px;
+                }
+                @media (min-width: 768px) {
+                    padding-bottom: 5rem;
+                }
+                @media (min-width: 1240px) {
+                    max-width: 18.75rem;
+                }
+            }
+            & > div {
+                min-height: 23.8rem;
+                display: flex;
+                flex-direction: column;
+                @media (min-width: 1240px) {
+                    min-height: 23.8rem;
+                }
+                p {
+                    color: var(--Grey);
+                    font-family: Circe;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.54px;
+                    @media (min-width: 768px) {
+                        font-size: 18px;
+                    }
+                    &:last-of-type {
+                        margin-bottom: 40px;
+                    }
+                    @media (min-width: 1240px) {
+                        font-size: 1.12rem;
+                    }
+                    strong {
+                        color: var(--Dark-grey);
+                        font-weight: 700;
+                    }
+                }
+                & > a {
+                    margin-top: auto;
+                    color: var(--Grey);
+                    font-family: Circe;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.8px;
+                    text-transform: uppercase;
+                    transition: .4s;
+                    display: flex;
+                    align-items: center;
+                    svg {
+                        display: none;
+                    }
+                    @media (min-width: 768px) {
+                        font-size: 18px;
+                        svg {
+                            display: block;
+                            margin-left: 1.25rem;
+                            margin-bottom: 5px;
+                            width: 24px;
+                            height: 24px;
+                            transition: .4s;
+                        }
+                    }
+                    @media (min-width: 1240px) {
+                        font-size: 1rem;
+                    }
+ 
+                    &:hover {
+                        color: black;
+                        svg {
+                            transform: translateX(10px);
+                        }
+                    }
+                }
+
+            }
+        }
+        
+    }
+    .brand__container + .hit__slider {
+        padding-top: 60px;
+    }
+}

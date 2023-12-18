@@ -1,0 +1,253 @@
+.loyaliti {
+    width: 100%;
+
+    .container {
+        border-bottom: 1px solid #EBEBEB;
+    }
+    .loyaliti__container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        @media (min-width: 1240px) {
+            padding-top: 7.5rem;
+            padding-bottom: 7.5rem;
+        }
+        h2 {
+            color: var(--Dark-grey);
+            text-align: center;
+            font-family: Manrope;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.84px;
+            & + h3 {
+                margin-top: 90px;
+                margin-bottom: 20px;
+            }
+            @media (min-width: 992px) {
+                text-transform: uppercase;
+                font-size: 40px;
+                letter-spacing: 4px;
+            }
+            & + .content {
+                margin-top: 90px;
+                & > *:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+                h3 {
+                    margin: unset;
+                    color: var(--Dark-grey);
+                    font-family: Manrope;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 1.68px;
+                    text-transform: uppercase;
+                }
+                
+                & > p {
+                    color: var(--Grey);
+                    font-family: Circe;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.32px;
+                    a {
+                        text-decoration-line: underline;
+                        color: inherit;
+                        transition: .4s;
+                        &:hover {
+                            color: black;
+                        }
+                    }
+                    & + h3 {
+                        margin-top: 60px;
+                    }
+                    strong {
+                        color: var(--Dark-grey);
+                    }
+                    & + ul {
+                        margin-bottom: unset;
+                    }
+                }
+
+                & > ul {
+                    list-style: none;
+                    padding: unset;
+                    margin: unset;
+                }
+            }
+        }
+
+        h2 + p:not([class]) {
+            margin-top: 20px;
+            color: var(--Dark-grey);
+            text-align: center;
+            font-family: Circe;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.36px; 
+        }
+        h2 + p.nota {
+            color: var(--Grey);
+            font-family: Circe;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.48px;
+        }
+        & > ul.nota {
+            margin: unset;
+            padding: unset;
+            padding-top: 60px;
+            display: flex;
+            flex-direction: column;
+            li {
+                color: var(--Grey);
+                font-family: Circe;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.48px;
+            }
+        }
+        & > ul:not([class]) {
+            margin: unset;
+            padding: unset;
+            list-style: none;
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 80px;
+            max-width: 600px;
+            margin: 0 auto;
+            @media (min-width: 1240px) {
+                padding-top: 5.62rem;
+            }
+            & > li {
+                position: relative;
+                @media (min-width: 768px) {
+                    padding-left: 100px; 
+                }
+                & > *:not(:last-child) {
+                    margin-bottom: 10px;
+                    @media (min-width: 992px) {
+                        margin-bottom: 20px;
+                    }
+                }
+                h3 {
+                    margin: unset;
+                    color: var(--Dark-grey);
+                    font-family: Manrope;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 1.68px;
+                    text-transform: uppercase;
+                    @media (min-width: 992px) {
+                        font-size: 28px;
+                    }
+                    @media (min-width: 1240px) {
+                        font-size: 1.75rem;
+                    }
+                }
+                p {
+                    color: var(--Grey);
+                    font-family: Circe;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.32px;
+                    @media (min-width: 992px) {
+                        font-size: 16px;
+                    }
+                    strong {
+                        color: var(--Dark-grey);
+                        letter-spacing: 0.16px;
+                    }
+                }
+                ul {
+                    list-style:decimal;
+                    padding-left: 15px;
+                    li {
+                        color: var(--Grey);
+                        font-family: Circe;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.32px;
+                        @media (min-width: 992px) {
+                            font-size: 16px;
+                        }
+                        a {
+                            font-weight: 700;
+                            text-decoration-line: underline;
+                        }
+                    }
+                }
+                img {
+                    width: 70px;
+                    height: 50px;
+                    object-fit: contain;
+                    @media (min-width: 768px) {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        // width: 4.25rem;
+                        // height: 3.12rem;
+                    }
+                }
+            }
+        }
+    }
+    .loyaliti__form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        
+        padding-bottom: 200px;
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 'inp1 ta' 'inp2 ta' 'cb cb' 'sm .';
+            max-width: 992px;
+            margin: 0 auto;
+        }
+        .form__placeholder-container {
+            &:nth-child(1) {
+                grid-area: inp1;
+            }
+            &:nth-child(2) {
+                grid-area: inp2;
+            }
+            &:nth-child(3) {
+                grid-area: ta;
+                min-height: 132px;
+                display: flex;
+                @media (min-width: 768px) {
+                    min-height: unset;
+                }
+            }
+        }
+        .custom-checkbox {
+            grid-area: cb;
+            margin-top: 30px;
+        }
+        input[type="submit"] {
+            grid-area: sm;
+            margin-top: 60px
+        }
+    }
+}

@@ -3,39 +3,48 @@
     width: 100%;
 }
   
-.form__placeholder-container input {
-    border: 1px solid var(--Dark-grey);
-    background: #FFF;
+.form__placeholder-container input, 
+.form__placeholder-container textarea {
+    border: unset;
     box-sizing: border-box;
     outline: none;
     width: 100%;
     color: var(--Dark-grey);
+    font-family: Circe;
     font-size: 14px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: normal;
     letter-spacing: 0.7px;
-    padding-left: 24px;
-    padding-right: 24px;
+    background: #F3F3F3;
+    padding-left: 16px;
+    padding-right: 16px;
     box-sizing: border-box;
-    min-height: 51px;
+    min-height: 50px;
+}
+.form__placeholder-container textarea {
+  height: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
   
 .form__placeholder-container label {
     display: flex;
     align-items: center;
     width: fit-content;
-    color: var(--Grey);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.7px;
     pointer-events: none;
     position: absolute;
     transition: all 200ms;
     top: 14px;
     left: 15px;
+
+    color: var(--Grey);
+    font-family: Circe;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.7px;
 }
 
 input[type="submit"] {
@@ -62,12 +71,15 @@ input[type="submit"] {
   
 .form__placeholder-container input:focus + label,
 .form__placeholder-container input:not(:placeholder-shown) + label {
-    top: -25px;
-    left: 0;
-    color: var(--Dark-grey);
+    opacity: 0;
 }
   
-  
+.form__placeholder-container textarea:focus + label, 
+.form__placeholder-container textarea:not(:placeholder-shown) + label
+{
+    opacity: 0;
+}
+
   .form__checkbox {
     height: fit-content;
     position: relative;
