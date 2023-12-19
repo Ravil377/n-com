@@ -90,14 +90,13 @@ document.addEventListener("DOMContentLoaded", function () {
         if (screenWidth >= 1240) {
             
             if (window.scrollY >= 300) {
-                // console.log('dsfsddsf')
                 headerBottom.classList.add("_fixed");
                 header.classList.add('_pb');
             } else {
                 headerBottom.classList.remove("_fixed");
                 header.classList.remove('_pb');
             }
-            if (window.scrollY >= 500) {
+            if (window.scrollY >= 300) {
                 headerBottom.classList.add("_transform");
             } else {
                 headerBottom.classList.remove("_transform");
