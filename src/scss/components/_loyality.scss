@@ -253,8 +253,17 @@
                 'su su'
                 'sm sm';
             }
+            &._materials {
+                grid-template-columns: 1fr 1fr;
+                max-width: 892px;
+                grid-template-areas: 
+                'inp1 ph' 
+                'inp2 me'
+                'ag ag'
+                'sm sm';
+            }
         }
-        &:not(._registration) {
+        &:not(._registration):not(._materials) {
             .form__placeholder-container {
                 &:nth-child(1) {
                     grid-area: inp1;
@@ -312,7 +321,28 @@
                 }
             }
         }
-        
+        &._materials {
+            & > * {
+                &:nth-child(1) {
+                    grid-area: inp1;
+                }
+                &:nth-child(2) {
+                    grid-area: inp2;
+                }
+                &:nth-child(4) {
+                    grid-area: me;
+                }
+                &:nth-child(3) {
+                    grid-area: ph;
+                }
+                &:nth-child(5) {
+                    grid-area: ag;
+                }
+                &:nth-child(6) {
+                    grid-area: sm;
+                }
+            }
+        }
         .custom-checkbox {
             grid-area: cb;
             margin-top: 30px;

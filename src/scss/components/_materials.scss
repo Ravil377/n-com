@@ -1,0 +1,79 @@
+.materials {
+    width: 100%;
+}
+.materials__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 14px;
+    row-gap: 6.25rem;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--plashka);
+    @media (min-width: 576px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: 1240px) {
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 7.5rem;
+        padding-bottom: 7.5rem;
+    }
+    a {
+        &:hover {
+            .img img {
+                transform: scale(1.1);
+            }
+        }
+        .img {
+            width: 100%;
+            padding-top: 100%;
+            background-color: black;
+            position: relative;
+            overflow: hidden;
+            
+            img {
+                transition: .4s;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        p {
+            padding-top: 20px;
+            span {
+                color: var(--Grey);
+                font-family: Circe;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.16px;
+                text-transform: uppercase;
+                @media (min-width: 1240px) {
+                    font-size: 1rem;
+                }
+            }
+            strong {
+                display: block;
+                margin-top: 8px;
+                color: var(--Dark-grey);
+                font-family: Circe;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.6px;
+                text-decoration-line: underline;
+                @media (min-width: 1240px) {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}
