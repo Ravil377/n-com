@@ -21,11 +21,15 @@
     padding-right: 16px;
     box-sizing: border-box;
     min-height: 50px;
+    resize: none; 
 }
 .form__placeholder-container textarea {
-  height: auto;
-  padding-top: 16px;
-  padding-bottom: 16px;
+    height: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @media (max-width: 769px) {
+        min-height: 150px;
+    }
 }
   
 .form__placeholder-container label {

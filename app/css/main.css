@@ -1672,7 +1672,7 @@ input[type=number]:focus {
 }
 .achievements__container li p i {
   font-style: normal;
-  font-size: 18px;
+  font-size: 14px;
   font-variant: none;
 }
 @media (min-width: 1024px) {
@@ -2672,12 +2672,18 @@ input[type=number]:focus {
   padding-right: 16px;
   box-sizing: border-box;
   min-height: 50px;
+  resize: none;
 }
 
 .form__placeholder-container textarea {
   height: auto;
   padding-top: 16px;
   padding-bottom: 16px;
+}
+@media (max-width: 769px) {
+  .form__placeholder-container textarea {
+    min-height: 150px;
+  }
 }
 
 .form__placeholder-container label {
@@ -6103,7 +6109,7 @@ input[type=submit] {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 12px;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 @media (min-width: 768px) {
   .loyaliti .loyaliti__form {
@@ -6116,12 +6122,13 @@ input[type=submit] {
     grid-template-areas: "inp1 ta" "inp2 ta" "cb cb" "sm .";
     max-width: 992px;
     margin: 0 auto;
+    padding-bottom: 200px;
   }
   .loyaliti .loyaliti__form._registration {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     max-width: 892px;
-    grid-template-areas: "inp1 ln" "inp2 ph" "cb cb" "sm .";
+    grid-template-areas: "inp1 ln" "inp2 ph" "ci me" "pa me" "re me" "ag ag" "su su" "sm sm";
   }
 }
 .loyaliti .loyaliti__form:not(._registration) .form__placeholder-container:nth-child(1) {
@@ -6142,17 +6149,41 @@ input[type=submit] {
     min-height: unset;
   }
 }
-.loyaliti .loyaliti__form._registration .form__placeholder-container:nth-child(1) {
+.loyaliti .loyaliti__form._registration > *:nth-child(1) {
   grid-area: inp1;
 }
-.loyaliti .loyaliti__form._registration .form__placeholder-container:nth-child(2) {
+.loyaliti .loyaliti__form._registration > *:nth-child(2) {
   grid-area: ln;
 }
-.loyaliti .loyaliti__form._registration .form__placeholder-container:nth-child(4) {
+.loyaliti .loyaliti__form._registration > *:nth-child(4) {
   grid-area: inp2;
 }
-.loyaliti .loyaliti__form._registration .form__placeholder-container:nth-child(3) {
+.loyaliti .loyaliti__form._registration > *:nth-child(3) {
   grid-area: ph;
+}
+.loyaliti .loyaliti__form._registration > *:nth-child(5) {
+  grid-area: ci;
+}
+.loyaliti .loyaliti__form._registration > *:nth-child(6) {
+  grid-area: pa;
+}
+.loyaliti .loyaliti__form._registration > *:nth-child(7) {
+  grid-area: re;
+}
+.loyaliti .loyaliti__form._registration > *:nth-child(8) {
+  grid-area: me;
+}
+.loyaliti .loyaliti__form._registration > *:nth-child(8) > textarea {
+  height: 100%;
+}
+.loyaliti .loyaliti__form._registration > *:nth-child(9) {
+  grid-area: ag;
+}
+.loyaliti .loyaliti__form._registration > *:nth-child(10) {
+  grid-area: su;
+}
+.loyaliti .loyaliti__form._registration > *:nth-child(11) {
+  grid-area: sm;
 }
 .loyaliti .loyaliti__form .custom-checkbox {
   grid-area: cb;
@@ -6184,36 +6215,67 @@ input[type=submit] {
     -ms-grid-row-span: 2;
     -ms-grid-column: 2;
   }
-  .loyaliti .loyaliti__form._registration .form__placeholder-container:nth-child(1) {
+  .loyaliti .loyaliti__form._registration > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
-  .loyaliti .loyaliti__form._registration > .form__placeholder-container:nth-child(1) {
+  .loyaliti .loyaliti__form._registration > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
-  .loyaliti .loyaliti__form._registration .form__placeholder-container:nth-child(2) {
+  .loyaliti .loyaliti__form._registration > *:nth-child(2) {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
-  .loyaliti .loyaliti__form._registration .form__placeholder-container:nth-child(4) {
+  .loyaliti .loyaliti__form._registration > *:nth-child(4) {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
-  .loyaliti .loyaliti__form._registration > .form__placeholder-container:nth-child(4) {
+  .loyaliti .loyaliti__form._registration > *:nth-child(4) {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
-  .loyaliti .loyaliti__form._registration .form__placeholder-container:nth-child(3) {
+  .loyaliti .loyaliti__form._registration > *:nth-child(3) {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
   }
-  .loyaliti .loyaliti__form .custom-checkbox {
+  .loyaliti .loyaliti__form._registration > *:nth-child(5) {
     -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .loyaliti .loyaliti__form._registration > *:nth-child(6) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+  .loyaliti .loyaliti__form._registration > *:nth-child(7) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .loyaliti .loyaliti__form._registration > *:nth-child(8) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
+  }
+  .loyaliti .loyaliti__form._registration > *:nth-child(9) {
+    -ms-grid-row: 6;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
   }
-  .loyaliti .loyaliti__form._registration > .custom-checkbox {
+  .loyaliti .loyaliti__form._registration > *:nth-child(10) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .loyaliti .loyaliti__form._registration > *:nth-child(11) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+  .loyaliti .loyaliti__form._registration > *:nth-child(11) {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .loyaliti .loyaliti__form .custom-checkbox {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -6223,8 +6285,9 @@ input[type=submit] {
     -ms-grid-column: 1;
   }
   .loyaliti .loyaliti__form._registration > input[type=submit] {
-    -ms-grid-row: 4;
+    -ms-grid-row: 8;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
   }
 }
 
