@@ -230,7 +230,6 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
-        
         padding-bottom: 100px;
         @media (min-width: 768px) {
             display: grid;
@@ -262,8 +261,17 @@
                 'ag ag'
                 'sm sm';
             }
+            &._about {
+                grid-template-columns: 1fr 1fr;
+                max-width: 892px;
+                grid-template-areas: 
+                'inp1 inp2' 
+                'ta ph'
+                'ag ag'
+                'sm sm';
+            }
         }
-        &:not(._registration):not(._materials) {
+        &:not(._registration):not(._materials):not(._about) {
             .form__placeholder-container {
                 &:nth-child(1) {
                     grid-area: inp1;
@@ -317,6 +325,29 @@
                     grid-area: su;
                 }
                 &:nth-child(11) {
+                    grid-area: sm;
+                }
+            }
+        }
+        &._about {
+            & > * {
+                &:nth-child(1) {
+                    grid-area: inp1;
+                }
+                &:nth-child(2) {
+                    grid-area: inp2;
+                }
+                &:nth-child(4) {
+                    grid-area: ph;
+                }
+                &:nth-child(3) {
+                    grid-area: ta;
+                    min-height: unset;
+                }
+                &:nth-child(5) {
+                    grid-area: ag;
+                }
+                &:nth-child(6) {
                     grid-area: sm;
                 }
             }

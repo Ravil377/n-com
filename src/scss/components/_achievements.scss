@@ -15,70 +15,145 @@
     width: 100%;
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     row-gap: 2rem;
     padding: unset;
     justify-items: center;
-    @media (min-width: 1024px) {
-        row-gap: 40px;
-        max-width: 66%;
-    }
-    li {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 16px;
-        @media (min-width: 1024px) {
-            justify-content: center;  
-            width: 16rem;
-            height: 16rem;
-            border-radius: 50%; 
-            border: 3px solid var(--plashka);
 
+    &:not(._about) {
+        grid-template-columns: repeat(3, 1fr);
+        @media (min-width: 1024px) {
+            row-gap: 40px;
+            max-width: 66%;
         }
-        
-        img {
-            max-width: 32px;
+        li {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 16px;
             @media (min-width: 1024px) {
-                max-width: 3rem;
-                &._big {
-                    max-width: 5rem;
+                justify-content: center;  
+                width: 16rem;
+                height: 16rem;
+                border-radius: 50%; 
+                border: 3px solid var(--plashka);
+    
+            }
+            
+            img {
+                max-width: 32px;
+                @media (min-width: 1024px) {
+                    max-width: 3rem;
+                    &._big {
+                        max-width: 5rem;
+                    }
                 }
             }
-        }
-        p {
-            color: var(--Dark-grey);
-            text-align: center;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 125%;
-            font-variant: all-small-caps;
-            max-width: 200px;
-            i {
-                font-style: normal;
+            p {
+                color: var(--Dark-grey);
+                text-align: center;
                 font-size: 14px;
-                font-variant: none;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 125%;
+                font-variant: all-small-caps;
+                max-width: 200px;
+                i {
+                    font-style: normal;
+                    font-size: 14px;
+                    font-variant: none;
+                    @media (min-width: 1024px) {
+                        font-size: 1.87rem;
+                    }
+                }
                 @media (min-width: 1024px) {
-                    font-size: 1.87rem;
+                    font-size: 1rem;
+                }
+                span {
+                    font-family: Manrope;
+                    margin-top: 4px;
+                    display: block;
+                    color: var(--Grey);
+                    // font-family: Manrope;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.45px;
+                    text-transform: lowercase;
+                    @media (min-width: 1024px) {
+                        font-size: 0.93rem;
+                    }
                 }
             }
-            @media (min-width: 1024px) {
-                font-size: 1rem;
+        }
+    }
+    &._about {
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 40px;
+        @media (min-width: 1024px) {
+            grid-template-columns: repeat(4, 1fr);
+            row-gap: 40px;
+            max-width: 100%;
+            padding-top: 7.5rem;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 16px;
+            @media (min-width: 1240px) {
+                justify-content: center;  
+                width: 19.5rem;
+                height: 19.5rem;
+                border-radius: 50%; 
+                border: 3px solid var(--plashka);
+    
             }
-            span {
-                font-family: Manrope;
-                margin-top: 4px;
-                display: block;
-                color: var(--Grey);
-                // font-family: Manrope;
-                font-size: 12px;
-                font-weight: 400;
-                line-height: normal;
-                letter-spacing: 0.45px;
-                text-transform: lowercase;
+            
+            img {
+                max-width: 32px;
                 @media (min-width: 1024px) {
-                    font-size: 0.93rem;
+                    max-width: 3rem;
+                    &._big {
+                        max-width: 5rem;
+                    }
+                }
+            }
+            p {
+                font-family: Circe;
+                color: var(--Dark-grey);
+                text-align: center;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 125%;
+                text-transform: uppercase;
+                max-width: 13rem;
+                @media (min-width: 1024px) {
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                }
+                i {
+                    font-style: normal;
+                    font-size: 14px;
+                    font-variant: none;
+                    @media (min-width: 1024px) {
+                        font-size: 1.87rem;
+                    }
+                }
+                span {
+                    font-family: Manrope;
+                    margin-top: 4px;
+                    display: block;
+                    color: var(--Grey);
+                    // font-family: Manrope;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.45px;
+                    text-transform: lowercase;
+                    @media (min-width: 1024px) {
+                        font-size: 1rem;
+                    }
                 }
             }
         }

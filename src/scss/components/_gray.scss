@@ -1,0 +1,87 @@
+.gray {
+    background: #F3F3F3;
+    padding: 60px 0;
+    width: 100%;
+    @media (min-width: 1240px) {
+        padding: 120px 0;
+    }
+    .gray__list {
+        list-style: none;
+        margin: unset;
+        padding: unset;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        @media (min-width: 1240px) {
+            display: grid;
+            gap: 1.25rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        & > li {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            @media (min-width: 1240px) {
+                position: relative;
+                padding-left: 6rem;
+            }
+            & > img {
+                
+                display: none;
+                @media (min-width: 1240px) {
+                    display: block;
+                    object-fit: contain;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 4.37rem;
+                    height: 3.12rem;
+                }
+            }
+            & > ul {
+                padding: unset;
+                margin: unset;
+                display: flex;
+                flex-direction: column;
+                list-style: unset;
+                & > li:first-child {
+                    color: var(--Dark-grey);
+                    font-family: Manrope;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 1.68px;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                    @media (min-width: 1240px) {
+                        font-size: 1.75rem;
+                    }
+                }
+                & > li:not(:first-child) {
+                    color: var(--Grey);
+                    font-family: Circe;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.32px;
+
+                    strong, a {
+                        font-weight: 700;
+                        color: inherit;
+                    }
+                    a {
+                        transition: .4s;
+                        &:hover {
+                            color: var(--Dark-grey);
+                        }
+                    }
+                }
+                @media (min-width: 1240px) {
+                }
+            }
+        }
+        
+    }
+}
