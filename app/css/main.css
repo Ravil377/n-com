@@ -1912,6 +1912,35 @@ input[type=number]:focus {
   margin-top: 70px;
   width: 100%;
 }
+.hit._collection {
+  margin-top: unset;
+}
+.hit._collection h2 {
+  text-align: left;
+  color: var(--Dark-grey);
+  font-family: Manrope;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.68px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #EBEBEB;
+  padding-bottom: 12px;
+}
+.hit._collection h2::after {
+  display: none;
+}
+.hit._collection .hit__slider {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (min-width: 1024px) {
+  .hit._collection .hit__slider {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
 .hit + .hit:last-child {
   margin-bottom: 100px;
 }
@@ -5938,8 +5967,11 @@ input[type=submit] {
 .loyaliti {
   width: 100%;
 }
-.loyaliti .container {
+.loyaliti .container:not(._collection) {
   border-bottom: 1px solid #EBEBEB;
+}
+.loyaliti .container._collection {
+  border-bottom: unset;
 }
 .loyaliti .loyaliti__container {
   max-width: 960px;
@@ -5952,6 +5984,51 @@ input[type=submit] {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
   }
+}
+.loyaliti .loyaliti__container._collection {
+  max-width: 1400px;
+}
+.loyaliti .loyaliti__container._collection h2 {
+  text-align: left;
+  color: var(--Dark-grey);
+  font-family: Manrope;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 3.2px;
+}
+@media (min-width: 1024px) {
+  .loyaliti .loyaliti__container._collection h2 {
+    font-size: 4rem;
+  }
+}
+.loyaliti .loyaliti__container._collection .content {
+  margin-top: 30px;
+}
+@media (min-width: 1024px) {
+  .loyaliti .loyaliti__container._collection .content {
+    margin-top: 60px;
+  }
+}
+.loyaliti .loyaliti__container._collection .content > p {
+  font-size: 18px;
+}
+.loyaliti .loyaliti__container._collection .content > p > a:first-child {
+  display: block;
+  margin-bottom: 30px;
+  color: var(--Grey);
+  font-family: Circe;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+.loyaliti .loyaliti__container._collection .content > p > a:first-child:hover {
+  color: var(--Dark-grey);
 }
 .loyaliti .loyaliti__container h2 {
   color: var(--Dark-grey);

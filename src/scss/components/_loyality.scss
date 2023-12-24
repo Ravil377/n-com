@@ -2,7 +2,12 @@
     width: 100%;
 
     .container {
-        border-bottom: 1px solid #EBEBEB;
+        &:not(._collection) {
+            border-bottom: 1px solid #EBEBEB;
+        }
+        &._collection {
+            border-bottom: unset;
+        }
     }
     .loyaliti__container {
         max-width: 960px;
@@ -12,6 +17,49 @@
         @media (min-width: 1240px) {
             padding-top: 7.5rem;
             padding-bottom: 7.5rem;
+        }
+        &._collection {
+            max-width: 1400px;
+            h2 {
+                text-align: left;
+                color: var(--Dark-grey);
+                font-family: Manrope;
+                font-size: 34px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 3.2px;
+                @media (min-width: 1024px) {
+                    font-size: 4rem;
+                }
+            }
+            .content {
+                margin-top: 30px;
+                @media (min-width: 1024px) {
+                    margin-top: 60px;
+                }
+                & > p {
+                    font-size: 18px;
+                }
+                & > p > a:first-child {
+                    display: block;
+                    margin-bottom: 30px;
+
+                    color: var(--Grey);
+                    font-family: Circe;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.48px;
+                    text-decoration-line: underline;
+                    &:hover {
+                        color: var(--Dark-grey);
+                    }
+                }
+
+            }
+            
         }
         h2 {
             color: var(--Dark-grey);

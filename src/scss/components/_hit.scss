@@ -1,6 +1,33 @@
 .hit {
     margin-top: 70px;
     width: 100%;
+    &._collection {
+        margin-top: unset;
+        h2 {
+            text-align: left;
+            color: var(--Dark-grey);
+            font-family: Manrope;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.68px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #EBEBEB;
+            padding-bottom: 12px;
+            &::after {
+                display: none;
+            }
+        }
+        .hit__slider {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            @media (min-width: 1024px) {
+                padding-top: 90px;
+                padding-bottom: 90px;
+            }
+        }
+    }
     & + .hit:last-child {
         margin-bottom: 100px;
         @media (min-width: 1024px) {
