@@ -112,7 +112,7 @@ function init() {
           balloonContent: data.balloonContent
         }, {
           iconLayout: 'default#image',
-          iconImageHref: '/img/placemark.png',
+          iconImageHref: 'img/placemark.png',
           iconImageSize: [37, 50],
           iconImageOffset: [-15, -15]
         });
