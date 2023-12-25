@@ -7350,4 +7350,194 @@ input[type=submit] {
 .gray .gray__list > li > ul > li:not(:first-child) a:hover {
   color: var(--Dark-grey);
 }
+.tabs {
+  width: 100%;
+}
+
+.tabs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 14px;
+  margin: unset;
+  padding: unset;
+}
+.tabs__list > li > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 35px;
+  height: 30px;
+  border-radius: 1px;
+  border: 1px solid var(--Grey);
+  background: #F3F3F3;
+  color: var(--Dark-grey);
+  text-align: center;
+  font-family: Circe;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  background: white;
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+@media (min-width: 1240px) {
+  .tabs__list > li > a {
+    font-size: 1rem;
+    width: 3.37rem;
+    height: 3.12rem;
+  }
+}
+.tabs__list > li > a:hover {
+  background: var(--Dark-grey);
+  color: white;
+}
+
+.tabs__contens {
+  list-style: none;
+  padding: unset;
+  margin: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 110px;
+}
+.tabs__contens .list-item-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 2px solid var(--plashka);
+  background: #FFF;
+  color: var(--Dark-grey);
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+@media (min-width: 1240px) {
+  .tabs__contens .list-item-title {
+    font-size: 1.25rem;
+    padding: 1.25rem 2.5rem;
+    font-size: 1.5rem;
+  }
+}
+.tabs__contens .list-item-title:hover {
+  border-bottom: 1px solid var(--Dark-grey);
+}
+.tabs__contens input {
+  display: none;
+  overflow: hidden;
+}
+.tabs__contens .toggle-checkbox:checked + .list-item-title {
+  border-bottom: unset;
+}
+.tabs__contens .toggle-checkbox:checked + .list-item-title + .sublist {
+  display: block;
+}
+.tabs__contens .sublist {
+  display: none;
+  list-style: none;
+  padding: unset;
+  margin: unset;
+  padding-top: 10px;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 2px solid var(--plashka);
+}
+@media (min-width: 425px) {
+  .tabs__contens .sublist {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+@media (min-width: 992px) {
+  .tabs__contens .sublist {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+@media (min-width: 1240px) {
+  .tabs__contens .sublist {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+  }
+}
+@media (min-width: 1240px) {
+  .tabs__contens .sublist {
+    padding-left: 25px;
+    padding-right: 25px;
+    -webkit-column-count: 8;
+    -moz-column-count: 8;
+    column-count: 8;
+  }
+}
+.tabs__contens .sublist .list-item {
+  color: var(--Dark-grey);
+  -webkit-font-kerning: none;
+  font-kerning: none;
+  font-family: Circe;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (min-width: 1240px) {
+  .tabs__contens .sublist .list-item {
+    font-size: 1rem;
+  }
+}
+.tabs__contens .sublist .list-item a {
+  color: inherit;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: block;
+}
+@media (min-width: 1240px) {
+  .tabs__contens .sublist .list-item a:hover {
+    -webkit-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+}
 /*# sourceMappingURL=main.css.map */

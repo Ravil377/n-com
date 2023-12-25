@@ -68,8 +68,10 @@ const tabs = new GraphTabs('tab');
 // const rellax = new Rellax('.rellax');
 
 // Подключение плавной прокрутки к якорям
-// import SmoothScroll from 'smooth-scroll';
-// const scroll = new SmoothScroll('a[href*="#"]');
+import SmoothScroll from 'smooth-scroll';
+const scroll = new SmoothScroll('a[href*="#"]', {
+    offset: 150,
+  });
 
 // Подключение событий свайпа на мобильных
 // import 'swiped-events';
