@@ -141,7 +141,6 @@ function init() {
   var mapTab = document.querySelector('.map__tab-js');
   var starte = mapTab.querySelector('.activeadress');
   var findAddresses = function (addresses) {
-    console.log(addresses);
     clusterer.removeAll();
     addresses.forEach(function (data) {
       var coordinates = data.coordinates;
@@ -151,7 +150,7 @@ function init() {
         }, {
           iconLayout: 'default#image',
           iconImageHref: '/img/placemark.png',
-          iconImageSize: [47, 70],
+          iconImageSize: [37, 50],
           iconImageOffset: [-15, -15]
         });
         clusterer.add(marker);
@@ -193,14 +192,6 @@ function init() {
     balloonContent: 'г. Москва, Саларьево, ул. Адмирала Корнилова, д. 61'
   }];
   findAddresses(multipleAddressesData);
-
-  // // Пример данных для старта с одним адресом
-  // var sampleAddressData = {
-  //   coordinates: [55.751244, 37.618423],
-  //   balloonContent: 'Москва, ул. Примерная, д. 123, корп. 1, офис 456'
-  // };
-
-  // findAddresses([sampleAddressData]);
 }
 
 // validateForms('.form-1', rules1, afterForm);
