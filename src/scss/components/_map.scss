@@ -1,0 +1,11 @@
+.map {
+    // height: 42.5vw;
+    min-height: 400px;
+    width: 100%;
+    @media (min-width: 1240px) {
+        min-height: 34vw;
+    }
+    @media (min-width: 1920px) {
+        min-height: 680px;
+    }
+}

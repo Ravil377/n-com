@@ -88,4 +88,88 @@ const scroll = new SmoothScroll('a[href*="#"]', {
 //   console.log('Произошла отправка, тут можно писать любые действия');
 // };
 
+ymaps.ready(init);
+
+function init() {
+  var map = new ymaps.Map("map1", {
+    center: [55.751244, 37.618423],
+    zoom: 8
+  });
+
+  var clusterer = new ymaps.Clusterer();
+  map.geoObjects.add(clusterer);
+
+  var mapTab = document.querySelector('.map__tab-js');
+  var starte = mapTab.querySelector('.activeadress');
+
+  var findAddresses = function (addresses) {
+    console.log(addresses);
+    clusterer.removeAll();
+
+    addresses.forEach(function (data) {
+      var coordinates = data.coordinates;
+      if (coordinates) {
+        var marker = new ymaps.Placemark(coordinates, {
+          balloonContent: data.balloonContent
+        }, {
+          iconLayout: 'default#image',
+          iconImageHref: '/img/placemark.png',
+          iconImageSize: [47, 70],
+          iconImageOffset: [-15, -15]
+        });
+
+        clusterer.add(marker);
+      }
+    });
+
+    // // Если есть хотя бы один адрес, центрируем карту по первому адресу
+    // if (addresses.length > 0) {
+    //   map.setCenter(addresses[0].coordinates, 15);
+    // }
+  };
+
+  // mapTab && mapTab.addEventListener('click', function (e) {
+  //   if (e.target.classList.contains('map-tab-js')) {
+  //     var ele = e.target;
+
+  //     // Пример данных для нескольких адресов
+  //     var multipleAddressesData = [
+  //       {
+  //         coordinates: [55.75217656899729,37.66865049999999],
+  //         balloonContent: 'г. Москва, Дизайн-центр Artplay, ул. Нижняя Сыромятническая, д. 10, стр. 7'
+  //       },
+  //       {
+  //         coordinates: [55.61922306910225,37.44080199999995],
+  //         balloonContent: 'г. Москва, Саларьево, ул. Адмирала Корнилова, д. 61'
+  //       },
+  //       // Добавьте еще адресов при необходимости
+  //     ];
+
+  //     findAddresses(multipleAddressesData);
+  //   }
+  // });
+
+  var multipleAddressesData = [
+    {
+      coordinates: [55.75217656899729,37.66865049999999],
+      balloonContent: 'г. Москва, Дизайн-центр Artplay, ул. Нижняя Сыромятническая, д. 10, стр. 7'
+    },
+    {
+      coordinates: [55.61922306910225,37.44080199999995],
+      balloonContent: 'г. Москва, Саларьево, ул. Адмирала Корнилова, д. 61'
+    },
+  ];
+
+  findAddresses(multipleAddressesData);
+
+  // // Пример данных для старта с одним адресом
+  // var sampleAddressData = {
+  //   coordinates: [55.751244, 37.618423],
+  //   balloonContent: 'Москва, ул. Примерная, д. 123, корп. 1, офис 456'
+  // };
+
+  // findAddresses([sampleAddressData]);
+}
+
+
 // validateForms('.form-1', rules1, afterForm);

@@ -18,6 +18,12 @@
             padding-top: 7.5rem;
             padding-bottom: 7.5rem;
         }
+        &._contacts {
+            padding-top: unset;
+        }
+        &._contacts, &._contacts > ul {
+            max-width: 840px !important;
+        }
         &._collection {
             max-width: 1400px;
             h2 {

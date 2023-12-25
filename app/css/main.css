@@ -5985,6 +5985,12 @@ input[type=submit] {
     padding-bottom: 7.5rem;
   }
 }
+.loyaliti .loyaliti__container._contacts {
+  padding-top: unset;
+}
+.loyaliti .loyaliti__container._contacts, .loyaliti .loyaliti__container._contacts > ul {
+  max-width: 840px !important;
+}
 .loyaliti .loyaliti__container._collection {
   max-width: 1400px;
 }
@@ -7619,6 +7625,21 @@ input[type=submit] {
     -webkit-transform: translateX(5px);
     -ms-transform: translateX(5px);
     transform: translateX(5px);
+  }
+}
+
+.map {
+  min-height: 400px;
+  width: 100%;
+}
+@media (min-width: 1240px) {
+  .map {
+    min-height: 34vw;
+  }
+}
+@media (min-width: 1920px) {
+  .map {
+    min-height: 680px;
   }
 }
 /*# sourceMappingURL=main.css.map */
