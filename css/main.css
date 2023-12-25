@@ -3105,6 +3105,31 @@ input[type=submit] {
     max-width: 350px;
   }
 }
+.footer__container div > a {
+  color: #FFF;
+  font-family: Circe;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.footer__container div > a:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .footer__container div > a:not([class]):hover {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
 .footer__container div form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3166,10 +3191,12 @@ input[type=submit] {
   margin: unset;
   padding: unset;
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 @media (min-width: 992px) {
   .footer__container div > ul {
     margin-top: 50px;
+    margin-bottom: 30px;
     -webkit-column-gap: 16px;
     -moz-column-gap: 16px;
     column-gap: 16px;
