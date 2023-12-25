@@ -96,6 +96,27 @@
         @media (min-width: 1240px) {
             max-width: 350px;
         }
+
+        & > a {
+            color: #FFF;
+            font-family: Circe;
+            display: block;
+            width: fit-content;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.8px;
+            transition: .4s;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+            @media (min-width: 992px) {
+                &:not([class]):hover {
+                    transform: translateX(10px);
+                }   
+            }
+        }
         form {
             display: flex;
             column-gap: 10px;
@@ -140,8 +161,10 @@
             margin: unset;
             padding: unset;
             margin-top: 30px;
+            margin-bottom: 20px;
             @media (min-width: 992px) {
                 margin-top: 50px;
+                margin-bottom: 30px;
                 column-gap: 16px;
                 row-gap: 20px;
             }
