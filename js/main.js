@@ -585,20 +585,20 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
     var screenWidth = window.innerWidth;
     if (screenWidth >= 1240) {
-      if (window.scrollY >= 300) {
+      if (window.scrollY >= 200) {
         headerBottom.classList.add("_fixed");
         header.classList.add('_pb');
       } else {
         headerBottom.classList.remove("_fixed");
         header.classList.remove('_pb');
       }
-      if (window.scrollY >= 300) {
+      if (window.scrollY >= 230) {
         headerBottom.classList.add("_transform");
       } else {
         headerBottom.classList.remove("_transform");
       }
     } else {
-      if (window.scrollY >= 300) {
+      if (window.scrollY >= 200) {
         headerTop.classList.add("_fixed");
         header.classList.add('_pb');
       } else {
