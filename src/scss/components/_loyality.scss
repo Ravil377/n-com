@@ -239,6 +239,25 @@
                         letter-spacing: 0.16px;
                     }
                 }
+                & > a {
+                    display: flex;
+                    align-items: center;
+                    color: var(--Grey);
+                    font-family: Circe;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.32px;
+                    text-decoration-line: underline;
+                    transition: .4s;
+                    &:hover {
+                        color: var(--Dark-grey);
+                    }
+                    img {
+                        margin-left: 30px;
+                    }
+                }
                 ul {
                     list-style:decimal;
                     padding-left: 15px;
@@ -259,7 +278,7 @@
                         }
                     }
                 }
-                img {
+                & > img {
                     width: 70px;
                     height: 50px;
                     object-fit: contain;
@@ -318,8 +337,18 @@
                 'ag ag'
                 'sm sm';
             }
+            &._contacts {
+                grid-template-columns: 40% 60%;
+                max-width: 892px;
+                grid-template-areas: 
+                'name text' 
+                'phone text'
+                'email text'
+                'agree agree'
+                'submit submit';
+            }
         }
-        &:not(._registration):not(._materials):not(._about) {
+        &:not(._registration):not(._materials):not(._about):not(._contacts) {
             .form__placeholder-container {
                 &:nth-child(1) {
                     grid-area: inp1;
@@ -419,6 +448,29 @@
                 }
                 &:nth-child(6) {
                     grid-area: sm;
+                }
+            }
+        }
+        &._contacts {
+            & > * {
+                &:nth-child(1) {
+                    grid-area: name;
+                }
+                &:nth-child(2) {
+                    grid-area: phone;
+                }
+                &:nth-child(4) {
+                    grid-area: text;
+                    display: flex;
+                }
+                &:nth-child(3) {
+                    grid-area: email;
+                }
+                &:nth-child(5) {
+                    grid-area: agree;
+                }
+                &:nth-child(6) {
+                    grid-area: submit;
                 }
             }
         }
