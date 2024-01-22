@@ -5,3 +5,4 @@ import './components/project';
 import './components/filter';
 import './components/detail';
 import './components/modal';
+import './components/basketbuy';

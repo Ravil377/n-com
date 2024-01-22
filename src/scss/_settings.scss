@@ -182,3 +182,29 @@ input[type="number"]:focus {
     appearance: none;
     -moz-appearance: textfield;
 }
+
+._firstname {
+  grid-area: firstname;
+}
+
+._lastname {
+  grid-area: lastname;
+}
+
+._phone {
+  grid-area: phone;
+}
+
+._email {
+  grid-area: email;
+}
+
+._comment {
+  grid-area: comment;
+  display: flex;
+}
+
+._address {
+  grid-area: address;
+  display: flex;
+}

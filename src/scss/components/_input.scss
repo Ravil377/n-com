@@ -68,9 +68,15 @@ input[type="submit"] {
     letter-spacing: 0.8px;
     min-height: 51px;
     width: 100%;
+
     @media (min-width: 992px) {
         max-width: 310px;
     }
+}
+
+input[type="submit"]:disabled {
+  opacity: .3;
+  cursor: not-allowed;
 }
   
 .form__placeholder-container input:focus + label,
