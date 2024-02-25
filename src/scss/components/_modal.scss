@@ -1,6 +1,6 @@
 .graph-modal__container {
     max-width: 750px;
-    min-height: 750px;
+    // min-height: 750px;
     padding: 36px 23px;
     padding-right: 79px;
     &.graph-modal-open {
@@ -16,6 +16,64 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        &:not(._favorits) {
+            min-height: 678px;
+        }
+        &._favorits {
+            padding-top: 44px;
+            padding-left: 71px;
+            padding-right: 15px;
+            padding-bottom: 34px;
+            & > span {
+                margin-top: 8px;
+                color: var(--Grey);
+                font-family: Circe;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 2%;
+                text-align: left;
+                max-width: 80%;
+            }
+            & > button {
+                cursor: pointer;
+                padding: unset;
+                color: var(--Dark-grey);
+                font-family: Circe;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 5%;
+                text-align: left;
+                text-decoration-line: underline;
+                text-transform: uppercase;
+                background: unset;
+                border: unset;
+                margin-top: 40px;
+            }
+            & > p {
+                color: var(--Dark-grey);
+                font-family: Manrope;
+                font-size: 28px;
+                font-weight: 400;
+                line-height: 38px;
+                letter-spacing: 6%;
+                text-align: center;
+                text-transform: uppercase;
+                margin-bottom: 60px;
+            }
+            & > form {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                .buttons {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 20px;
+                    margin-top: 48px;
+                }
+            }
+        }
     }
     .modal__tabs {
         display: flex;
