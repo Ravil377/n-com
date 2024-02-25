@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>N-Con</title>
+  <link rel="preload" href="fonts/circe-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/circe-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/CRC55.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+  <script defer src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=87170bc0-cae2-4d94-8d26-83cdc4ee28b7&lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body class="page__body">
+    <div class="site-container">
+        <header class="header header-js">
+  <div class="container">
+    <div class="header__top header-top-js">
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" data-burger/>
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <div class="menu__container" >
+          <ul class="menu__box" data-menucontainer>
+            <li>
+              <a class="menu__item" href="#" data-menu>Каталог</a>
+              <ul>
+                <li><a class="menu__subitem" href="#">Интерьерный свет</a></li>
+                <li><a class="menu__subitem" href="#">Уличный свет </a></li>
+                <li><a class="menu__subitem" href="#">Декор</a></li>
+                <li><a class="menu__subitem" href="#">Аксессуарыт</a></li>
+                <li><a class="menu__subitem" href="#">В наличии</a></li>
+                <li><a class="menu__subitem" href="#">Новинки</a></li>
+                <li><a class="menu__subitem" href="#">Бренды</a></li>
+                <li><a class="menu__subitem" href="#">Коллекции</a></li>
+                <li><a class="menu__subitem" href="#">Идеи для подарков</a></li>
+                <li><a class="menu__subitem" href="#">Акции</a></li>
+                <li><a class="menu__subitem" href="#">Outlet</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="menu__item" href="#" data-menu>сотрудничество</a>
+              <ul>
+                <li><a class="menu__subitem" href="#">Дизайнерам</a></li>
+                <li><a class="menu__subitem" href="#">Дилерам</a></li>
+                <li><a class="menu__subitem" href="#">скачать Каталоги</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="menu__item" href="#" data-menu>как купить</a>
+              <ul>
+                <li><a class="menu__subitem" href="#">шоу-рум</a></li>
+                <li><a class="menu__subitem" href="#">доставка</a></li>
+                <li><a class="menu__subitem" href="#">гарантии</a></li>
+                <li><a class="menu__subitem" href="#">оплата</a></li>
+                <li><a class="menu__subitem" href="#">программа лояльности</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="menu__item" href="#" data-menu>контакты</a>
+              <ul>
+                <li><a class="menu__subitem" href="#">О компании</a></li>
+                <li><a class="menu__subitem" href="#">Мы находимся</a></li>
+              </ul>
+            </li>
+            <li>
+              <p>нужна помощь?
+                <a href="#">Задайте вопрос в ватсапп</a>
+              </p>
+              <p>телефон для связи
+                <a href="tel:88005555792">8 800 555 57 92</a>
+              </p>
+            </li>
+          </ul>
+          <div class="menu__bottom">
+            <a href="#" data-graph-path="form" data-graph-animation="fadeIn"
+            data-graph-speed="500"><img src="img/user_light-white.svg" alt="Иконка"></a>
+            <a href="#"><img src="img/favorite_light-white.svg" alt="Иконка"></a>
+            <a href="#"><img src="img/icon-compare.svg" alt="Иконка"></a>
+          </div>
+        </div>
+      </div>
+      <button><img src="img/search.svg" alt="Иконка" data-searchbtn></button>
+      <a href="/" class="logo__mobil">
+        <img src="img/nc.svg" alt="Лого">
+      </a>
+      <a href="#"><img src="img/compare.svg" alt="Иконка"></a>
+      <a href="#"><img src="img/favorite_light.svg" alt="Иконка"></a>
+      <a href="#" data-graph-path="form" data-graph-animation="fadeIn"
+      data-graph-speed="500"><img src="img/user_light.svg" alt="Иконка"></a>
+      <a href="#"><img src="img/bag.svg" alt="Иконка"></a>
+    </div>
+    <div class="header__bottom header-bottom-js">
+      <div class="container" >
+        <div class="header__bottom" >
+          <a href="/" class="logo"><img src="img/logo.svg" alt="Логотип"></a>
+          <div class="header__nav">
+            <p>Дизайнерский СВЕТ ИЗ АМЕРИКИ И ЕВРОПЫ</p>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">каталог</a>
+                  <div class="header__catalog" >
+                    <div class="header__catalog-container">
+                      <ul>
+                        <li>
+                          <a href="#">Интерьерный свет</a>
+                          <ul>
+                            <li>
+                              <a href="#">Бра</a>
+                              <img src="img/bra.png" alt="Бра">
+                            </li>
+                            <li><a href="#">Бра для ванных комнат</a>
+                              <img src="img/img1.png" alt="Бра">
+                            </li>
+                            <li><a href="#">Люстры</a></li>
+                            <li><a href="#">Люстры для ванных комнат</a></li>
+                            <li><a href="#">Настольные лампы</a></li>
+                            <li><a href="#">Люстры-вентиляторы</a></li>
+                            <li><a href="#">Плафоны</a></li>
+                            <li><a href="#">Потолочные светильники</a></li>
+                            <li><a href="#">Потолочные светильники для ванных комнат</a></li>
+                            <li><a href="#">Светильники для картин</a></li>
+                            <li><a href="#">Торшеры / Напольные лампы</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">Уличный свет </a>
+                          <ul>
+                            <li>
+                              <a href="#">Бра</a>
+                            </li>
+                            <li><a href="#">Бра для ванных комнат</a>
+                            </li>
+                            <li><a href="#">Люстры</a>
+                            </li>
+                            <li><a href="#">Люстры для ванных комнат</a>
+                            </li>
+                            <li><a href="#">Настольные лампы</a>
+                            </li>
+                            <li><a href="#">Потолочные светильники</a>
+                            </li>
+                            <li><a href="#">Потолочные светильники для ванных комнат</a>
+                            </li>
+                            <li><a href="#">Светильники для картин</a>
+                            </li>
+                            <li><a href="#">Торшеры / Напольные лампы</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">Декор</a>
+                          <ul>
+                            <li><a href="#">Плафоны</a></li>
+                            <li><a href="#">Потолочные светильники</a></li>
+                            <li><a href="#">Потолочные светильники для ванных комнат</a></li>
+                            <li><a href="#">Светильники для картин</a></li>
+                            <li><a href="#">Торшеры / Напольные лампы</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">Аксессуары</a>
+                          <ul>
+                            <li><a href="#">Бра</a></li>
+                            <li><a href="#">Бра для ванных комнат</a></li>
+                            <li><a href="#">Люстры</a></li>
+                            <li><a href="#">Потолочные светильники</a></li>
+                            <li><a href="#">Потолочные светильники для ванных комнат</a></li>
+                            <li><a href="#">Светильники для картин</a></li>
+                            <li><a href="#">Торшеры / Напольные лампы</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">в наличии</a>
+                          <ul>
+                            <li><a href="#">Торшеры / Напольные лампы</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">новинки</a>
+                        </li>
+                        <li>
+                          <a href="#">бренды</a>
+                        </li>
+                        <li>
+                          <a href="#">коллекции</a>
+                        </li>
+                        <li>
+                          <a href="#">идеи для подарков</a>
+                        </li>
+                        <li>
+                          <a href="#">Акции</a>
+                        </li>
+                        <li>
+                          <a href="#">outlet</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" >сотрудничество</a>
+                  <div class="header__catalog" >
+                    <div class="header__catalog-container">
+                      <ul>
+                        <li>
+                          <a href="#">Сотрудничество</a>
+                          <ul>
+                            <li><a href="#">Дизайнерам</a></li>
+                            <li><a href="#">Дилерам</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">скачать Каталоги</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">как купить</a>
+                  <div class="header__catalog" >
+                    <div class="header__catalog-container">
+                      <ul>
+                        <li><a href="#">шоу-рум</a></li>
+                        <li><a href="#">доставка</a></li>
+                        <li><a href="#">гарантии</a></li>
+                        <li><a href="#">оплата</a></li>
+                        <li><a href="#">программа лояльности</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" >контакты</a>
+                  <div class="header__catalog" >
+                    <div class="header__catalog-container">
+                      <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Мы находимся</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <p>
+            <a href="tel:88005555792">8 800 555 57 92</a>
+            <span>пн-пт: 10.00 — 19.00<br>
+              сб: 11.00 — 18.00</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="header__search" data-search>
+      <div class="container">
+        <div class="header__search-content">
+          <form>
+            <div class="header__search-container">
+              <input type="text">
+            </div>
+            <input type="submit" value="Найти">
+          </form>
+          <button data-closebtn><p>Закрыть</p></button>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="header__mobil">
+      <div class="container">
+        <input id="menu__toggle" type="checkbox" data-burger/>
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+      </div>
+    </div> -->
+  </div>
+</header>
+
+        <main class="main">
+            <div class="breadcrumbs">
+    <div class="container">
+        <p class="">
+            <a href="/">ГЛАВНАЯ</a>
+            <span>/</span>
+            каталог
+        </p>
+        <h1>Каталог</h1>
+    </div>
+</div>
+            <section class="favorits">
+    <div class="container">
+        <div class="favorits__container">
+            <h2>Ваши Подборки светильников</h2>
+
+        </div>
+    </div>
+</section>
+
+        </main>
+        <div class="graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="form">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+        <div class="modal__tabs modal__tabs-js">
+            <button class="_active" data-id="login-form">Войти</button>
+            <button data-id="registration-form">Регистрация</button>
+        </div>
+        <div id="login-form" class="modal__content _active">
+            <form>
+                <div class="form__placeholder-container form__placeholder-container--js">
+                    <input class="form__input--js" type="email" name="email" placeholder=" " required="required" id="email"/>
+                    <label for="email">E-mail *</label><span class="input__error name-error"></span>
+                </div>
+                <div class="form__placeholder-container form__placeholder-container--js">
+                    <input class="form__input--js" type="password" name="password" placeholder=" " required="required" id="password"/>
+                    <label for="password">Пароль *</label><span class="input__error name-error"></span>
+                </div>
+                <div class="modal__flex">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="custom-checkbox__field">
+                        <span class="custom-checkbox__content">Запомнить меня</span>
+                    </label>
+                    <a href="#">Забыли свой пароль?</a>
+                </div>
+
+                <input type="submit" value="Войти">
+            </form>
+        </div>
+        <div id="registration-form" class="modal__content">
+            <form>
+                <div class="form__placeholder-container form__placeholder-container--js">
+                    <input class="form__input--js" type="text" name="name" placeholder=" " required="required" id="name"/>
+                    <label for="name">Имя</label><span class="input__error name-error"></span>
+                </div>
+                <div class="form__placeholder-container form__placeholder-container--js">
+                    <input class="form__input--js" type="email" name="email" placeholder=" " required="required" id="email"/>
+                    <label for="email">E-mail *</label><span class="input__error name-error"></span>
+                </div>
+                <div class="form__placeholder-container form__placeholder-container--js">
+                    <input class="form__input--js" type="password" name="password" placeholder=" " required="required" id="password"/>
+                    <label for="password">Пароль *</label><span class="input__error name-error"></span>
+                </div>
+                <div class="form__placeholder-container form__placeholder-container--js">
+                    <input class="form__input--js" type="password" name="password1" placeholder=" " required="required" id="password1"/>
+                    <label for="password1">Повторите пароль *</label><span class="input__error name-error"></span>
+                </div>
+                <div class="modal__radio">
+                    <p>Вы:</p>
+                    <label class="custom-checkbox" >
+                        <input type="radio" class="custom-checkbox__field" name="you">
+                        <span class="custom-checkbox__content">Дизайнер</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="radio" class="custom-checkbox__field" name="you">
+                        <span class="custom-checkbox__content">Дилер</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="radio" class="custom-checkbox__field" name="you">
+                        <span class="custom-checkbox__content">Другое</span>
+                    </label>
+
+                </div>
+                <label class="custom-checkbox" style="margin-top: 10px;">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Подписаться на рассылку</span>
+                </label>
+                <label class="custom-checkbox" style="margin-top: 10px;">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Я согласен на обработку персональных данных</span>
+                </label>
+
+                <input type="submit" value="Зарегистрироваться">
+            </form>
+        </div>
+    </div>
+  </div>
+</div>
+        <footer class="footer">
+  <div class="container">
+    <div class="footer__container">
+      <ul>
+        <li>
+          <a href="#">О нас</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+        <li>
+          <a href="tel:88005555792">8 800 555 57 92</a>
+          г. Москва, ул. Адмирала Корнилова, д. 61
+        </li>
+        <li>
+          <a href="#">Условия и сроки доставки</a>
+        </li>
+        <li>
+          <a href="#">Гарантия</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+        <li>
+          <a href="#">Программа лояльности</a>
+        </li>
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#">Обработка персональных данных</a>
+        </li>
+        <li>
+          <a href="#">Правила сайта</a>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="#" class="icon">
+          <img src="img/play.svg" alt="Youtube">
+        </a></li>
+        <li><a href="#">Все акции</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Видео</a></li>
+        <li><a href="#">Проекты</a></li>
+        <li><a href="#">Бренды</a></li>
+        <li><a href="#">Коллекции</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Скачать каталоги </a></li>
+      </ul>
+      <div>
+        <form action="">
+          <input type="text" name="search" placeholder=" " required="required" id="search"/>
+          <button type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+              <path d="M15.8443 17.1527L15.8443 16.0686L15.4738 15.6844C13.9095 17.0292 11.8786 17.8388 9.66938 17.8388C4.74314 17.8388 0.749999 13.8456 0.75 8.91938C0.75 3.99314 4.74314 1.74546e-07 9.66938 3.89879e-07C14.5956 6.05212e-07 18.5888 3.99314 18.5888 8.91938C18.5888 11.1286 17.7792 13.1595 16.4344 14.7238L16.8186 15.0943L17.9027 15.0943L24.75 21.9554L22.7054 24L15.8443 17.1527V17.1527ZM15.8443 8.91938C15.8443 5.50257 13.0862 2.74443 9.66938 2.74443C6.25257 2.74443 3.49443 5.50257 3.49443 8.91938C3.49442 12.3362 6.25257 15.0943 9.66938 15.0943C13.0862 15.0943 15.8443 12.3362 15.8443 8.91938Z" fill="#EBEBEB"/>
+            </svg>
+          </button>
+        </form>
+        <ul>
+          <li><a href="#">ИНТЕРЬЕРНЫЙ СВЕТ</a></li>
+          <li><a href="#">уличный СВЕТ</a></li>
+          <li><a href="#">Аксессуары</a></li>
+          <li><a href="#">декор</a></li>
+          <li><a href="#">новинки</a></li>
+          <li><a href="#">бренды</a></li>
+          <li><a href="#">коллекции</a></li>
+          <li><a href="#">проекты</a></li>
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">В наличии</a></li>
+          <li><a href="#">как купить</a></li>
+          <li><a href="#">контакты</a></li>
+          <li><a href="#">о компании</a></li>
+          <li><a href="#">Оплата</a></li>
+          <li><a href="#">Доставка</a></li>
+        </ul>
+        <a href="#">Обработка персональных данных</a>
+        <a href="#">Публичная оферта</a>
+      </div>
+    </div>
+    <p>Natural Concepts 2023 © Все права защищены</p>
+  </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
