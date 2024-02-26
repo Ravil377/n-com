@@ -9892,6 +9892,7 @@ input[type=submit]:disabled {
   margin: 0 auto;
   margin-top: 90px;
   max-width: 312px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9959,6 +9960,15 @@ input[type=submit]:disabled {
 }
 .order__card-podborka-container button + a:hover {
   color: #000;
+}
+
+.basket__container._empty {
+  padding-bottom: 23px;
+  /* plashka */
+  border-bottom: 1px solid var(--Grey);
+}
+.basket__container._empty + .order__card-podborka-container {
+  margin-top: 120px;
 }
 
 .order {
