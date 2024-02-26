@@ -378,3 +378,58 @@
         max-width: 100%;
     }
 }
+
+
+.order__card-podborka-container {
+    margin: 0 auto;
+    margin-top: 90px;
+    max-width: 312px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .empty {
+        margin-bottom: 60px;
+        width: 100%;
+        height: 312px;
+        box-sizing: border-box;
+        /* plashka */
+        border: 3px solid var(--plashka);
+        border-radius: 156px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 27px;
+        img {
+            width: 52px;
+            height: 52px;
+            object-fit: contain;
+        }
+        p {
+            color: var(--Grey);
+            max-width: 160px;
+            font-family: Circe;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+    }
+    button + a {
+        color: var(--Grey);
+        margin-top: 30px;
+        font-family: Circe;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 3%;
+        text-align: center;
+        text-decoration-line: underline;
+        transition: .4s;
+        &:hover {
+            color: #000;
+        }
+    }
+}
