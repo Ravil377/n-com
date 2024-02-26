@@ -474,6 +474,45 @@
         </div>
     </div>
   </div>
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="form1">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно" onclick=""></button>
+    <div class="graph-modal__content _favorits">
+        <p>Редактировать подборку</p>
+        <form>
+            <div class="form__placeholder-container form__placeholder-container--js">
+                <input class="form__input--js" type="text" name="favtitle" autocomplete="off" placeholder=" " required="required" id="favtitle"/>
+                <label for="favtitle">Новое название</label><span class="input__error name-error"></span>
+            </div>
+            <div class="form__placeholder-container form__placeholder-container--js">
+                <textarea class="form__input--js" name="favtext" id="favtext" placeholder=" " autocomplete="off"></textarea>
+                <label for="favtext">Описание Подборки</label><span class="input__error name-error"></span>
+            </div>
+            <div class="buttons">
+                <button class="btn _black" type="submit">Сохранить</button>
+                <button class="btn _white js-modal-close" >Отменить</button>
+            </div>
+        </form>
+        <button>Удалить подборку</button>
+        <span>Эта Подборка и все товары в ней будут удалены,
+            действие невозможно отменить.</span>
+    </div>
+  </div>
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="form2">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно" onclick=""></button>
+    <div class="graph-modal__content _favorits">
+        <p>Новая подборка</p>
+        <form>
+            <div class="form__placeholder-container form__placeholder-container--js">
+                <input class="form__input--js" type="text" name="favtitle" autocomplete="off" placeholder=" " required="required" id="favtitle"/>
+                <label for="favtitle">Название</label><span class="input__error name-error"></span>
+            </div>
+            <div class="buttons">
+                <button class="btn _black" type="submit">Сохранить</button>
+                <button class="btn _white js-modal-close" >Отменить</button>
+            </div>
+        </form>
+    </div>
+  </div>
 </div>
     <footer class="footer">
   <div class="container">
