@@ -14,7 +14,7 @@
         margin: 0 auto;
         padding-top: 40px;
         padding-bottom: 40px;
-        @media (min-width: 1240px) {
+        @media (min-width: 992px) {
             padding-top: 7.5rem;
             padding-bottom: 7.5rem;
         }
@@ -26,6 +26,9 @@
         }
         &._collection {
             max-width: 1400px;
+            @media (min-width: 992px) {
+                max-width: 87.5rem;
+            }
             h2 {
                 text-align: left;
                 color: var(--Dark-grey);
