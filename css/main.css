@@ -1289,6 +1289,8 @@ input[type=number]:focus {
 }
 .header__search-content > button:hover {
   background: var(--Dark-grey);
+}
+.header__search-content > button:hover p {
   color: white;
 }
 
