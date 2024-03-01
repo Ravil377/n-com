@@ -766,7 +766,10 @@ content: '';
         }
         &:hover {
             background: var(--Dark-grey);
-            color: white;
+            p {
+                color: white;
+            }
+            
         }
     }
 }
