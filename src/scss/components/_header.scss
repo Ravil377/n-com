@@ -723,7 +723,7 @@ content: '';
         & > input[type="submit"] {
             transition: .4s;
             @media (min-width: 992px) {
-                min-height: 2.75rem !important;
+                min-height: 3.18rem;
             }
             &:hover {
                 background: var(--Dark-grey);
