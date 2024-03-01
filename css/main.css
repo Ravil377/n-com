@@ -1155,7 +1155,7 @@ input[type=number]:focus {
 }
 @media (min-width: 992px) {
   .header__search {
-    padding: 30px 0;
+    padding: 1.87rem 0;
   }
 }
 .header__search._open {
