@@ -1243,6 +1243,7 @@ input[type=number]:focus {
 .header__search-content form > input[type=submit] {
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  min-height: 40px;
 }
 @media (min-width: 992px) {
   .header__search-content form > input[type=submit] {

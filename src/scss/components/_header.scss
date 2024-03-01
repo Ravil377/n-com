@@ -722,6 +722,7 @@ content: '';
         }
         & > input[type="submit"] {
             transition: .4s;
+            min-height: 40px;
             @media (min-width: 992px) {
                 min-height: 3.18rem;
             }
