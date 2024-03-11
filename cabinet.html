@@ -301,6 +301,321 @@
         <h1>Каталог</h1>
     </div>
 </div>
+      <div class="cabinet" >
+    <div class="container">
+        <div class="cabinet__container">
+            <div class="cabinet__menu">
+                <button class="accordion active">
+                    <img src="img/muser.svg" alt="Icon">
+                    Мой кабинет</button>
+                <div class="panel" style="display: flex;">
+                    <p class="title">Здравствуйте, Любовь!</p>
+                    <p>Здесь вы можете посмотреть историю своих заказов, изменить пароль для входа в аккаунт и персональные данные. Оставить запрос на печатные каталоги и отправить свой проект для размещения в наших социальных сетях и на сайте.
+                        А также вам доступны: файл с остатками товаров, 3D модели светильников для скачивания и список ваших Подборок.</p>
+                </div>
+                <button class="accordion">
+                    <img src="img/mnotebook.svg" alt="Icon">
+                    Личные данные</button>
+                <div class="panel -grid" >
+                    <p class="title">Личные данные</p>
+                    <form>
+                        <div class="panel__grid">
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="text" name="name" placeholder=" " required="required" id="name" />
+                                <label for="name">Имя *</label>
+                            </div>
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="text" name="name" placeholder=" " required="required" id="name" />
+                                <label for="name">Фамилия *</label>
+                            </div>
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="email" name="email" placeholder=" " required="required" id="email" />
+                                <label for="email">E-mail *</label>
+                            </div>
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="text" name="phone" placeholder=" " required="required" id="phone" />
+                                <label for="phone">Телефон *</label>
+                            </div>
+                        </div>
+                        <p class="subtitle">Дополнительная информация</p>
+                        <div class="panel__grid">
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="text" name="lastname" placeholder=" " id="lastname" />
+                                <label for="lastname">Отчество</label>
+                            </div>
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="text" name="birthday" placeholder=" " id="birthday" />
+                                <label for="birthday">Дата рождения</label>
+                            </div>
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="text" name="city" placeholder=" " id="city" />
+                                <label for="city">Город</label>
+                            </div>
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="text" name="link" placeholder=" " id="link" />
+                                <label for="link">Ссылка на сайт или соц.сети</label>
+                            </div>
+                        </div>
+                        <div class="panel__btns">
+                            <button class="btn _black" type="submit">Сохранить изменения</button>
+                            <button class="btn _white">Отменить</button>
+                        </div>
+                    </form>
+                    <form class="_pt">
+                        <p class="subtitle">Изменить пароль</p>
+                        <div class="panel__grid">
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="password" name="password" placeholder=" " required="required" id="password"/>
+                                <label for="password">Новый пароль</label><span class="input__error name-error"></span>
+                            </div>
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="password" name="password1" placeholder=" " required="required" id="password1"/>
+                                <label for="password1">Подтверждение нового пароля</label><span class="input__error name-error"></span>
+                            </div>
+                        </div>
+                        <div class="panel__btns">
+                            <button class="btn _black" type="submit">Сохранить изменения</button>
+                            <button class="btn _white">Отменить</button>
+                        </div>
+                    </form>
+                </div>
+                <button class="accordion">
+                    <img src="img/mhistory.svg" alt="Icon">
+                    текущие заказы</button>
+                <div class="panel">
+                    <p class="title">ТЕКУЩИЕ ЗАКАЗЫ</p>
+                    <ul>
+                        <li class="_header">
+                            <ul>
+                                <li>№</li>
+                                <li>Дата</li>
+                                <li>Статус</li>
+                                <li>Сумма</li>
+                                <li>Информация</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>100</li>
+                                <li>23.02.2023</li>
+                                <li>Принят, ожидается оплата</li>
+                                <li>1 000 000 ₽</li>
+                                <li>
+                                    <a href="#">Подробнее</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>99</li>
+                                <li>18.01.2022</li>
+                                <li>Оплачен, ожидается доставка</li>
+                                <li>1 000 000 ₽</li>
+                                <li>
+                                    <a href="#">Подробнее</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button class="accordion">
+                    <img src="img/mhistory_.svg" alt="Icon">
+                    История заказов</button>
+                <div class="panel" >
+                    <p class="title">ИСТОРИЯ ЗАКАЗОВ</p>
+                    <ul>
+                        <li class="_header">
+                            <ul>
+                                <li>№</li>
+                                <li>Дата</li>
+                                <li>Статус</li>
+                                <li>Сумма</li>
+                                <li>Информация</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>100</li>
+                                <li>23.02.2023</li>
+                                <li>Принят, ожидается оплата</li>
+                                <li>1 000 000 ₽</li>
+                                <li>
+                                    <a href="#">Подробнее</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>99</li>
+                                <li>18.01.2022</li>
+                                <li>Оплачен, ожидается доставка</li>
+                                <li>1 000 000 ₽</li>
+                                <li>
+                                    <a href="#">Подробнее</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="accordion">
+                    <img src="img/mfavorite.svg" alt="Icon">
+                    мои подборки</a>
+                <div class="panel" style="padding: unset;">
+                    <!-- <p>Lorem ipsum...</p> -->
+                </div>
+
+                <button class="accordion">
+                    <img src="img/m3d_box.svg" alt="Icon">
+                    3D модели</button>
+                <div class="panel" >
+                    <p>ЗD модели доступны к самым популярным светильникам. Для скачивания ЗD моделей, вам нужно зайти в карточку интересующего вас товара и нажать на значок ЗD.</p>
+                    <p>Для вашего удобства мы сохраним список ранее скачанных вами 3D-моделей. Вы можете скачать модель повторно, нажав на ее название.</p>
+                    <p class="title">РАНЕЕ ВЫ СКАЧАЛИ:</p>
+                    <ul class="threed">
+                        <li>
+                            <img src="img/3d_1.png" alt="">
+                            <p>Потолочный светильник для ванных комнат QN-HADRIAN-MINI-F-CM-OPAL</p>
+                            <a href="#" class="btn _white">Загрузить повторно</a>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path d="M11.667 17.5L11.667 14" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M16.333 17.5L16.333 14" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M3.5 8.1665H24.5V8.1665C23.0955 8.1665 22.3933 8.1665 21.8889 8.50356C21.6705 8.64948 21.483 8.83698 21.3371 9.05536C21 9.55981 21 10.262 21 11.6665V19.3332C21 21.2188 21 22.1616 20.4142 22.7474C19.8284 23.3332 18.8856 23.3332 17 23.3332H11C9.11438 23.3332 8.17157 23.3332 7.58579 22.7474C7 22.1616 7 21.2188 7 19.3332V11.6665C7 10.262 7 9.55981 6.66294 9.05536C6.51702 8.83698 6.32952 8.64948 6.11114 8.50356C5.60669 8.1665 4.90446 8.1665 3.5 8.1665V8.1665Z" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M11.7458 3.93236C11.8788 3.80832 12.1717 3.69872 12.5792 3.62054C12.9867 3.54237 13.486 3.5 13.9997 3.5C14.5133 3.5 15.0126 3.54237 15.4201 3.62054C15.8276 3.69872 16.1206 3.80832 16.2535 3.93236" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <img src="img/3d_1.png" alt="">
+                            <p>Потолочный светильник для ванных комнат QN-HADRIAN-MINI-F-CM-OPAL</p>
+                            <a href="#" class="btn _white">Загрузить повторно</a>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path d="M11.667 17.5L11.667 14" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M16.333 17.5L16.333 14" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M3.5 8.1665H24.5V8.1665C23.0955 8.1665 22.3933 8.1665 21.8889 8.50356C21.6705 8.64948 21.483 8.83698 21.3371 9.05536C21 9.55981 21 10.262 21 11.6665V19.3332C21 21.2188 21 22.1616 20.4142 22.7474C19.8284 23.3332 18.8856 23.3332 17 23.3332H11C9.11438 23.3332 8.17157 23.3332 7.58579 22.7474C7 22.1616 7 21.2188 7 19.3332V11.6665C7 10.262 7 9.55981 6.66294 9.05536C6.51702 8.83698 6.32952 8.64948 6.11114 8.50356C5.60669 8.1665 4.90446 8.1665 3.5 8.1665V8.1665Z" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M11.7458 3.93236C11.8788 3.80832 12.1717 3.69872 12.5792 3.62054C12.9867 3.54237 13.486 3.5 13.9997 3.5C14.5133 3.5 15.0126 3.54237 15.4201 3.62054C15.8276 3.69872 16.1206 3.80832 16.2535 3.93236" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <button class="accordion">
+                    <img src="img/mostatki.svg" alt="Icon">
+                    посмотреть остатки</button>
+                <div class="panel">
+                    <p class="title">Актуальные остатки</p>
+                    <p>Для вас доступна информация об актуальных остатках
+                        <a href="#" download rel="noopener noreferrer" target="_blank">Скачать файл</a>
+
+                    </p>
+                </div>
+                <button class="accordion">
+                    <img src="img/mbook.svg" alt="Icon">
+                    заказ печатных каталогов</button>
+                <div class="panel">
+                    <p>Все наши электронные каталоги собраны <a href="" class="_link">здесь.</a></p>
+                    <p>Чтобы получить каталоги в печатном виде, заполните форму.</p>
+                    <form>
+                        <div class="panel__grid _catalog">
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="text" name="name" placeholder=" " required="required" id="name" />
+                                <label for="name">Имя *</label>
+                            </div>
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="email" name="email" placeholder=" " required="required" id="email" />
+                                <label for="email">E-mail *</label>
+                            </div>
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="text" name="address" placeholder=" " required="required" id="address" />
+                                <label for="address">Адрес доставки *</label>
+                            </div>
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="text" name="comment" placeholder=" " required="required" id="comment" />
+                                <label for="comment">Какой каталог вы хотите заказать? *</label>
+                            </div>
+                        </div>
+                        <div class="panel__btns">
+                            <button class="btn _black" type="submit">Заказать</button>
+                            <button class="btn _white">Отменить</button>
+                        </div>
+                    </form>
+                </div>
+                <button class="accordion">
+                    <img src="img/mrupor.svg" alt="Icon">
+                    рекламная поддержка</button>
+                <div class="panel" >
+                    <p>Мы с удовольствием разместим ваши проекты на <a href="#" class="_link">сайте</a> и в <a href="#" class="_link">социальных сетях.</a></p>
+                    <p>Чтобы отправить нам информацию о проекте, заполните форму.</p>
+
+                    <form class="_pt1">
+                        <p class="subtitle">Автор проекта</p>
+                        <div class="panel__grid">
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="text" name="name" placeholder=" " required="required" id="name" />
+                                <label for="name">Имя *</label>
+                            </div>
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="text" name="name" placeholder=" " required="required" id="name" />
+                                <label for="name">Фамилия *</label>
+                            </div>
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="email" name="email" placeholder=" " required="required" id="email" />
+                                <label for="email">E-mail *</label>
+                            </div>
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="text" name="company" placeholder=" " id="company" />
+                                <label for="company">Название компании</label>
+                            </div>
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="text" name="soc" placeholder=" " id="soc" />
+                                <label for="soc">Ссылка на социальные сети</label>
+                            </div>
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="text" name="site" placeholder=" " id="site" />
+                                <label for="site">Ссылка на сайт</label>
+                            </div>
+                        </div>
+                        <p class="subtitle">О проекте</p>
+                        <div class="panel__grid _about">
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="text" name="nameproject" placeholder=" " id="nameproject" />
+                                <label for="nameproject">Название проекта *</label>
+                            </div>
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <textarea class="form__input--js" type="text" name="aboutproject" placeholder=" " id="aboutproject" ></textarea>
+                                <label for="aboutproject">Описание проекта *</label>
+                            </div>
+                            <div class="form__placeholder-container form__placeholder-container--js">
+                                <input class="form__input--js" type="text" name="linkproject" placeholder=" " id="linkproject" />
+                                <label for="linkproject">Ссылка на товары из проекта или артикулы *</label>
+                            </div>
+                            <div class="_files">
+                                <a href="#" type="file">Прикрепить фотографии проекта</a>
+                                <span>файлы в форматах .JPG, .PNG, размер файла не более 2 Мб</span>
+                            </div>
+
+                        </div>
+                        <div class="panel__btns">
+                            <button class="btn _black" type="submit">Отправить</button>
+                            <button class="btn _white">Отменить</button>
+                        </div>
+                    </form>
+                </div>
+                <button class="accordion">
+                    <img src="img/mexit.svg" alt="Icon">
+                    выход
+                </button>
+                <div class="panel" style="padding: unset;">
+                    <!-- <p>Lorem ipsum...</p> -->
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
     </main>
     <div class="graph-modal">
   <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="form">
