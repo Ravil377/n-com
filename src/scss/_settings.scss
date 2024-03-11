@@ -150,6 +150,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid var(--Dark-grey);
   cursor: pointer;
   transition: .4s;
   &._black {

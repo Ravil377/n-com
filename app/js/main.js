@@ -19,6 +19,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_modal__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_modal__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _components_basketbuy__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/basketbuy */ "./src/js/components/basketbuy.js");
 /* harmony import */ var _components_basketbuy__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_basketbuy__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_cabinet__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/cabinet */ "./src/js/components/cabinet.js");
+/* harmony import */ var _components_cabinet__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_cabinet__WEBPACK_IMPORTED_MODULE_8__);
+
 
 
 
@@ -277,19 +280,19 @@ const checkBtn = document.querySelector(".bottom-check-js");
 const buyerForm = document.querySelector('.buyer-js');
 const bottomBlock = document.querySelector('.bottom-js');
 const submitButton = document.querySelector('.submit-js');
-cityInput.addEventListener("input", function () {
+cityInput?.addEventListener("input", function () {
   cityBtn.disabled = !cityInput.value.trim();
 });
-cityBtn.addEventListener("click", function () {
+cityBtn?.addEventListener("click", function () {
   document.querySelector('li[data-true="false"]').setAttribute("data-true", "true");
 });
-deliveryBtn.addEventListener("click", function () {
+deliveryBtn?.addEventListener("click", function () {
   document.querySelector('li[data-true="false"]').setAttribute("data-true", "true");
 });
-paymentBtn.addEventListener("click", function () {
+paymentBtn?.addEventListener("click", function () {
   document.querySelector('li[data-true="false"]').setAttribute("data-true", "true");
 });
-deliveryRadios.forEach(function (radio) {
+deliveryRadios?.forEach(function (radio) {
   radio.addEventListener("change", function () {
     const isAnyRadioSelected = Array.from(deliveryRadios).some(radio => radio.checked);
     if (isAnyRadioSelected) {
@@ -299,7 +302,7 @@ deliveryRadios.forEach(function (radio) {
     }
   });
 });
-paymentRadios.forEach(function (radio) {
+paymentRadios?.forEach(function (radio) {
   radio.addEventListener("change", function () {
     const isAnyRadioSelected = Array.from(paymentRadios).some(radio => radio.checked);
     if (isAnyRadioSelected) {
@@ -309,7 +312,7 @@ paymentRadios.forEach(function (radio) {
     }
   });
 });
-buyerForm.addEventListener('input', function () {
+buyerForm?.addEventListener('input', function () {
   const requiredInputs = buyerForm.querySelectorAll('input[required]');
   const isAllFieldsFilled = Array.from(requiredInputs).every(input => input.value.trim() !== '');
   if (isAllFieldsFilled) {
@@ -319,7 +322,7 @@ buyerForm.addEventListener('input', function () {
     bottomBlock.classList.remove('_active');
   }
 });
-checkBtn.addEventListener('change', function () {
+checkBtn?.addEventListener('change', function () {
   if (checkBtn.checked) {
     submitButton.removeAttribute('disabled');
   } else {
@@ -327,7 +330,7 @@ checkBtn.addEventListener('change', function () {
   }
 });
 const liElements = document.querySelectorAll('.basketbuy-js li');
-liElements.forEach((li, index) => {
+liElements?.forEach((li, index) => {
   const currentSpan = li.querySelector('.edit-js');
   if (currentSpan) {
     const nextLi = liElements[index + 1];
@@ -342,6 +345,34 @@ liElements.forEach((li, index) => {
     }
   }
 });
+
+/***/ }),
+
+/***/ "./src/js/components/cabinet.js":
+/*!**************************************!*\
+  !*** ./src/js/components/cabinet.js ***!
+  \**************************************/
+/***/ (() => {
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    const prevActive = document.querySelector(".active");
+    prevActive?.classList.remove("active");
+    const prevPanel = prevActive.nextElementSibling;
+    if (prevPanel) {
+      prevPanel.style.display = "none";
+    }
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "flex") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "flex";
+      this.classList.toggle("active");
+    }
+  });
+}
 
 /***/ }),
 

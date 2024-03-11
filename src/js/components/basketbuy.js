@@ -9,23 +9,23 @@ const buyerForm = document.querySelector('.buyer-js');
 const bottomBlock = document.querySelector('.bottom-js');
 const submitButton = document.querySelector('.submit-js');
 
-cityInput.addEventListener("input", function () {
+cityInput?.addEventListener("input", function () {
     cityBtn.disabled = !cityInput.value.trim();
 });
 
-cityBtn.addEventListener("click", function () {
+cityBtn?.addEventListener("click", function () {
     document.querySelector('li[data-true="false"]').setAttribute("data-true", "true");
 });
 
-deliveryBtn.addEventListener("click", function () {
+deliveryBtn?.addEventListener("click", function () {
     document.querySelector('li[data-true="false"]').setAttribute("data-true", "true");
 });
 
-paymentBtn.addEventListener("click", function () {
+paymentBtn?.addEventListener("click", function () {
     document.querySelector('li[data-true="false"]').setAttribute("data-true", "true");
 });
 
-deliveryRadios.forEach(function (radio) {
+deliveryRadios?.forEach(function (radio) {
     radio.addEventListener("change", function () {
         const isAnyRadioSelected = Array.from(deliveryRadios).some((radio) => radio.checked);
         
@@ -38,7 +38,7 @@ deliveryRadios.forEach(function (radio) {
 });
 
 
-paymentRadios.forEach(function (radio) {
+paymentRadios?.forEach(function (radio) {
     radio.addEventListener("change", function () {
         const isAnyRadioSelected = Array.from(paymentRadios).some((radio) => radio.checked);
         if (isAnyRadioSelected) {
@@ -49,7 +49,7 @@ paymentRadios.forEach(function (radio) {
     });
 });
 
-buyerForm.addEventListener('input', function () {
+buyerForm?.addEventListener('input', function () {
     const requiredInputs = buyerForm.querySelectorAll('input[required]');
     const isAllFieldsFilled = Array.from(requiredInputs).every(input => input.value.trim() !== '');
 
@@ -61,7 +61,7 @@ buyerForm.addEventListener('input', function () {
     }
 });
 
-checkBtn.addEventListener('change', function() {
+checkBtn?.addEventListener('change', function() {
     if (checkBtn.checked) {
         submitButton.removeAttribute('disabled');
     } else {
@@ -71,7 +71,7 @@ checkBtn.addEventListener('change', function() {
 
 const liElements = document.querySelectorAll('.basketbuy-js li');
 
-liElements.forEach((li, index) => {
+liElements?.forEach((li, index) => {
     const currentSpan = li.querySelector('.edit-js');
     
     if (currentSpan) {
