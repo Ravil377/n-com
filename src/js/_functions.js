@@ -53,32 +53,7 @@ function init() {
       }
     });
 
-    // // Если есть хотя бы один адрес, центрируем карту по первому адресу
-    // if (addresses.length > 0) {
-    //   map.setCenter(addresses[0].coordinates, 15);
-    // }
   };
-
-  // mapTab && mapTab.addEventListener('click', function (e) {
-  //   if (e.target.classList.contains('map-tab-js')) {
-  //     var ele = e.target;
-
-  //     // Пример данных для нескольких адресов
-  //     var multipleAddressesData = [
-  //       {
-  //         coordinates: [55.75217656899729,37.66865049999999],
-  //         balloonContent: 'г. Москва, Дизайн-центр Artplay, ул. Нижняя Сыромятническая, д. 10, стр. 7'
-  //       },
-  //       {
-  //         coordinates: [55.61922306910225,37.44080199999995],
-  //         balloonContent: 'г. Москва, Саларьево, ул. Адмирала Корнилова, д. 61'
-  //       },
-  //       // Добавьте еще адресов при необходимости
-  //     ];
-
-  //     findAddresses(multipleAddressesData);
-  //   }
-  // });
 
   var multipleAddressesData = [
     {
