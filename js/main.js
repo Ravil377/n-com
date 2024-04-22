@@ -93,34 +93,7 @@ function init() {
         clusterer.add(marker);
       }
     });
-
-    // // Если есть хотя бы один адрес, центрируем карту по первому адресу
-    // if (addresses.length > 0) {
-    //   map.setCenter(addresses[0].coordinates, 15);
-    // }
   };
-
-  // mapTab && mapTab.addEventListener('click', function (e) {
-  //   if (e.target.classList.contains('map-tab-js')) {
-  //     var ele = e.target;
-
-  //     // Пример данных для нескольких адресов
-  //     var multipleAddressesData = [
-  //       {
-  //         coordinates: [55.75217656899729,37.66865049999999],
-  //         balloonContent: 'г. Москва, Дизайн-центр Artplay, ул. Нижняя Сыромятническая, д. 10, стр. 7'
-  //       },
-  //       {
-  //         coordinates: [55.61922306910225,37.44080199999995],
-  //         balloonContent: 'г. Москва, Саларьево, ул. Адмирала Корнилова, д. 61'
-  //       },
-  //       // Добавьте еще адресов при необходимости
-  //     ];
-
-  //     findAddresses(multipleAddressesData);
-  //   }
-  // });
-
   var multipleAddressesData = [{
     coordinates: [55.75217656899729, 37.66865049999999],
     balloonContent: 'г. Москва, Дизайн-центр Artplay, ул. Нижняя Сыромятническая, д. 10, стр. 7'
@@ -24630,8 +24603,6 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_functions */ "./src/js/_functions.js");
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_components */ "./src/js/_components.js");
-// import './_vendor';
-// import vars from './_vars';
 
 
 })();
