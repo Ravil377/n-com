@@ -644,6 +644,25 @@ const swiper1 = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.hit__slider
     prevEl: ".hit-swiper-button-prev"
   }
 });
+document.addEventListener("DOMContentLoaded", function () {
+  // Находим все элементы с классом .swiper-cards-js
+  document.querySelectorAll(".swiper-cards-js").forEach((el, index) => {
+    // Добавляем уникальный класс каждому контейнеру
+    let swiperClass = `swiper-instance-${index}`;
+    el.classList.add(swiperClass);
+
+    // Создаём новый экземпляр Swiper
+    new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](`.${swiperClass}`, {
+      effect: "fade",
+      grabCursor: true,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      }
+    });
+  });
+});
 
 /***/ }),
 
@@ -707,6 +726,24 @@ const swiper2 = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.project__sl
     1600: {
       slidesPerView: 4,
       spaceBetween: 16
+    }
+  }
+});
+const swiperProjjj = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.project-detail__slider-js', {
+  slidesPerView: 1,
+  spaceBetween: 5,
+  navigation: {
+    nextEl: '.swiper-button-nextproj',
+    prevEl: '.swiper-button-prevproj'
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 16
+    },
+    1240: {
+      slidesPerView: 3,
+      spaceBetween: 20
     }
   }
 });
