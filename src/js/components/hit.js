@@ -22,23 +22,41 @@ const swiper1 = new Swiper('.hit__slider-js', {
         prevEl: ".hit-swiper-button-prev",
     }
 });
-  
-document.addEventListener("DOMContentLoaded", function () {
-  // Находим все элементы с классом .swiper-cards-js
-  document.querySelectorAll(".swiper-cards-js").forEach((el, index) => {
-      // Добавляем уникальный класс каждому контейнеру
-      let swiperClass = `swiper-instance-${index}`;
-      el.classList.add(swiperClass);
 
-      // Создаём новый экземпляр Swiper
-      new Swiper(`.${swiperClass}`, {
-          effect: "fade",
-          grabCursor: true,
-          loop: true,
-          pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-          },
-      });
-  });
-});
+
+let swiperInstances = []; // Массив для хранения всех экземпляров Swiper
+
+function initSwipers() {
+    // Уничтожаем все предыдущие Swiper
+    swiperInstances.forEach(swiper => {
+        if (swiper && swiper.destroy) {
+            swiper.destroy(true, true);
+        }
+    });
+
+    swiperInstances = []; // Очищаем массив
+
+    // Находим все элементы с классом .swiper-cards-js и инициализируем их
+    document.querySelectorAll(".swiper-cards-js").forEach((el, index) => {
+        let swiperClass = `swiper-instance-${index}`;
+        el.classList.add(swiperClass);
+
+        // Создаём новый экземпляр Swiper и сохраняем его в переменную
+        let swiper = new Swiper(`.${swiperClass}`, {
+            effect: "fade",
+            grabCursor: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        // Добавляем созданный экземпляр в массив
+        swiperInstances.push(swiper);
+    });
+}
+
+// Инициализируем Swiper при загрузке страницы
+document.addEventListener("DOMContentLoaded", initSwipers);
+

@@ -644,15 +644,24 @@ const swiper1 = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.hit__slider
     prevEl: ".hit-swiper-button-prev"
   }
 });
-document.addEventListener("DOMContentLoaded", function () {
-  // Находим все элементы с классом .swiper-cards-js
+let swiperInstances = []; // Массив для хранения всех экземпляров Swiper
+
+function initSwipers() {
+  // Уничтожаем все предыдущие Swiper
+  swiperInstances.forEach(swiper => {
+    if (swiper && swiper.destroy) {
+      swiper.destroy(true, true);
+    }
+  });
+  swiperInstances = []; // Очищаем массив
+
+  // Находим все элементы с классом .swiper-cards-js и инициализируем их
   document.querySelectorAll(".swiper-cards-js").forEach((el, index) => {
-    // Добавляем уникальный класс каждому контейнеру
     let swiperClass = `swiper-instance-${index}`;
     el.classList.add(swiperClass);
 
-    // Создаём новый экземпляр Swiper
-    new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](`.${swiperClass}`, {
+    // Создаём новый экземпляр Swiper и сохраняем его в переменную
+    let swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](`.${swiperClass}`, {
       effect: "fade",
       grabCursor: true,
       loop: true,
@@ -661,8 +670,14 @@ document.addEventListener("DOMContentLoaded", function () {
         clickable: true
       }
     });
+
+    // Добавляем созданный экземпляр в массив
+    swiperInstances.push(swiper);
   });
-});
+}
+
+// Инициализируем Swiper при загрузке страницы
+document.addEventListener("DOMContentLoaded", initSwipers);
 
 /***/ }),
 
