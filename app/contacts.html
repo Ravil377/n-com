@@ -277,8 +277,185 @@
           </form>
           <button data-closebtn><p>Закрыть</p></button>
         </div>
+        <div class="header__search-result">
+          <div class="header__search-result-content">
+            <p>Вы ранее искали</p>
+            <ul>
+              <li>
+                <a href="#">бра для ванной комнаты</a>
+              </li>
+              <li>
+                <a href="#">современная люстра</a>
+              </li>
+              <li>
+                <a href="#">светильник для кухни</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__search-links">
+            <a href="#">
+              <div class="img-container">
+                <img src="#" alt="">
+              </div>
+              <p>ИНТЕРЬЕРНЫЙ СВЕТ</p>
+            </a>
+            <a href="#">
+              <div class="img-container">
+                <img src="#" alt="">
+              </div>
+              <p>УЛИЧНЫЙ СВЕТ</p>
+            </a>
+            <a href="#">
+              <div class="img-container">
+                <img src="#" alt="">
+              </div>
+
+              <p>НАСТЕННЫЙ СВЕТ</p>
+            </a>
+            <a href="#">
+              <div class="img-container">
+                <img src="#" alt="">
+              </div>
+              <p>Аксессуары</p>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
+    <style>
+      .header__search-links {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+      }
+      .header__search-links a .img-container {
+        display: none;
+      }
+      .header__search-links a {
+        width: fit-content;
+      }
+      .header__search-links a p {
+        padding: 4.5px 5.5px;
+        color: rgb(56, 56, 56);
+        font-family: Circe;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 3%;
+        text-align: left;
+        text-transform: uppercase;
+        box-sizing: border-box;
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 1px; 
+        width: fit-content;
+      }
+      .header__search-result {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 5px;
+        padding-top: 15px;
+      }
+      .header__search-result-content p {
+        margin: unset;
+        color: rgb(200, 200, 200);
+        font-family: Circe;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 5%;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+      .header__search-result-content ul {
+        margin: unset;
+        padding: unset;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        row-gap: 10px;
+      }
+      .header__search-result-content ul li a {
+        color: rgb(128, 128, 128);
+        font-family: Circe;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 5%;
+        text-align: left;
+        transition: .4s;
+      }
+      .header__search-result-content ul li a:hover {
+        color: black;
+      }
+      .header__search-result-content {
+          margin-top: 15px;
+          padding-left: 10px;
+        }
+      @media (min-width: 1240px) {
+        .header__search-links a p {
+          font-size: 20px;
+          line-height: 29px;
+        }
+      }
+      @media (max-width: 1023px) {
+        .header__search._open {
+          height: 100vh;
+        }
+      }
+      @media (min-width: 1024px) {
+        .header__search-result-content ul {
+          row-gap: 12px;
+        }
+        .header__search-result-content ul li a {
+          font-size: 16px;
+          line-height: 24px;
+        }
+        .header__search-result-content p {
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 12px;
+        }
+        .header__search-result-content {
+          margin-top: unset;
+          padding-left: unset;
+        }
+        .header__search-links {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 30px;
+        }
+        .header__search-links a p {
+          padding: unset;
+          padding-top: 10px;
+        }
+
+        .header__search-result {
+          display: grid;
+          grid-template-columns: auto auto;
+          gap: 20px;
+          padding-top: 35px;
+        }
+        .header__search-links a .img-container {
+          display: block;
+          width: 100%;
+          max-width: 331px;
+          height: auto;
+          position: relative;
+          padding-bottom: 88.52%;
+          overflow: hidden;
+        }
+        .header__search-links a .img-container img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: .4s;
+        }
+        .header__search-links a:hover .img-container img {
+          transform: scale(1.1);
+        }
+      }
+      
+    </style>
     <!-- <div class="header__mobil">
       <div class="container">
         <input id="menu__toggle" type="checkbox" data-burger/>
@@ -383,7 +560,7 @@
 </div>
     </main>
     <div class="graph-modal">
-  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="form">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="form4">
     <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
     <div class="graph-modal__content">
         <div class="modal__tabs modal__tabs-js">
@@ -498,7 +675,346 @@
         </form>
     </div>
   </div>
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="form5">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно" onclick=""></button>
+    <div class="graph-modal__content _favorits">
+        <p>перенести в подборку</p>
+        <form>
+            <div class="form__container">
+                <label class="custom-checkbox _labelleft">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Классика</span>
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Люстры</span>
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Белые потолочные</span>
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Чёрные подвесные светильники</span>
+                </label>
+                <button type="button">Создать новую подборку</button>
+                <div class="buttons">
+                    <button class="btn _black" type="submit">Перенести</button>
+                    <button class="btn _white js-modal-close" >Отменить</button>
+                </div>
+            </div>
+        </form>
+        <style>
+            .form__container {
+                display: flex;
+                flex-direction: column;
+                max-width: 500px;
+                width: 100%;
+                margin: 0 auto;
+            }
+            .form__container .custom-checkbox {
+                min-height: 61px;
+                padding: 12px;
+                border-bottom: 1px solid rgb(235, 235, 235);
+                display: flex;
+                align-items: center;
+            }
+            .form__container .custom-checkbox__content::before {
+                width: 36px;
+                height: 36px;
+                right: 12px;
+                left: unset;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .form__container .custom-checkbox:not(._right) > .custom-checkbox__content {
+                padding-left: unset;
+                color: rgb(56, 56, 56);
+                font-family: Manrope;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: 5%;
+                text-align: left;
+                text-transform: math-auto;
+            }
+            .form__container  .custom-checkbox__content::after {
+                right: 12px;
+                left: unset;
+                top: 50%;
+                width: 36px;
+                height: 36px;
+                transform: translateY(-50%);
+                background-size: 14px 10px;
+            }
+            .form__container > button {
+                color: rgb(128, 128, 128);
+                font-family: Manrope;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: 5%;
+                text-align: left;
+                min-height: 61px;
+                padding: 12px;
+                display: flex;
+                align-items: center;
+                background: white;
+                border: unset;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-right: 20px;
+            }
+            .form__container > button::after {
+                content: '';
+                width: 20px;
+                height: 20px;
+                background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.0039 1L11.0039 21' stroke='%23808080' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M21 11L1 11' stroke='%23808080' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        </style>
+    </div>
+  </div>
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="form6">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно" onclick=""></button>
+    <div class="graph-modal__content _favorits">
+        <p>Выберите подборку</p>
+        <form>
+            <div class="form__container">
+                <label class="custom-checkbox _labelleft">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Классика</span>
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Люстры</span>
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Белые потолочные</span>
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">Чёрные подвесные светильники</span>
+                </label>
+                <button type="button">Создать новую подборку</button>
+                <div class="buttons">
+                    <button class="btn _black" type="submit">Добавить</button>
+                    <button class="btn _white js-modal-close" >Отменить</button>
+                </div>
+            </div>
+        </form>
+    </div>
+  </div>
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="form7">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно" onclick=""></button>
+    <div class="graph-modal__content _favorits _transfer">
+        <p>Товар перенесен в подборку
+            <span>Белые потолочные</span></p>
+        <div class="buttons">
+            <button class="btn _black">Перейти к подборку</button>
+            <button class="btn _white js-modal-close" >Продолжить покупки</button>
+        </div>
+    </div>
+  </div>
+  <div class="graph-modal__container _quickveiw" role="dialog" aria-modal="true" data-graph-target="form">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно" onclick=""></button>
+    <div class="graph-modal__content ">
+        <div class="quickveiw__container">
+            <img src="img/goods/good1.png" alt="">
+            <div class="detail-good__info">
+                <div class="info">
+                    <div class="top">
+                        <h2>Потолочный светильник для ванных комнат QZ-CHANCE-F-PC</h2>
+                        <p>21 372 ₽
+                            <span>В наличии</span>
+                        </p>
+                        <div class="buttons">
+                            <a href="#"><img src="img/favorite_light.svg" alt="Иконка"></a>
+                            <a href="#"><img src="img/compare.svg" alt="Иконка"></a>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">шоу-рум ARTPLAY</a>
+                        </li>
+                        <li>
+                            <a href="#">шоу-рум Юго-Запад</a>
+                        </li>
+                        <li>
+                            <a href="#">Склад в Москве</a>
+                        </li>
+                    </ul>
+                    <div class="info__container">
+                        <ul class="column">
+                            <li><p>Категория: <span>Потолочные вентиляторы</span></p></li>
+                            <li><p>Бренд: <span>Kichler</span></p></li>
+                            <li><p>Артикул: <span>KLF-SOLA-34-BN</span></p></li>
+                            <li><p>Коллекция: <span>SOLA</span></p></li>
+                            <li><p>Цоколь: <span>Integrated LED</span></p></li>
+                            <li><p>Высота изделия: <span>280 мм</span></p></li>
+                            <li><p>Количество ламп: <span>1 шт</span></p></li>
+                            <li><p>Мощность: <span>10 Вт</span></p></li>
+                            <li><p>IP рейтинг: <span>IP23</span></p></li>
+                            <li><p>Цветовая температура (К): <span>3000</span></p></li>
+                            <li><p>Напряжение: <span>220 В</span></p></li>
+                            <li><p>Применение: <span>Уличный свет</span></p></li>
+                            <li><p>Страна происхождения бренда: <span>США</span></p></li>
+                            <li><p>Размер упаковки (ДхШхВ): <span>537×304×285</span></p></li>
+                            <li><p>Вес брутто, кг: <span>8.06</span></p></li>
+                        </ul>
+                    </div>
+
+                    <div class="calc">
+                        <button>-</button>
+                        <input step="1" min="1" max="9999" type="number" value="1">
+                        <button>+</button>
+                    </div>
+                    <button>В корзину</button>
+                    <p>Стоимость доставки будет расчитана при оформлении</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  </div>
 </div>
+
+<style>
+.graph-modal__content._favorits._transfer > p {
+    color: rgb(56, 56, 56);
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 5%;
+    text-align: center;
+    text-transform: math-auto;
+    margin-bottom: 50px;
+}
+.graph-modal__content._favorits._transfer > p span {
+    display: block;
+}
+.graph-modal__content._favorits._transfer .buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+@media (max-width: 769px) {
+    .graph-modal__content._favorits._transfer .buttons {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+}
+.graph-modal__container._quickveiw {
+    max-width: 1440px;
+    width: 100%;
+}
+@media (min-width: 1024px) {
+    .graph-modal__container._quickveiw {
+        max-width: 1000px;
+        width: 100%;
+    }
+}
+@media (min-width: 1440px) {
+    .graph-modal__container._quickveiw {
+        max-width: 1440px;
+        width: 100%;
+    }
+}
+.graph-modal__container._quickveiw .detail-good__info h2 {
+    line-height: normal;
+}
+.graph-modal__container._quickveiw .info {
+    padding-left: unset;
+    padding-top: 20px;
+    padding-bottom: 32px;
+    padding-right: unset;
+    border: unset;
+}
+.graph-modal__container._quickveiw .graph-modal__content  {
+    min-height: unset;
+}
+.quickveiw__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4vw;
+}
+.quickveiw__container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.quickveiw__container .detail-good__info .info > p {
+    position: unset;
+}
+    ul.column {
+        max-width: 490px;
+        list-style: none;
+        padding: unset;
+        margin: unset;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+
+    @media (min-width: 1024px) {
+        ul.column {
+            padding: unset;
+
+        }
+    }
+
+    ul.column li p {
+        display: flex;
+        column-gap: 10px;
+        justify-content: space-between;
+        color: var(--Dark-grey);
+        font-family: Circe;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.32px;
+    }
+
+    @media (min-width: 425px) {
+        ul.column li p {
+            font-size: 16px;
+        }
+        
+    }
+    @media (min-width: 1024px) {
+        ul.column li p {
+            column-gap: 3.12rem;
+            font-size: 1rem;
+        }
+    }
+
+    ul.column li p span {
+        max-width: 100px;
+        width: 100%;
+        color: var(--Grey);
+    }
+
+    @media (min-width: 425px) {
+        ul.column li p span {
+            max-width: 200px;
+        }
+        
+    }
+
+    @media (min-width: 1024px) {
+        ul.column li p span {
+            max-width: 200px;   
+        }
+    }
+</style>
     <footer class="footer">
   <div class="container">
     <div class="footer__container">

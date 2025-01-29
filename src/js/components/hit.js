@@ -23,3 +23,22 @@ const swiper1 = new Swiper('.hit__slider-js', {
     }
 });
   
+document.addEventListener("DOMContentLoaded", function () {
+  // Находим все элементы с классом .swiper-cards-js
+  document.querySelectorAll(".swiper-cards-js").forEach((el, index) => {
+      // Добавляем уникальный класс каждому контейнеру
+      let swiperClass = `swiper-instance-${index}`;
+      el.classList.add(swiperClass);
+
+      // Создаём новый экземпляр Swiper
+      new Swiper(`.${swiperClass}`, {
+          effect: "fade",
+          grabCursor: true,
+          loop: true,
+          pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+          },
+      });
+  });
+});

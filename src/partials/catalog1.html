@@ -543,17 +543,50 @@
             </div>
             <button>Очистить фильтры</button>
         </div>
+        <style>
+            .hit__card .hit__img .hit__label {
+                z-index: 1;
+            }
+            .hit__card .swiper-pagination span {
+                background: #949A8E;
+            }
+
+            .hit__card .swiper-pagination span.swiper-pagination-bullet-active {
+                background: var(--Dark-grey);
+            }
+
+            .hit__card .swiper-pagination {
+                bottom: 2px;
+            }
+
+            .hit__card .hit__buttons {
+                z-index: 1;
+            }
+            @media (min-width: 1024px) {
+                .hit__img.swiper-cards-js .swiper-wrapper > img:nth-child(n+2){
+                    display: none;
+                }                
+            }
+
+
+        </style>
         <div class="goods__container" data-goods>
             <a href="#" class="hit__card">
-                <div class="hit__img" >
-                    <img src="img/goods/good1.png" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                <div class="hit__img swiper-cards-js" >
+                    <div class="swiper-wrapper">
+                        <img src="img/goods/good1.png" class="swiper-slide" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                        <img src="img/goods/good2.png" class="swiper-slide" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    
                     <div class="hit__label" >
                         <p>в наличии</p>
                         <p class="_new">Новинка</p>
                         <p>хит</p>
                     </div>
                     <div class="hit__buttons">
-                        <button>
+                        <button data-graph-path="form" data-graph-animation="fadeIn"
+                        data-graph-speed="500">
                             <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20" viewBox="0 0 29 20" fill="none">
                                 <circle cx="14.5" cy="10" r="5" stroke-width="2"/>
                                 <path d="M27.2014 8.92254C27.5846 9.41029 27.7762 9.65417 27.7762 10C27.7762 10.3458 27.5846 10.5897 27.2014 11.0775C25.3243 13.4668 20.3461 19 14.5 19C8.65392 19 3.67575 13.4668 1.79863 11.0775C1.41544 10.5897 1.22385 10.3458 1.22385 10C1.22385 9.65417 1.41544 9.41029 1.79863 8.92255C3.67575 6.53323 8.65392 1 14.5 1C20.3461 1 25.3243 6.53323 27.2014 8.92254Z" stroke-width="2"/>
@@ -590,8 +623,12 @@
                 </div>
             </a>
             <a href="#" class="hit__card">
-                <div class="hit__img" >
-                    <img src="img/goods/good2.png" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                <div class="hit__img swiper-cards-js" >
+                    <div class="swiper-wrapper">
+                        <img src="img/goods/good3.png" class="swiper-slide" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                        <img src="img/goods/good1.png" class="swiper-slide" alt="Потолочный светильник для ванных комнат QZ-CHANCE-F-PC" >
+                    </div>
+                    <div class="swiper-pagination"></div>
                     <div class="hit__label" >
                         <p>в наличии</p>
                         <p class="_new">Новинка</p>
@@ -797,7 +834,7 @@
                 <p class="hit__name">Подвесной светильник QZ-CHANCE-F-PC</p>
                 <p class="hit__price">144 458 ₽</p>
                 <div>
-                    <button>
+                    <button >
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.28484 17.7004L15.2744 28.2348C15.6148 28.5938 15.7851 28.7734 16 28.7734C16.2149 28.7734 16.3852 28.5938 16.7256 28.2348L26.7152 17.7004C29.1799 15.1011 29.3786 11.092 27.1828 8.26185C24.2409 4.47009 18.3358 5.106 16.2686 9.43717L16 10L15.7314 9.43717C13.6642 5.106 7.7591 4.47009 4.81722 8.26185C2.62142 11.092 2.82005 15.1011 5.28484 17.7004Z" stroke-width="2" stroke-linejoin="round"/>
                         </svg>

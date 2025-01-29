@@ -19,4 +19,23 @@ const swiper2 = new Swiper('.project__slider-js', {
         }
     }
 });
+
+const swiperProjjj = new Swiper('.project-detail__slider-js', {
+  slidesPerView: 1,
+  spaceBetween: 5,
+  navigation: {
+    nextEl: '.swiper-button-nextproj',
+    prevEl: '.swiper-button-prevproj',
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 16
+    },
+    1240: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  }
+});
   
